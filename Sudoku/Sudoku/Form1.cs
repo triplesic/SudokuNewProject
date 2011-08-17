@@ -11,26 +11,38 @@ namespace Sudoku
 {
     public partial class Form1 : Form
     {
-        solve s = new solve();
-        int[,] table = new int[4, 4];
-        
-
-
         public Form1()
         {
             InitializeComponent();
         }
 
+        private int[,] table = new int[4, 4];
+        solve s = new solve();
+
         private void button1_Click(object sender, EventArgs e)
         {
-           
-
             table = s.getSolve();
             mapArrayToTable(table);
         }
 
-        private void mapArrayToTable(int[,] table)
-        {  
+        private void mapArrayToTable(int[,] tableInt)
+        {
+            string[,] table = new string[4, 4];
+            for (int i = 0; i < 4; i++)
+            {
+                for (int j = 0; j < 4; j++)
+                {
+                    if (tableInt[i,j] == 0 || tableInt[i,j] == null)
+                    {
+                        table[i, j] = "";
+                    }
+                    else
+                    {
+                        table[i, j] = tableInt[i, j].ToString();
+                    }
+                    
+                }
+            }
             textBox1.Text = table[0, 0].ToString();
             textBox2.Text = table[0, 1].ToString();
             textBox4.Text = table[0, 2].ToString();
@@ -52,47 +64,430 @@ namespace Sudoku
             textBox13.Text = table[3, 3].ToString();
         }
 
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            if (textBox1.Text != "")
+            {
+                if (textBox1.Text == textBox2.Text || 
+                    textBox1.Text == textBox4.Text || 
+                    textBox1.Text == textBox7.Text || 
+                    textBox1.Text == textBox5.Text || 
+                    textBox1.Text == textBox6.Text || 
+                    textBox1.Text == textBox10.Text || 
+                    textBox1.Text == textBox12.Text)
+                {
+                    textBox1.BackColor = Color.Red;
+                }else
+                {
+                    textBox1.BackColor = Color.White;
+                }
+            }
+            else
+            {
+                textBox1.BackColor = Color.White;
+            }
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            if (textBox2.Text != "")
+            {
+                if (textBox2.Text == textBox1.Text || 
+                    textBox2.Text == textBox4.Text || 
+                    textBox2.Text == textBox7.Text || 
+                    textBox2.Text == textBox5.Text || 
+                    textBox2.Text == textBox6.Text || 
+                    textBox2.Text == textBox11.Text || 
+                    textBox2.Text == textBox9.Text)
+                {
+                    textBox2.BackColor = Color.Red;
+                }
+                else
+                {
+                    textBox2.BackColor = Color.White;
+                }
+            }
+            else
+            {
+                textBox2.BackColor = Color.White;
+            }
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+            if (textBox4.Text != "")
+            {
+                if (textBox4.Text == textBox1.Text ||
+                    textBox4.Text == textBox2.Text ||
+                    textBox4.Text == textBox7.Text ||
+                    textBox4.Text == textBox8.Text ||
+                    textBox4.Text == textBox3.Text ||
+                    textBox4.Text == textBox14.Text ||
+                    textBox4.Text == textBox16.Text)
+                {
+                    textBox4.BackColor = Color.Red;
+                }
+                else
+                {
+                    textBox4.BackColor = Color.White;
+                }
+            }
+            else
+            {
+                textBox4.BackColor = Color.White;
+            }
+        }
+
+        private void textBox7_TextChanged(object sender, EventArgs e)
+        {
+            if (textBox7.Text != "")
+            {
+                if (textBox7.Text == textBox1.Text ||
+                    textBox7.Text == textBox2.Text ||
+                    textBox7.Text == textBox4.Text ||
+                    textBox7.Text == textBox8.Text ||
+                    textBox7.Text == textBox3.Text ||
+                    textBox7.Text == textBox15.Text ||
+                    textBox7.Text == textBox3.Text)
+                {
+                    textBox7.BackColor = Color.Red;
+                }
+                else
+                {
+                    textBox7.BackColor = Color.White;
+                }
+            }
+            else
+            {
+                textBox7.BackColor = Color.White;
+            }
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+            if (textBox5.Text != "")
+            {
+                if (textBox5.Text == textBox6.Text ||
+                    textBox5.Text == textBox8.Text ||
+                    textBox5.Text == textBox3.Text ||
+                    textBox5.Text == textBox1.Text ||
+                    textBox5.Text == textBox2.Text ||
+                    textBox5.Text == textBox10.Text ||
+                    textBox5.Text == textBox12.Text)
+                {
+                    textBox5.BackColor = Color.Red;
+                }
+                else
+                {
+                    textBox5.BackColor = Color.White;
+                }
+            }
+            else
+            {
+                textBox5.BackColor = Color.White;
+            }
+        }
+
+        private void textBox6_TextChanged(object sender, EventArgs e)
+        {
+            if (textBox6.Text != "")
+            {
+                if (textBox6.Text == textBox5.Text ||
+                    textBox6.Text == textBox8.Text ||
+                    textBox6.Text == textBox3.Text ||
+                    textBox6.Text == textBox1.Text ||
+                    textBox6.Text == textBox2.Text ||
+                    textBox6.Text == textBox11.Text ||
+                    textBox6.Text == textBox9.Text)
+                {
+                    textBox6.BackColor = Color.Red;
+                }
+                else
+                {
+                    textBox6.BackColor = Color.White;
+                }
+            }
+            else
+            {
+                textBox6.BackColor = Color.White;
+            }
+        }
+
+        private void textBox8_TextChanged(object sender, EventArgs e)
+        {
+            if (textBox8.Text != "")
+            {
+                if (textBox8.Text == textBox5.Text ||
+                    textBox8.Text == textBox6.Text ||
+                    textBox8.Text == textBox3.Text ||
+                    textBox8.Text == textBox4.Text ||
+                    textBox8.Text == textBox7.Text ||
+                    textBox8.Text == textBox14.Text ||
+                    textBox8.Text == textBox16.Text)
+                {
+                    textBox8.BackColor = Color.Red;
+                }
+                else
+                {
+                    textBox8.BackColor = Color.White;
+                }
+            }
+            else
+            {
+                textBox8.BackColor = Color.White;
+            }
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+            if (textBox3.Text != "")
+            {
+                if (textBox3.Text == textBox5.Text ||
+                    textBox3.Text == textBox6.Text ||
+                    textBox3.Text == textBox8.Text ||
+                    textBox3.Text == textBox4.Text ||
+                    textBox3.Text == textBox7.Text ||
+                    textBox3.Text == textBox15.Text ||
+                    textBox3.Text == textBox13.Text)
+                {
+                    textBox3.BackColor = Color.Red;
+                }
+                else
+                {
+                    textBox3.BackColor = Color.White;
+                }
+            }
+            else
+            {
+                textBox3.BackColor = Color.White;
+            }
+        }
+
+        private void textBox10_TextChanged(object sender, EventArgs e)
+        {
+            if (textBox10.Text != "")
+            {
+                if (textBox10.Text == textBox11.Text ||
+                    textBox10.Text == textBox14.Text ||
+                    textBox10.Text == textBox15.Text ||
+                    textBox10.Text == textBox1.Text ||
+                    textBox10.Text == textBox5.Text ||
+                    textBox10.Text == textBox12.Text ||
+                    textBox10.Text == textBox9.Text)
+                {
+                    textBox10.BackColor = Color.Red;
+                }
+                else
+                {
+                    textBox10.BackColor = Color.White;
+                }
+            }
+            else
+            {
+                textBox10.BackColor = Color.White;
+            }
+        }
+
+        private void textBox11_TextChanged(object sender, EventArgs e)
+        {
+            if (textBox11.Text != "")
+            {
+                if (textBox11.Text == textBox10.Text ||
+                    textBox11.Text == textBox14.Text ||
+                    textBox11.Text == textBox15.Text ||
+                    textBox11.Text == textBox2.Text ||
+                    textBox11.Text == textBox6.Text ||
+                    textBox11.Text == textBox9.Text ||
+                    textBox11.Text == textBox12.Text)
+                {
+                    textBox11.BackColor = Color.Red;
+                }
+                else
+                {
+                    textBox11.BackColor = Color.White;
+                }
+            }
+            else
+            {
+                textBox11.BackColor = Color.White;
+            }
+        }
+
+        private void textBox14_TextChanged(object sender, EventArgs e)
+        {
+            if (textBox14.Text != "")
+            {
+                if (textBox14.Text == textBox10.Text ||
+                    textBox14.Text == textBox11.Text ||
+                    textBox14.Text == textBox15.Text ||
+                    textBox14.Text == textBox4.Text ||
+                    textBox14.Text == textBox8.Text ||
+                    textBox14.Text == textBox6.Text ||
+                    textBox14.Text == textBox13.Text)
+                {
+                    textBox14.BackColor = Color.Red;
+                }
+                else
+                {
+                    textBox14.BackColor = Color.White;
+                }
+            }
+            else
+            {
+                textBox14.BackColor = Color.White;
+            }
+        }
+
+        private void textBox15_TextChanged(object sender, EventArgs e)
+        {
+            if (textBox15.Text != "")
+            {
+                if (textBox15.Text == textBox10.Text ||
+                    textBox15.Text == textBox11.Text ||
+                    textBox15.Text == textBox14.Text ||
+                    textBox15.Text == textBox7.Text ||
+                    textBox15.Text == textBox3.Text ||
+                    textBox15.Text == textBox13.Text ||
+                    textBox15.Text == textBox16.Text)
+                {
+                    textBox15.BackColor = Color.Red;
+                }
+                else
+                {
+                    textBox15.BackColor = Color.White;
+                }
+            }
+            else
+            {
+                textBox15.BackColor = Color.White;
+            }
+        }
+
+        private void textBox12_TextChanged(object sender, EventArgs e)
+        {
+            if (textBox12.Text != "")
+            {
+                if (textBox12.Text == textBox9.Text ||
+                    textBox12.Text == textBox16.Text ||
+                    textBox12.Text == textBox13.Text ||
+                    textBox12.Text == textBox1.Text ||
+                    textBox12.Text == textBox5.Text ||
+                    textBox12.Text == textBox10.Text ||
+                    textBox12.Text == textBox11.Text)
+                {
+                    textBox12.BackColor = Color.Red;
+                }
+                else
+                {
+                    textBox12.BackColor = Color.White;
+                }
+            }
+            else
+            {
+                textBox12.BackColor = Color.White;
+            }
+        }
+
+        private void textBox9_TextChanged(object sender, EventArgs e)
+        {
+            if (textBox9.Text != "")
+            {
+                if (textBox9.Text == textBox12.Text ||
+                    textBox9.Text == textBox16.Text ||
+                    textBox9.Text == textBox13.Text ||
+                    textBox9.Text == textBox2.Text ||
+                    textBox9.Text == textBox6.Text ||
+                    textBox9.Text == textBox11.Text ||
+                    textBox9.Text == textBox10.Text)
+                {
+                    textBox9.BackColor = Color.Red;
+                }
+                else
+                {
+                    textBox9.BackColor = Color.White;
+                }
+            }
+            else
+            {
+                textBox9.BackColor = Color.White;
+            }
+        }
+
+        private void textBox16_TextChanged(object sender, EventArgs e)
+        {
+            if (textBox16.Text != "")
+            {
+                if (textBox16.Text == textBox12.Text ||
+                    textBox16.Text == textBox9.Text ||
+                    textBox16.Text == textBox13.Text ||
+                    textBox16.Text == textBox4.Text ||
+                    textBox16.Text == textBox8.Text ||
+                    textBox16.Text == textBox14.Text ||
+                    textBox16.Text == textBox15.Text)
+                {
+                    textBox16.BackColor = Color.Red;
+                }
+                else
+                {
+                    textBox16.BackColor = Color.White;
+                }
+            }
+            else
+            {
+                textBox16.BackColor = Color.White;
+            }
+        }
+
+        private void textBox13_TextChanged(object sender, EventArgs e)
+        {
+            if (textBox13.Text != "")
+            {
+                if (textBox13.Text == textBox12.Text ||
+                    textBox13.Text == textBox9.Text ||
+                    textBox13.Text == textBox16.Text ||
+                    textBox13.Text == textBox7.Text ||
+                    textBox13.Text == textBox3.Text ||
+                    textBox13.Text == textBox15.Text ||
+                    textBox13.Text == textBox14.Text)
+                {
+                    textBox13.BackColor = Color.Red;
+                }
+                else
+                {
+                    textBox13.BackColor = Color.White;
+                }
+            }
+            else
+            {
+                textBox13.BackColor = Color.White;
+            }
+        }
+
         private void button2_Click(object sender, EventArgs e)
-        {        
+        {
 
             table = s.getSolve();
-            Random r = new Random();            
-            int x, y ;
+            Random r = new Random();
+            int x, y;
             int[,] arrGen = new int[4, 4];
 
             for (int i = 0; i < 7; i++)
-            { 
+            {
                 x = r.Next(4);
-                y = r.Next(4);    
-            
+                y = r.Next(4);
+
                 // Random duplicate
-                if (arrGen[x,y] != 0 && i != 0)
+                if (arrGen[x, y] != 0 && i != 0)
                 {
                     i--;
                 }
                 else
-                {                   
+                {
                     arrGen[x, y] = table[x, y];
-                }               
-            }       
-            mapArrayToTable(arrGen);
-            lockCell(arrGen);
-        }
-
-        private void lockCell(int[,] arrGenLock)
-        {
-            foreach (int i in arrGenLock)
-            {
-                if (i != 0)
-                {
-                    //lock cell  
-                }
-                else
-                {
-
                 }
             }
-
+            mapArrayToTable(arrGen);
         }
+
     }
 }
