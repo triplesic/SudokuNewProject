@@ -11,6 +11,11 @@ namespace Sudoku
 {
     public partial class Form1 : Form
     {
+        solve s = new solve();
+        int[,] table = new int[4, 4];
+        
+
+
         public Form1()
         {
             InitializeComponent();
@@ -18,15 +23,14 @@ namespace Sudoku
 
         private void button1_Click(object sender, EventArgs e)
         {
-            solve s = new solve();
-            int [ , ] table = new int [4,4];
+           
 
             table = s.getSolve();
             mapArrayToTable(table);
         }
 
         private void mapArrayToTable(int[,] table)
-        {
+        {  
             textBox1.Text = table[0, 0].ToString();
             textBox2.Text = table[0, 1].ToString();
             textBox4.Text = table[0, 2].ToString();
@@ -46,6 +50,49 @@ namespace Sudoku
             textBox9.Text = table[3, 1].ToString();
             textBox16.Text = table[3, 2].ToString();
             textBox13.Text = table[3, 3].ToString();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {        
+
+            table = s.getSolve();
+            Random r = new Random();            
+            int x, y ;
+            int[,] arrGen = new int[4, 4];
+
+            for (int i = 0; i < 7; i++)
+            { 
+                x = r.Next(4);
+                y = r.Next(4);    
+            
+                // Random duplicate
+                if (arrGen[x,y] != 0 && i != 0)
+                {
+                    i--;
+                }
+                else
+                {                   
+                    arrGen[x, y] = table[x, y];
+                }               
+            }       
+            mapArrayToTable(arrGen);
+            lockCell(arrGen);
+        }
+
+        private void lockCell(int[,] arrGenLock)
+        {
+            foreach (int i in arrGenLock)
+            {
+                if (i != 0)
+                {
+                    //lock cell  
+                }
+                else
+                {
+
+                }
+            }
+
         }
     }
 }
