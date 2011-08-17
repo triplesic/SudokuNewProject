@@ -27,12 +27,30 @@ namespace Sudoku
 
         private void mapArrayToTable(int[,] tableInt)
         {
+            textBox1.Enabled = true;
+            textBox2.Enabled = true;
+            textBox3.Enabled = true;
+            textBox4.Enabled = true;
+            textBox5.Enabled = true;
+            textBox6.Enabled = true;
+            textBox7.Enabled = true;
+            textBox8.Enabled = true;
+            textBox9.Enabled = true;
+            textBox10.Enabled = true;
+            textBox11.Enabled = true;
+            textBox12.Enabled = true;
+            textBox13.Enabled = true;
+            textBox14.Enabled = true;
+            textBox15.Enabled = true;
+            textBox16.Enabled = true;
+
+
             string[,] table = new string[4, 4];
             for (int i = 0; i < 4; i++)
             {
                 for (int j = 0; j < 4; j++)
                 {
-                    if (tableInt[i,j] == 0 || tableInt[i,j] == null)
+                    if (tableInt[i,j] == 0)
                     {
                         table[i, j] = "";
                     }
@@ -43,24 +61,101 @@ namespace Sudoku
                     
                 }
             }
+
+            if (table[0, 0] != "")
+            {
+                textBox1.Enabled = false;
+            }
             textBox1.Text = table[0, 0].ToString();
+
+            if (table[0, 1] != "")
+            {
+                textBox2.Enabled = false;
+            }
             textBox2.Text = table[0, 1].ToString();
+
+            if (table[0, 2] != "")
+            {
+                textBox4.Enabled = false;
+            }
             textBox4.Text = table[0, 2].ToString();
+
+            if (table[0, 3] != "")
+            {
+                textBox7.Enabled = false;
+            }
             textBox7.Text = table[0, 3].ToString();
 
+            if (table[1, 0] != "")
+            {
+                textBox5.Enabled = false;
+            }
             textBox5.Text = table[1, 0].ToString();
+
+            if (table[1, 1] != "")
+            {
+                textBox6.Enabled = false;
+            }
             textBox6.Text = table[1, 1].ToString();
+
+            if (table[1, 2] != "")
+            {
+                textBox8.Enabled = false;
+            }
             textBox8.Text = table[1, 2].ToString();
+
+            if (table[1, 3] != "")
+            {
+                textBox3.Enabled = false;
+            }
             textBox3.Text = table[1, 3].ToString();
 
+            if (table[2, 0] != "")
+            {
+                textBox10.Enabled = false;
+            }
             textBox10.Text = table[2, 0].ToString();
+
+            if (table[2, 1] != "")
+            {
+                textBox11.Enabled = false;
+            }
             textBox11.Text = table[2, 1].ToString();
+
+            if (table[2, 2] != "")
+            {
+                textBox14.Enabled = false;
+            }
             textBox14.Text = table[2, 2].ToString();
+
+            if (table[2, 3] != "")
+            {
+                textBox15.Enabled = false;
+            }
             textBox15.Text = table[2, 3].ToString();
 
+            if (table[3, 0] != "")
+            {
+                textBox12.Enabled = false;
+            }
             textBox12.Text = table[3, 0].ToString();
+
+            if (table[3, 1] != "")
+            {
+                textBox9.Enabled = false;
+            }
             textBox9.Text = table[3, 1].ToString();
+
+            if (table[3, 2] != "")
+            {
+                textBox16.Enabled = false;
+            }
             textBox16.Text = table[3, 2].ToString();
+
+            if (table[3, 3] != "")
+            {
+                textBox13.Enabled = false;
+            }
             textBox13.Text = table[3, 3].ToString();
         }
 
