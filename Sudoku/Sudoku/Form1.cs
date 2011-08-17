@@ -22,7 +22,11 @@ namespace Sudoku
             int [ , ] table = new int [4,4];
 
             table = s.getSolve();
+            mapArrayToTable(table);
+        }
 
+        private void mapArrayToTable(int[,] table)
+        {
             textBox1.Text = table[0, 0].ToString();
             textBox2.Text = table[0, 1].ToString();
             textBox4.Text = table[0, 2].ToString();
