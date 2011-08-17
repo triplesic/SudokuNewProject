@@ -181,6 +181,7 @@ namespace Sudoku
             {
                 textBox1.BackColor = Color.White;
             }
+            congratulations();
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
@@ -206,6 +207,7 @@ namespace Sudoku
             {
                 textBox2.BackColor = Color.White;
             }
+            congratulations();
         }
 
         private void textBox4_TextChanged(object sender, EventArgs e)
@@ -231,6 +233,7 @@ namespace Sudoku
             {
                 textBox4.BackColor = Color.White;
             }
+            congratulations();
         }
 
         private void textBox7_TextChanged(object sender, EventArgs e)
@@ -256,6 +259,7 @@ namespace Sudoku
             {
                 textBox7.BackColor = Color.White;
             }
+            congratulations();
         }
 
         private void textBox5_TextChanged(object sender, EventArgs e)
@@ -281,6 +285,7 @@ namespace Sudoku
             {
                 textBox5.BackColor = Color.White;
             }
+            congratulations();
         }
 
         private void textBox6_TextChanged(object sender, EventArgs e)
@@ -306,6 +311,7 @@ namespace Sudoku
             {
                 textBox6.BackColor = Color.White;
             }
+            congratulations();
         }
 
         private void textBox8_TextChanged(object sender, EventArgs e)
@@ -331,6 +337,7 @@ namespace Sudoku
             {
                 textBox8.BackColor = Color.White;
             }
+            congratulations();
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
@@ -356,6 +363,7 @@ namespace Sudoku
             {
                 textBox3.BackColor = Color.White;
             }
+            congratulations();
         }
 
         private void textBox10_TextChanged(object sender, EventArgs e)
@@ -381,6 +389,7 @@ namespace Sudoku
             {
                 textBox10.BackColor = Color.White;
             }
+            congratulations();
         }
 
         private void textBox11_TextChanged(object sender, EventArgs e)
@@ -406,6 +415,7 @@ namespace Sudoku
             {
                 textBox11.BackColor = Color.White;
             }
+            congratulations();
         }
 
         private void textBox14_TextChanged(object sender, EventArgs e)
@@ -431,6 +441,7 @@ namespace Sudoku
             {
                 textBox14.BackColor = Color.White;
             }
+            congratulations();
         }
 
         private void textBox15_TextChanged(object sender, EventArgs e)
@@ -456,6 +467,7 @@ namespace Sudoku
             {
                 textBox15.BackColor = Color.White;
             }
+            congratulations();
         }
 
         private void textBox12_TextChanged(object sender, EventArgs e)
@@ -481,6 +493,7 @@ namespace Sudoku
             {
                 textBox12.BackColor = Color.White;
             }
+            congratulations();
         }
 
         private void textBox9_TextChanged(object sender, EventArgs e)
@@ -506,6 +519,7 @@ namespace Sudoku
             {
                 textBox9.BackColor = Color.White;
             }
+            congratulations();
         }
 
         private void textBox16_TextChanged(object sender, EventArgs e)
@@ -531,6 +545,7 @@ namespace Sudoku
             {
                 textBox16.BackColor = Color.White;
             }
+            congratulations();
         }
 
         private void textBox13_TextChanged(object sender, EventArgs e)
@@ -556,6 +571,7 @@ namespace Sudoku
             {
                 textBox13.BackColor = Color.White;
             }
+            congratulations();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -582,6 +598,31 @@ namespace Sudoku
                 }
             }
             mapArrayToTable(arrGen);
+        }
+
+
+
+        public void congratulations()
+        {
+            if (textBox1.Text != "" && textBox2.Text != "" && textBox3.Text != "" && textBox4.Text != "" &&
+                textBox5.Text != "" && textBox6.Text != "" && textBox7.Text != "" && textBox8.Text != "" &&
+                textBox9.Text != "" && textBox10.Text != "" && textBox11.Text != "" && textBox12.Text != "" &&
+                textBox13.Text != "" && textBox14.Text != "" && textBox15.Text != "" && textBox16.Text != "")
+            {
+
+                if (textBox1.BackColor != Color.Red && textBox2.BackColor != Color.Red && textBox3.BackColor != Color.Red && textBox4.BackColor != Color.Red &&
+            textBox5.BackColor != Color.Red && textBox6.BackColor != Color.Red && textBox7.BackColor != Color.Red && textBox8.BackColor != Color.Red &&
+            textBox9.BackColor != Color.Red && textBox10.BackColor != Color.Red && textBox11.BackColor != Color.Red && textBox12.BackColor != Color.Red &&
+            textBox13.BackColor != Color.Red && textBox14.BackColor != Color.Red && textBox15.BackColor != Color.Red && textBox16.BackColor != Color.Red)
+                {
+                    label1.Visible = true;
+                }
+
+            }
+            else {
+
+                label1.Visible = false;
+            }
         }
 
     }
