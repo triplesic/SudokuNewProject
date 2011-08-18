@@ -16,13 +16,31 @@ namespace Sudoku
             InitializeComponent();
         }
 
-        private int[,] table = new int[4, 4];
+        //private int[,] table = new int[4, 4];
         solve s = new solve();
+        private int[,] table = new int[4,4];
 
         private void button1_Click(object sender, EventArgs e)
         {
-            table = s.getSolve();
+            //table = new solve().getSolve();
             mapArrayToTable(table);
+            textBox1.BackColor = Color.White;
+            textBox2.BackColor = Color.White;
+            textBox3.BackColor = Color.White;
+            textBox4.BackColor = Color.White;
+            textBox5.BackColor = Color.White;
+            textBox6.BackColor = Color.White;
+            textBox7.BackColor = Color.White;
+            textBox8.BackColor = Color.White;
+            textBox9.BackColor = Color.White;
+            textBox10.BackColor = Color.White;
+            textBox11.BackColor = Color.White;
+            textBox12.BackColor = Color.White;
+            textBox13.BackColor = Color.White;
+            textBox14.BackColor = Color.White;
+            textBox15.BackColor = Color.White;
+            textBox16.BackColor = Color.White;
+
         }
 
         private void mapArrayToTable(int[,] tableInt)
@@ -597,7 +615,24 @@ namespace Sudoku
                     arrGen[x, y] = table[x, y];
                 }
             }
+            
             mapArrayToTable(arrGen);
+            textBox1.BackColor = Color.White;
+            textBox2.BackColor = Color.White;
+            textBox3.BackColor = Color.White;
+            textBox4.BackColor = Color.White;
+            textBox5.BackColor = Color.White;
+            textBox6.BackColor = Color.White;
+            textBox7.BackColor = Color.White;
+            textBox8.BackColor = Color.White;
+            textBox9.BackColor = Color.White;
+            textBox10.BackColor = Color.White;
+            textBox11.BackColor = Color.White;
+            textBox12.BackColor = Color.White;
+            textBox13.BackColor = Color.White;
+            textBox14.BackColor = Color.White;
+            textBox15.BackColor = Color.White;
+            textBox16.BackColor = Color.White;
         }
 
 
