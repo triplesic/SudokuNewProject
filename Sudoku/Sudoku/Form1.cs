@@ -20,6 +20,7 @@ namespace Sudoku
         solve s = new solve();
         private int[,] table = new int[4,4];
         private int[,] table9x9 = new int[9, 9];
+        CheckCorrectCell CCC = new CheckCorrectCell();
         private int valueLevel4x4;
         private int valueLevel9x9;
 
@@ -1122,7 +1123,7 @@ namespace Sudoku
                     arrGen[x, y] = table[x, y];
                 }
             }
-            
+
             mapArrayToTable(arrGen);
             textBox1.BackColor = Color.White;
             textBox2.BackColor = Color.White;
@@ -1191,6 +1192,8 @@ namespace Sudoku
 
         private void button4_Click(object sender, EventArgs e)
         {
+            
+
             table9x9 = s.getSolve9x9();
             int[,] gen = new int[9, 9];
             Random r = new Random();
@@ -1200,7 +1203,7 @@ namespace Sudoku
             {
                 x = r.Next(9);
                 y = r.Next(9);
-                
+
                 if (gen[x, y] != 0 && i != 0)
                 {
                     i--;
@@ -1211,7 +1214,7 @@ namespace Sudoku
                 }
 
                 gen[x, y] = table9x9[x, y];
-            }           
+            }
             mapArrayToTable9x9(gen);
         }
 
@@ -1449,38 +1452,1192 @@ namespace Sudoku
 
         }
 
-        private void button5_Click(object sender, EventArgs e)
-        {
-            //load table currennt
 
-          
+        private int[,] mapTableToArray()
+        {
+            int[,] map = new int[9, 9];
+
+                try { map[0, 0] = Convert.ToInt32(Box1.Text); }
+                catch { }
+                try { map[0, 1] = Convert.ToInt32(Box2.Text);}
+                catch { }
+                try { map[0, 2] = Convert.ToInt32(Box3.Text);}
+                catch { }
+                try { map[0, 3] = Convert.ToInt32(Box4.Text);}
+                catch { }
+                try { map[0, 4] = Convert.ToInt32(Box5.Text);}
+                catch { }
+                try { map[0, 5] = Convert.ToInt32(Box6.Text);}
+                catch { }
+                try { map[0, 6] = Convert.ToInt32(Box7.Text);}
+                catch { }
+                try { map[0, 7] = Convert.ToInt32(Box8.Text);}
+                catch { }
+                try { map[0, 8] = Convert.ToInt32(Box9.Text);}
+                catch { }
+
+                
+                try {  map[1, 0] = Convert.ToInt32(Box10.Text);}
+                catch { }
+                try {  map[1, 1] = Convert.ToInt32(Box11.Text);}
+                catch { }
+                try { map[1, 2] = Convert.ToInt32(Box12.Text);}
+                catch { }
+                try { map[1, 3] = Convert.ToInt32(Box13.Text);}
+                catch { }
+                try { map[1, 4] = Convert.ToInt32(Box14.Text);}
+                catch { }
+                try {  map[1, 5] = Convert.ToInt32(Box15.Text);}
+                catch { }
+                try { map[1, 6] = Convert.ToInt32(Box16.Text);}
+                catch { }
+                try {  map[1, 7] = Convert.ToInt32(Box17.Text);}
+                catch { }
+                try { map[1, 8] = Convert.ToInt32(Box18.Text);}
+                catch { }
+
+                
+                try { map[2, 0] = Convert.ToInt32(Box19.Text); }
+                catch { }
+                try { map[2, 1] = Convert.ToInt32(Box20.Text);}
+                catch { }
+                try { map[2, 2] = Convert.ToInt32(Box21.Text);}
+                catch { }
+                try {  map[2, 3] = Convert.ToInt32(Box22.Text);}
+                catch { }
+                try { map[2, 4] = Convert.ToInt32(Box23.Text);}
+                catch { }
+                try { map[2, 5] = Convert.ToInt32(Box24.Text);}
+                catch { }
+                try { map[2, 6] = Convert.ToInt32(Box25.Text);}
+                catch { }
+                try { map[2, 7] = Convert.ToInt32(Box26.Text);}
+                catch { }
+                try { map[2, 8] = Convert.ToInt32(Box27.Text);}
+                catch { }
+
+
+                try { map[3, 0] = Convert.ToInt32(Box28.Text);}
+                catch { }
+                try { map[3, 1] = Convert.ToInt32(Box29.Text);}
+                catch { }
+                try { map[3, 2] = Convert.ToInt32(Box30.Text);}
+                catch { }
+                try { map[3, 3] = Convert.ToInt32(Box31.Text);}
+                catch { }
+                try { map[3, 4] = Convert.ToInt32(Box32.Text);}
+                catch { }
+                try { map[3, 5] = Convert.ToInt32(Box33.Text);}
+                catch { }
+                try { map[3, 6] = Convert.ToInt32(Box34.Text);}
+                catch { }
+                try { map[3, 7] = Convert.ToInt32(Box35.Text);}
+                catch { }
+                try { map[3, 8] = Convert.ToInt32(Box36.Text);}
+                catch { }
+
+
+                try { map[4, 0] = Convert.ToInt32(Box37.Text);}
+                catch { }
+                try { map[4, 1] = Convert.ToInt32(Box38.Text);}
+                catch { }
+                try { map[4, 2] = Convert.ToInt32(Box39.Text);}
+                catch { }
+                try { map[4, 3] = Convert.ToInt32(Box40.Text);}
+                catch { }
+                try { map[4, 4] = Convert.ToInt32(Box41.Text);}
+                catch { }
+                try { map[4, 5] = Convert.ToInt32(Box42.Text);}
+                catch { }
+                try { map[4, 6] = Convert.ToInt32(Box43.Text);}
+                catch { }
+                try { map[4, 7] = Convert.ToInt32(Box44.Text);}
+                catch { }
+                try { map[4, 8] = Convert.ToInt32(Box45.Text);}
+                catch { }
+
+
+                try { map[5, 0] = Convert.ToInt32(Box46.Text); }
+                catch { }
+                try { map[5, 1] = Convert.ToInt32(Box47.Text); }
+                catch { }
+                try { map[5, 2] = Convert.ToInt32(Box48.Text); }
+                catch { }
+                try { map[5, 3] = Convert.ToInt32(Box49.Text); }
+                catch { }
+                try { map[5, 4] = Convert.ToInt32(Box50.Text);}
+                catch { }
+                try { map[5, 5] = Convert.ToInt32(Box51.Text);}
+                catch { }
+                try { map[5, 6] = Convert.ToInt32(Box52.Text);}
+                catch { }
+                try { map[5, 7] = Convert.ToInt32(Box53.Text);}
+                catch { }
+                try { map[5, 8] = Convert.ToInt32(Box54.Text);}
+                catch { }
+
+
+                try { map[6, 0] = Convert.ToInt32(Box55.Text); }
+                catch { }
+                try { map[6, 1] = Convert.ToInt32(Box56.Text);}
+                catch { }
+                try {map[6, 2] = Convert.ToInt32(Box57.Text); }
+                catch { }
+                try { map[6, 3] = Convert.ToInt32(Box58.Text);}
+                catch { }
+                try { map[6, 4] = Convert.ToInt32(Box59.Text);}
+                catch { }
+                try { map[6, 5] = Convert.ToInt32(Box60.Text);}
+                catch { }
+                try { map[6, 6] = Convert.ToInt32(Box61.Text);}
+                catch { }
+                try { map[6, 7] = Convert.ToInt32(Box62.Text);}
+                catch { }
+                try {  map[6, 8] = Convert.ToInt32(Box63.Text);}
+                catch { }
+
+                
+                try { map[7, 0] = Convert.ToInt32(Box64.Text); }
+                catch { }
+                try { map[7, 1] = Convert.ToInt32(Box65.Text);}
+                catch { }
+                try { map[7, 2] = Convert.ToInt32(Box66.Text);}
+                catch { }
+                try { map[7, 3] = Convert.ToInt32(Box67.Text);}
+                catch { }
+                try { map[7, 4] = Convert.ToInt32(Box68.Text);}
+                catch { }
+                try { map[7, 5] = Convert.ToInt32(Box69.Text);}
+                catch { }
+                try { map[7, 6] = Convert.ToInt32(Box70.Text);}
+                catch { }
+                try { map[7, 7] = Convert.ToInt32(Box71.Text);}
+                catch { }
+                try { map[7, 8] = Convert.ToInt32(Box72.Text);}
+                catch { }
+
+
+                try { map[8, 0] = Convert.ToInt32(Box73.Text);}
+                catch { }
+                try { map[8, 1] = Convert.ToInt32(Box74.Text);}
+                catch { }
+                try { map[8, 2] = Convert.ToInt32(Box75.Text);}
+                catch { }
+                try { map[8, 3] = Convert.ToInt32(Box76.Text);}
+                catch { }
+                try { map[8, 4] = Convert.ToInt32(Box77.Text);}
+                catch { }
+                try { map[8, 5] = Convert.ToInt32(Box78.Text);}
+                catch { }
+                try { map[8, 6] = Convert.ToInt32(Box79.Text);}
+                catch { }
+                try { map[8, 7] = Convert.ToInt32(Box80.Text);}
+                catch { }
+                try { map[8, 8] = Convert.ToInt32(Box81.Text);}
+                catch { }
+                
+            return map;
+        }
+
+        private void Box1_TextChanged(object sender, EventArgs e)
+        {
+            int[,] arr = mapTableToArray();
+
+            CCC = new CheckCorrectCell(arr);
+
+            if (CCC.checkCorrectCell9x9(0,0) && 
+                
+                Box1.Text != "")
+            {
+                Box1.BackColor = Color.Red;
+            }
+            else
+                Box1.BackColor = Color.White;
+
+        }
+
+        private void Box2_TextChanged(object sender, EventArgs e)
+        {
+            int[,] arr = mapTableToArray();
+
+            CCC = new CheckCorrectCell(arr);
+
+            if (CCC.checkCorrectCell9x9(0, 1) &&
+
+                Box2.Text != "")
+            {
+                Box2.BackColor = Color.Red;
+            }
+            else
+                Box2.BackColor = Color.White;
+        }
+
+        private void Box3_TextChanged(object sender, EventArgs e) {int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+         if (CCC.checkCorrectCell9x9(0, 2) &&
+             Box3.Text != ""){
+                Box3.BackColor = Color.Red;} else
+                Box3.BackColor = Color.White;}
+
+        private void Box4_TextChanged(object sender, EventArgs e)
+        {
+            int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(0, 3) &&
+                Box4.Text != "")
+            {
+                Box4.BackColor = Color.Red;
+            }
+            else
+                Box4.BackColor = Color.White;
+        }
+
+        private void Box5_TextChanged(object sender, EventArgs e)
+        {
+            int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(0, 4) &&
+                Box5.Text != "")
+            {
+                Box5.BackColor = Color.Red;
+            }
+            else
+                Box5.BackColor = Color.White;
+        }
+
+        private void Box6_TextChanged(object sender, EventArgs e)
+        {
+            int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(0, 5) &&
+                Box6.Text != "")
+            {
+                Box6.BackColor = Color.Red;
+            }
+            else
+                Box6.BackColor = Color.White;
+        }
+
+        private void Box7_TextChanged(object sender, EventArgs e)
+        {
+            int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(0, 6) &&
+                Box7.Text != "")
+            {
+                Box7.BackColor = Color.Red;
+            }
+            else
+                Box7.BackColor = Color.White;
+        }
+
+        private void Box8_TextChanged(object sender, EventArgs e)
+        {
+            int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(0, 7) &&
+                Box8.Text != "")
+            {
+                Box8.BackColor = Color.Red;
+            }
+            else
+                Box8.BackColor = Color.White;
+        }
+
+        private void Box9_TextChanged(object sender, EventArgs e)
+        {
+            int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(0, 8) &&
+                Box9.Text != "")
+            {
+                Box9.BackColor = Color.Red;
+            }
+            else
+                Box9.BackColor = Color.White;
+        }
+
+        private void Box10_TextChanged(object sender, EventArgs e)
+        {
+            int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(1, 0) &&
+                Box10.Text != "")
+            {
+                Box10.BackColor = Color.Red;
+            }
+            else
+                Box10.BackColor = Color.White;
+        }
+
+        private void Box11_TextChanged(object sender, EventArgs e)
+        {
+               int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(1, 1) &&
+                Box11.Text != "")
+            {
+                Box11.BackColor = Color.Red;
+            }
+            else
+                Box11.BackColor = Color.White;
+        }
+
+        private void Box12_TextChanged(object sender, EventArgs e)
+        {
+               int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(1, 2) &&
+                Box12.Text != "")
+            {
+                Box12.BackColor = Color.Red;
+            }
+            else
+                Box12.BackColor = Color.White;
+        }
+
+        private void Box13_TextChanged(object sender, EventArgs e)
+        {
+               int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(1, 3) &&
+                Box13.Text != "")
+            {
+                Box13.BackColor = Color.Red;
+            }
+            else
+                Box13.BackColor = Color.White;
+        }
+
+        private void Box14_TextChanged(object sender, EventArgs e)
+        {
+               int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(1, 4) &&
+                Box14.Text != "")
+            {
+                Box14.BackColor = Color.Red;
+            }
+            else
+                Box14.BackColor = Color.White;
+        }
+
+        private void Box15_TextChanged(object sender, EventArgs e)
+        {
+               int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(1, 5) &&
+                Box15.Text != "")
+            {
+                Box15.BackColor = Color.Red;
+            }
+            else
+                Box15.BackColor = Color.White;
+        }
+
+        private void Box16_TextChanged(object sender, EventArgs e)
+        {
+               int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(1, 6) &&
+                Box16.Text != "")
+            {
+                Box16.BackColor = Color.Red;
+            }
+            else
+                Box16.BackColor = Color.White;
+        }
+
+        private void Box17_TextChanged(object sender, EventArgs e)
+        {
+               int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(1, 7) &&
+                Box17.Text != "")
+            {
+                Box17.BackColor = Color.Red;
+            }
+            else
+                Box17.BackColor = Color.White;
+        }
+
+        private void Box18_TextChanged(object sender, EventArgs e)
+        {
+               int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(1, 8) &&
+                Box18.Text != "")
+            {
+                Box18.BackColor = Color.Red;
+            }
+            else
+                Box18.BackColor = Color.White;
+        }
+
+        private void Box19_TextChanged(object sender, EventArgs e)
+        {
+               int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(2, 0) &&
+                Box19.Text != "")
+            {
+                Box19.BackColor = Color.Red;
+            }
+            else
+                Box19.BackColor = Color.White;
+        }
+
+        private void Box20_TextChanged(object sender, EventArgs e)
+        {
+            int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(2, 1) &&
+                Box20.Text != "")
+            {
+                Box20.BackColor = Color.Red;
+            }
+            else
+                Box20.BackColor = Color.White;
+        }
+
+        private void Box21_TextChanged(object sender, EventArgs e)
+        {
+            int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(2, 2) &&
+                Box21.Text != "")
+            {
+                Box21.BackColor = Color.Red;
+            }
+            else
+                Box21.BackColor = Color.White;
+        }
+
+        private void Box22_TextChanged(object sender, EventArgs e)
+        {
+            int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(2, 3) &&
+                Box22.Text != "")
+            {
+                Box22.BackColor = Color.Red;
+            }
+            else
+                Box22.BackColor = Color.White;
+        }
+
+        private void Box23_TextChanged(object sender, EventArgs e)
+        {
+            int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(2, 4) &&
+                Box23.Text != "")
+            {
+                Box23.BackColor = Color.Red;
+            }
+            else
+                Box23.BackColor = Color.White;
+        }
+
+        private void Box24_TextChanged(object sender, EventArgs e)
+        {
+            int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(2, 5) &&
+                Box24.Text != "")
+            {
+                Box24.BackColor = Color.Red;
+            }
+            else
+                Box24.BackColor = Color.White;
+        }
+
+        private void Box25_TextChanged(object sender, EventArgs e)
+        {
+            int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(2, 6) &&
+                Box25.Text != "")
+            {
+                Box25.BackColor = Color.Red;
+            }
+            else
+                Box25.BackColor = Color.White;
+        }
+
+        private void Box26_TextChanged(object sender, EventArgs e)
+        {
+            int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(2, 7) &&
+                Box26.Text != "")
+            {
+                Box26.BackColor = Color.Red;
+            }
+            else
+                Box26.BackColor = Color.White;
+        }
+
+        private void Box27_TextChanged(object sender, EventArgs e)
+        {
+            int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(2, 8) &&
+                Box27.Text != "")
+            {
+                Box27.BackColor = Color.Red;
+            }
+            else
+                Box27.BackColor = Color.White;
+        }
+
+        private void Box28_TextChanged(object sender, EventArgs e)
+        {
+            int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(3, 0) &&
+                Box28.Text != "")
+            {
+                Box28.BackColor = Color.Red;
+            }
+            else
+                Box28.BackColor = Color.White;
+        }
+
+        private void Box29_TextChanged(object sender, EventArgs e)
+        {
+             int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(3, 1) &&
+                Box29.Text != "")
+            {
+                Box29.BackColor = Color.Red;
+            }
+            else
+                Box29.BackColor = Color.White;
+        }
+
+        private void Box30_TextChanged(object sender, EventArgs e)
+        {
+             int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(3, 2) &&
+                Box30.Text != "")
+            {
+                Box30.BackColor = Color.Red;
+            }
+            else
+                Box30.BackColor = Color.White;
+        }
+
+        private void Box31_TextChanged(object sender, EventArgs e)
+        {
+             int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(3, 3) &&
+                Box31.Text != "")
+            {
+                Box31.BackColor = Color.Red;
+            }
+            else
+                Box31.BackColor = Color.White;
+        }
+
+        private void Box32_TextChanged(object sender, EventArgs e)
+        {
+             int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(3, 4) &&
+                Box32.Text != "")
+            {
+                Box32.BackColor = Color.Red;
+            }
+            else
+                Box32.BackColor = Color.White;
+        }
+
+        private void Box33_TextChanged(object sender, EventArgs e)
+        {
+             int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(3, 5) &&
+                Box33.Text != "")
+            {
+                Box33.BackColor = Color.Red;
+            }
+            else
+                Box33.BackColor = Color.White;
+        }
+
+        private void Box34_TextChanged(object sender, EventArgs e)
+        {
+             int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(3, 6) &&
+                Box34.Text != "")
+            {
+                Box34.BackColor = Color.Red;
+            }
+            else
+                Box34.BackColor = Color.White;
+        }
+
+        private void Box35_TextChanged(object sender, EventArgs e)
+        {
+             int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(3, 7) &&
+                Box35.Text != "")
+            {
+                Box35.BackColor = Color.Red;
+            }
+            else
+                Box35.BackColor = Color.White;
+        }
+
+        private void Box36_TextChanged(object sender, EventArgs e)
+        {
+             int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(3, 8) &&
+                Box36.Text != "")
+            {
+                Box36.BackColor = Color.Red;
+            }
+            else
+                Box36.BackColor = Color.White;
+        }
+
+        private void Box37_TextChanged(object sender, EventArgs e)
+        {
+             int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(4, 0) &&
+                Box37.Text != "")
+            {
+                Box37.BackColor = Color.Red;
+            }
+            else
+                Box37.BackColor = Color.White;
+        }
+
+        private void Box38_TextChanged(object sender, EventArgs e)
+        {
+            int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(4, 1) &&
+                Box38.Text != "")
+            {
+                Box38.BackColor = Color.Red;
+            }
+            else
+                Box38.BackColor = Color.White;
+        }
+
+        private void Box39_TextChanged(object sender, EventArgs e)
+        {
+            int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(4, 2) &&
+                Box39.Text != "")
+            {
+                Box39.BackColor = Color.Red;
+            }
+            else
+                Box39.BackColor = Color.White;
+        }
+
+        private void Box40_TextChanged(object sender, EventArgs e)
+        {
+            int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(4, 3) &&
+                Box40.Text != "")
+            {
+                Box40.BackColor = Color.Red;
+            }
+            else
+                Box40.BackColor = Color.White;
+        }
+
+        private void Box41_TextChanged(object sender, EventArgs e)
+        {
+            int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(4, 4) &&
+                Box41.Text != "")
+            {
+                Box41.BackColor = Color.Red;
+            }
+            else
+                Box41.BackColor = Color.White;
+        }
+
+        private void Box42_TextChanged(object sender, EventArgs e)
+        {
+            int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(4, 5) &&
+                Box42.Text != "")
+            {
+                Box42.BackColor = Color.Red;
+            }
+            else
+                Box42.BackColor = Color.White;
+        }
+
+        private void Box43_TextChanged(object sender, EventArgs e)
+        {
+            int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(4, 6) &&
+                Box43.Text != "")
+            {
+                Box43.BackColor = Color.Red;
+            }
+            else
+                Box43.BackColor = Color.White;
+        }
+
+        private void Box44_TextChanged(object sender, EventArgs e)
+        {
+            int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(4, 7) &&
+                Box44.Text != "")
+            {
+                Box44.BackColor = Color.Red;
+            }
+            else
+                Box44.BackColor = Color.White;
+        }
+
+        private void Box45_TextChanged(object sender, EventArgs e)
+        {
+            int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(4, 8) &&
+                Box45.Text != "")
+            {
+                Box45.BackColor = Color.Red;
+            }
+            else
+                Box45.BackColor = Color.White;
+        }
+
+        private void Box46_TextChanged(object sender, EventArgs e)
+        {
+            int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(5, 0) &&
+                Box46.Text != "")
+            {
+                Box46.BackColor = Color.Red;
+            }
+            else
+                Box46.BackColor = Color.White;
+        }
+
+        private void Box47_TextChanged(object sender, EventArgs e)
+        {
+            int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(5, 1) &&
+                Box47.Text != "")
+            {
+                Box47.BackColor = Color.Red;
+            }
+            else
+                Box47.BackColor = Color.White;
+        }
+
+        private void Box48_TextChanged(object sender, EventArgs e)
+        {
+            int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(5, 2) &&
+                Box48.Text != "")
+            {
+                Box48.BackColor = Color.Red;
+            }
+            else
+                Box48.BackColor = Color.White;
+        }
+
+        private void Box49_TextChanged(object sender, EventArgs e)
+        {
+            int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(5, 3) &&
+                Box49.Text != "")
+            {
+                Box49.BackColor = Color.Red;
+            }
+            else
+                Box49.BackColor = Color.White;
+        }
+
+        private void Box50_TextChanged(object sender, EventArgs e)
+        {
+            int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(5, 4) &&
+                Box50.Text != "")
+            {
+                Box50.BackColor = Color.Red;
+            }
+            else
+                Box50.BackColor = Color.White;
+        }
+
+        private void Box51_TextChanged(object sender, EventArgs e)
+        {
+             int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(5, 5) &&
+                Box51.Text != "")
+            {
+                Box51.BackColor = Color.Red;
+            }
+            else
+                Box51.BackColor = Color.White;
+        }
+
+        private void Box52_TextChanged(object sender, EventArgs e)
+        {
+             int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(5, 6) &&
+                Box52.Text != "")
+            {
+                Box52.BackColor = Color.Red;
+            }
+            else
+                Box52.BackColor = Color.White;
+        }
+
+        private void Box53_TextChanged(object sender, EventArgs e)
+        {
+             int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(5, 7) &&
+                Box53.Text != "")
+            {
+                Box53.BackColor = Color.Red;
+            }
+            else
+                Box53.BackColor = Color.White;
+        }
+
+        private void Box54_TextChanged(object sender, EventArgs e)
+        {
+             int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(5, 8) &&
+                Box54.Text != "")
+            {
+                Box54.BackColor = Color.Red;
+            }
+            else
+                Box54.BackColor = Color.White;
+        }
+
+        private void Box55_TextChanged(object sender, EventArgs e)
+        {
+             int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(6, 0) &&
+                Box55.Text != "")
+            {
+                Box55.BackColor = Color.Red;
+            }
+            else
+                Box55.BackColor = Color.White;
+        }
+
+        private void Box56_TextChanged(object sender, EventArgs e)
+        {
+            int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(6, 1) &&
+                Box56.Text != "")
+            {
+                Box56.BackColor = Color.Red;
+            }
+            else
+                Box56.BackColor = Color.White;
+        }
+
+        private void Box57_TextChanged(object sender, EventArgs e)
+        {
+            int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(6, 2) &&
+                Box57.Text != "")
+            {
+                Box57.BackColor = Color.Red;
+            }
+            else
+                Box57.BackColor = Color.White;
+        }
+
+        private void Box58_TextChanged(object sender, EventArgs e)
+        {
+            int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(6, 3) &&
+                Box58.Text != "")
+            {
+                Box58.BackColor = Color.Red;
+            }
+            else
+                Box58.BackColor = Color.White;
+        }
+
+        private void Box59_TextChanged(object sender, EventArgs e)
+        {
+            int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(6, 4) &&
+                Box59.Text != "")
+            {
+                Box59.BackColor = Color.Red;
+            }
+            else
+                Box59.BackColor = Color.White;
+        }
+
+        private void Box60_TextChanged(object sender, EventArgs e)
+        {
+            int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(6, 5) &&
+                Box60.Text != "")
+            {
+                Box60.BackColor = Color.Red;
+            }
+            else
+                Box60.BackColor = Color.White;
+        }
+
+        private void Box61_TextChanged(object sender, EventArgs e)
+        {
+             int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(6, 6) &&
+                Box61.Text != "")
+            {
+                Box61.BackColor = Color.Red;
+            }
+            else
+                Box61.BackColor = Color.White;
+        }
+
+        private void Box62_TextChanged(object sender, EventArgs e)
+        {
+             int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(6, 7) &&
+                Box62.Text != "")
+            {
+                Box62.BackColor = Color.Red;
+            }
+            else
+                Box62.BackColor = Color.White;
+        }
+
+        private void Box63_TextChanged(object sender, EventArgs e)
+        {
+             int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(6, 8) &&
+                Box63.Text != "")
+            {
+                Box63.BackColor = Color.Red;
+            }
+            else
+                Box63.BackColor = Color.White;
+        }
+
+        private void Box64_TextChanged(object sender, EventArgs e)
+        {
+             int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(7, 0) &&
+                Box64.Text != "")
+            {
+                Box64.BackColor = Color.Red;
+            }
+            else
+                Box64.BackColor = Color.White;
+        }
+
+        private void Box65_TextChanged(object sender, EventArgs e)
+        {
+             int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(7, 1) &&
+                Box65.Text != "")
+            {
+                Box65.BackColor = Color.Red;
+            }
+            else
+                Box65.BackColor = Color.White;
+        }
+
+        private void Box66_TextChanged(object sender, EventArgs e)
+        {
+             int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(7, 2) &&
+                Box66.Text != "")
+            {
+                Box66.BackColor = Color.Red;
+            }
+            else
+                Box66.BackColor = Color.White;
+        }
+
+        private void Box67_TextChanged(object sender, EventArgs e)
+        {
+             int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(7, 3) &&
+                Box67.Text != "")
+            {
+                Box67.BackColor = Color.Red;
+            }
+            else
+                Box67.BackColor = Color.White;
+        }
+
+        private void Box68_TextChanged(object sender, EventArgs e)
+        {
+             int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(7, 4) &&
+                Box68.Text != "")
+            {
+                Box68.BackColor = Color.Red;
+            }
+            else
+                Box68.BackColor = Color.White;
+        }
+
+        private void Box69_TextChanged(object sender, EventArgs e)
+        {
+             int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(7, 5) &&
+                Box69.Text != "")
+            {
+                Box69.BackColor = Color.Red;
+            }
+            else
+                Box69.BackColor = Color.White;
+        }
+
+        private void Box70_TextChanged(object sender, EventArgs e)
+        {
+             int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(7, 6) &&
+                Box70.Text != "")
+            {
+                Box70.BackColor = Color.Red;
+            }
+            else
+                Box70.BackColor = Color.White;
+        }
+
+        private void Box71_TextChanged(object sender, EventArgs e)
+        {
+            int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(7, 7) &&
+                Box71.Text != "")
+            {
+                Box71.BackColor = Color.Red;
+            }
+            else
+                Box71.BackColor = Color.White;
+        }
+
+        private void Box72_TextChanged(object sender, EventArgs e)
+        {
+            int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(7, 8) &&
+                Box72.Text != "")
+            {
+                Box72.BackColor = Color.Red;
+            }
+            else
+                Box72.BackColor = Color.White;
+        }
+
+        private void Box73_TextChanged(object sender, EventArgs e)
+        {
+            int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(8, 0) &&
+                Box73.Text != "")
+            {
+                Box73.BackColor = Color.Red;
+            }
+            else
+                Box73.BackColor = Color.White;
+        }
+
+        private void Box74_TextChanged(object sender, EventArgs e)
+        {
+            int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(8, 1) &&
+                Box74.Text != "")
+            {
+                Box74.BackColor = Color.Red;
+            }
+            else
+                Box74.BackColor = Color.White;
+        }
+
+        private void Box75_TextChanged(object sender, EventArgs e)
+        {
+            int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(8, 2) &&
+                Box75.Text != "")
+            {
+                Box75.BackColor = Color.Red;
+            }
+            else
+                Box75.BackColor = Color.White;
+        }
+
+        private void Box76_TextChanged(object sender, EventArgs e)
+        {
+            int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(8, 3) &&
+                Box76.Text != "")
+            {
+                Box76.BackColor = Color.Red;
+            }
+            else
+                Box76.BackColor = Color.White;
+        }
+
+        private void Box77_TextChanged(object sender, EventArgs e)
+        {
+            int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(8, 4) &&
+                Box77.Text != "")
+            {
+                Box77.BackColor = Color.Red;
+            }
+            else
+                Box77.BackColor = Color.White;
+        }
+
+        private void Box78_TextChanged(object sender, EventArgs e)
+        {
+            int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(8, 5) &&
+                Box78.Text != "")
+            {
+                Box78.BackColor = Color.Red;
+            }
+            else
+                Box78.BackColor = Color.White;
+        }
+
+        private void Box79_TextChanged(object sender, EventArgs e)
+        {
+            int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(8,6) &&
+                Box79.Text != "")
+            {
+                Box79.BackColor = Color.Red;
+            }
+            else
+                Box79.BackColor = Color.White;
+        }
+
+        private void Box80_TextChanged(object sender, EventArgs e)
+        {
+            int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(8, 7) &&
+                Box80.Text != "")
+            {
+                Box80.BackColor = Color.Red;
+            }
+            else
+                Box80.BackColor = Color.White;
+        }
+
+        private void Box81_TextChanged(object sender, EventArgs e)
+        {
+            int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
+            if (CCC.checkCorrectCell9x9(8, 8) &&
+                Box81.Text != "")
+            {
+                Box81.BackColor = Color.Red;
+            }
+            else
+                Box81.BackColor = Color.White;
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {             
-             if (comboBox1.Text.Equals("Easy"))
-             {
-                 valueLevel9x9 = 50;
+        {
+            if (comboBox1.Text.Equals("Easy"))
+            {
+                valueLevel9x9 = 50;
 
-             }else if (comboBox1.Text.Equals("Normal"))
-             {
-                 valueLevel9x9 = 40;
+            }
+            else if (comboBox1.Text.Equals("Normal"))
+            {
+                valueLevel9x9 = 40;
 
-             }
-             else if (comboBox1.Text.Equals("Hard"))
-             {
-                 valueLevel9x9 = 30;
+            }
+            else if (comboBox1.Text.Equals("Hard"))
+            {
+                valueLevel9x9 = 30;
 
-             }
-             else
-             {
-                 valueLevel9x9 = 0;
-             }
-
+            }
+            else
+            {
+                valueLevel9x9 = 0;
+            }
         }
-              
 
-        private void comboBox2_SelectedIndexChanged_1(object sender, EventArgs e)
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (comboBox2.Text.Equals("Easy"))
             {
@@ -1502,6 +2659,5 @@ namespace Sudoku
                 valueLevel4x4 = 0;
             }
         }
-
     }
 }
