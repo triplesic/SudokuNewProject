@@ -8,16 +8,11 @@ namespace Sudoku
 {
     class solve
     {
-        //public static Random randGen = new Random();
-        //public static int RandInt(int fr, int to)
-        //{
-        //    return fr + (randGen.Next() % (to - fr + 1));
-        //}
+        
         public int[,] genSolve()
         {
             Random ran = new Random();
             int[,] table = new int[4, 4];
-            table = getSolve();
             List<int> pp = new List<int>();
             pp.Add(1);
             pp.Add(2);
@@ -33,8 +28,7 @@ namespace Sudoku
             rr.Add(4);
 
             //input indext 00
-            //int index = RandInt(1, 4);
-            int index = ran.Next(4); 
+            int index = ran.Next(4);
             if (index == 0)
             {
                 table[0, 0] = rr[0];
@@ -51,11 +45,10 @@ namespace Sudoku
             {
                 table[0, 0] = rr[3];
             }
-            rr.RemoveAt(rr.IndexOf(table[0, 0]));
+            rr.Remove(table[0, 0]);
 
             //input indext 01
-            //index = RandInt(1, 3);
-            index = ran.Next(3); 
+            index = ran.Next(3);
             if (index == 0)
             {
                 table[0, 1] = rr[0];
@@ -68,36 +61,10 @@ namespace Sudoku
             {
                 table[0, 1] = rr[2];
             }
-            rr.RemoveAt(rr.IndexOf(table[0, 1]));
+            rr.Remove(table[0, 1]);
 
-            //input indext 02
-            //index = RandInt(1, 2);
-            index = ran.Next(2);
-            if (index == 0)
-            {
-                table[0, 2] = rr[0];
-            }
-            else
-            {
-                table[0, 2] = rr[1];
-            }
-            rr.RemoveAt(rr.IndexOf(table[0, 2]));
-
-            //input indext 03
-            table[0, 3] = rr[0];
-
-            //input indext 10
-            //rr = pp;
-            rr = new List<int>();
-            rr.Add(1);
-            rr.Add(2);
-            rr.Add(3);
-            rr.Add(4);
-
-            rr.RemoveAt(rr.IndexOf(table[0, 0]));
-            rr.RemoveAt(rr.IndexOf(table[0, 1]));
-            //index = RandInt(1, 2);
-            index = ran.Next(2);
+            //input index 10
+            index = ran.Next(3);
             if (index == 0)
             {
                 table[1, 0] = rr[0];
@@ -106,153 +73,1471 @@ namespace Sudoku
             {
                 table[1, 0] = rr[1];
             }
-            rr.RemoveAt(rr.IndexOf(table[1, 0]));
+            rr.Remove(table[1, 0]);
 
-            //input indext 11
+            //input index 11
             table[1, 1] = rr[0];
 
-            //input indext 12
-            rr = pp;
-            rr.RemoveAt(rr.IndexOf(table[0, 2]));
-            rr.RemoveAt(rr.IndexOf(table[0, 3]));
-            //index = RandInt(1, 2);
-            index = ran.Next(2);
+            //input index 22
+            rr = new List<int>();
+            rr.Add(1);
+            rr.Add(2);
+            rr.Add(3);
+            rr.Add(4);
+            index = ran.Next(4);
             if (index == 0)
+            {
+                table[2, 2] = rr[0];
+            }
+            else if (index == 1)
+            {
+                table[2, 2] = rr[1];
+            }
+            else if (index == 2)
+            {
+                table[2, 2] = rr[2];
+            }
+            else
+            {
+                table[2, 2] = rr[3];
+            }
+
+            //input index 02
+            rr = new List<int>();
+            rr.Add(1);
+            rr.Add(2);
+            rr.Add(3);
+            rr.Add(4);
+            rr.Remove(table[2, 2]);
+            rr.Remove(table[0, 0]);
+            rr.Remove(table[0, 1]);
+            if (rr.Count == 1)
+            {
+                table[0, 2] = rr[0];
+            }
+            else
+            {
+                index = ran.Next(2);
+                if (index == 0)
+                {
+                    table[0, 2] = rr[0];
+                }
+                else
+                {
+                    table[0, 2] = rr[1];
+                }
+            }
+
+            //input index 12
+            rr = new List<int>();
+            rr.Add(1);
+            rr.Add(2);
+            rr.Add(3);
+            rr.Add(4);
+            rr.Remove(table[2, 2]);
+            rr.Remove(table[1, 0]);
+            rr.Remove(table[1, 1]);
+            if (rr.Count == 1)
             {
                 table[1, 2] = rr[0];
             }
             else
             {
-                table[1, 2] = rr[1];
+                index = ran.Next(2);
+                if (index == 0)
+                {
+                    table[1, 2] = rr[0];
+                }
+                else
+                {
+                    table[1, 2] = rr[1];
+                }
             }
-            rr.RemoveAt(rr.IndexOf(table[1, 2]));
+            Boolean check2 = true;
+            while (check2 == true)
+            {
+                //input index 20
+                rr = new List<int>();
+                rr.Add(1);
+                rr.Add(2);
+                rr.Add(3);
+                rr.Add(4);
+                rr.Remove(table[2, 2]);
+                rr.Remove(table[0, 0]);
+                rr.Remove(table[1, 0]);
+                if (rr.Count == 1)
+                {
+                    table[2, 0] = rr[0];
+                }
+                else
+                {
+                    index = ran.Next(2);
+                    if (index == 0)
+                    {
+                        table[2, 0] = rr[0];
+                    }
+                    else
+                    {
+                        table[2, 0] = rr[1];
+                    }
+                }
 
-            //input indext 13
+
+                //input index 21
+                rr = new List<int>();
+                rr.Add(1);
+                rr.Add(2);
+                rr.Add(3);
+                rr.Add(4);
+                rr.Remove(table[2, 2]);
+                rr.Remove(table[0, 1]);
+                rr.Remove(table[1, 1]);
+                if (rr.Count == 1)
+                {
+                    table[2, 1] = rr[0];
+                }
+                else
+                {
+                    index = ran.Next(2);
+                    if (index == 0)
+                    {
+                        table[2, 1] = rr[0];
+                    }
+                    else
+                    {
+                        table[2, 1] = rr[1];
+                    }
+                }
+                check2 = ((table[0, 2] == table[2, 1] || table[1, 2] == table[2, 1]) && (table[0, 2] == table[2, 0] || table[1, 2] == table[2, 0]));
+            }
+
+            //input index 03
+            rr = new List<int>();
+            rr.Add(1);
+            rr.Add(2);
+            rr.Add(3);
+            rr.Add(4);
+            rr.Remove(table[0, 0]);
+            rr.Remove(table[0, 1]);
+            rr.Remove(table[0, 2]);
+            table[0, 3] = rr[0];
+
+            //input index 13
+            rr = new List<int>();
+            rr.Add(1);
+            rr.Add(2);
+            rr.Add(3);
+            rr.Add(4);
+            rr.Remove(table[1, 0]);
+            rr.Remove(table[1, 1]);
+            rr.Remove(table[1, 2]);
             table[1, 3] = rr[0];
 
-            //input indext 20
-            //rr = pp;
+            //input index 23
             rr = new List<int>();
             rr.Add(1);
             rr.Add(2);
             rr.Add(3);
             rr.Add(4);
-
-            rr.RemoveAt(rr.IndexOf(table[0, 0]));
-            rr.RemoveAt(rr.IndexOf(table[1, 0]));
-            //index = RandInt(1, 2);
-            index = ran.Next(2);
-            if (index == 0)
-            {
-                table[2, 0] = rr[0];
-            }
-            else
-            {
-                table[2, 0] = rr[1];
-            }
-
-            //input indext 21
-            //rr = pp;
-            rr = new List<int>();
-            rr.Add(1);
-            rr.Add(2);
-            rr.Add(3);
-            rr.Add(4);
-
-            rr.RemoveAt(rr.IndexOf(table[0, 1]));
-            rr.RemoveAt(rr.IndexOf(table[1, 1]));
-            //index = RandInt(1, 2);
-            index = ran.Next(2);
-            if (index == 0)
-            {
-                table[2, 1] = rr[0];
-            }
-            else
-            {
-                table[2, 1] = rr[1];
-            }
-
-            //input indext 22
-            //rr = pp;
-            rr = new List<int>();
-            rr.Add(1);
-            rr.Add(2);
-            rr.Add(3);
-            rr.Add(4);
-
-            rr.RemoveAt(rr.IndexOf(table[0, 2]));
-            rr.RemoveAt(rr.IndexOf(table[1, 2]));
-            //index = RandInt(1, 2);
-            index = ran.Next(2);
-            if (index == 0)
-            {
-                table[2, 2] = rr[0];
-            }
-            else
-            {
-                table[2, 2] = rr[1];
-            }
-
-            //input indext 23
-            rr = pp;
-            rr.RemoveAt(rr.IndexOf(table[2, 0]));
-            rr.RemoveAt(rr.IndexOf(table[2, 1]));
-            rr.RemoveAt(rr.IndexOf(table[2, 2]));
+            rr.Remove(table[2, 0]);
+            rr.Remove(table[2, 1]);
+            rr.Remove(table[2, 2]);
             table[2, 3] = rr[0];
 
-            //input indext 30
-            rr = pp;
-            rr.RemoveAt(rr.IndexOf(table[0, 0]));
-            rr.RemoveAt(rr.IndexOf(table[1, 0]));
-            rr.RemoveAt(rr.IndexOf(table[2, 0]));
+            //input index 30
+            rr = new List<int>();
+            rr.Add(1);
+            rr.Add(2);
+            rr.Add(3);
+            rr.Add(4);
+            rr.Remove(table[0, 0]);
+            rr.Remove(table[1, 0]);
+            rr.Remove(table[2, 0]);
             table[3, 0] = rr[0];
 
-            //input indext 31
-            rr = pp;
-            rr.RemoveAt(rr.IndexOf(table[0, 1]));
-            rr.RemoveAt(rr.IndexOf(table[1, 1]));
-            rr.RemoveAt(rr.IndexOf(table[2, 1]));
+            //input index 31
+            rr = new List<int>();
+            rr.Add(1);
+            rr.Add(2);
+            rr.Add(3);
+            rr.Add(4);
+            rr.Remove(table[0, 1]);
+            rr.Remove(table[1, 1]);
+            rr.Remove(table[2, 1]);
             table[3, 1] = rr[0];
 
-            //input indext 32
-            rr = pp;
-            rr.RemoveAt(rr.IndexOf(table[0, 2]));
-            rr.RemoveAt(rr.IndexOf(table[1, 2]));
-            rr.RemoveAt(rr.IndexOf(table[2, 2]));
+            //input index 32
+            rr = new List<int>();
+            rr.Add(1);
+            rr.Add(2);
+            rr.Add(3);
+            rr.Add(4);
+            rr.Remove(table[0, 2]);
+            rr.Remove(table[1, 2]);
+            rr.Remove(table[2, 2]);
             table[3, 2] = rr[0];
 
-            //input indext 33
-            rr = pp;
-            rr.RemoveAt(rr.IndexOf(table[0, 3]));
-            rr.RemoveAt(rr.IndexOf(table[1, 3]));
-            rr.RemoveAt(rr.IndexOf(table[2, 3]));
+            //input index 33
+            rr = new List<int>();
+            rr.Add(1);
+            rr.Add(2);
+            rr.Add(3);
+            rr.Add(4);
+            rr.Remove(table[0, 3]);
+            rr.Remove(table[1, 3]);
+            rr.Remove(table[2, 3]);
             table[3, 3] = rr[0];
+
+
+            return table;
+
+        }
+
+
+        public int[,] getSolve()
+        {
+            int[,] table = new int[4, 4];
+            table = genSolve();
+
+            //table[0, 0] = 1;
+            //table[0, 1] = 2;
+            //table[0, 2] = 3;
+            //table[0, 3] = 4;
+
+            //table[1, 0] = 3;
+            //table[1, 1] = 4;
+            //table[1, 2] = 1;
+            //table[1, 3] = 2;
+
+            //table[2, 0] = 4;
+            //table[2, 1] = 1;
+            //table[2, 2] = 2;
+            //table[2, 3] = 3;
+
+            //table[3, 0] = 2;
+            //table[3, 1] = 3;
+            //table[3, 2] = 4;
+            //table[3, 3] = 1;
+
             return table;
         }
 
-        public int[ , ] getSolve() 
-        {         
-            int [ , ] table = new int[4,4];
+        public int[,] getSolve9x9()
+        {
+            int[,] table = new int[9, 9];
 
-            table[0, 0] = 1;
-            table[0, 1] = 2;
-            table[0, 2] = 3;
-            table[0, 3] = 4;
+            //·∂«∑’Ë 0
 
-            table[1, 0] = 3;
-            table[1, 1] = 4;
-            table[1, 2] = 1;
-            table[1, 3] = 2;
+            table[0, 0] = 2;
+            table[0, 1] = 3;
+            table[0, 2] = 4;
 
-            table[2, 0] = 4;
-            table[2, 1] = 1;
-            table[2, 2] = 2;
+            table[0, 3] = 9;
+            table[0, 4] = 5;
+            table[0, 5] = 6;
+
+            table[0, 6] = 8;
+            table[0, 7] = 1;
+            table[0, 8] = 7;
+
+
+            //·∂«∑’Ë 1
+            table[1, 0] = 9;
+            table[1, 1] = 5;
+            table[1, 2] = 7;
+
+            table[1, 3] = 8;
+            table[1, 4] = 1;
+            table[1, 5] = 4;
+
+            table[1, 6] = 2;
+            table[1, 7] = 6;
+            table[1, 8] = 3;
+
+
+            //·∂«∑’Ë 2
+            table[2, 0] = 1;
+            table[2, 1] = 8;
+            table[2, 2] = 6;
+
             table[2, 3] = 3;
+            table[2, 4] = 7;
+            table[2, 5] = 2;
 
-            table[3, 0] = 2;
-            table[3, 1] = 3;
-            table[3, 2] = 4;
-            table[3, 3] = 1;
+            table[2, 6] = 4;
+            table[2, 7] = 5;
+            table[2, 8] = 9;
+
+
+            //·∂«∑’Ë 3
+            table[3, 0] = 5;
+            table[3, 1] = 4;
+            table[3, 2] = 9;
+
+            table[3, 3] = 6;
+            table[3, 4] = 8;
+            table[3, 5] = 1;
+
+            table[3, 6] = 7;
+            table[3, 7] = 3;
+            table[3, 8] = 2;
+
+            //·∂«∑’Ë 4
+            table[4, 0] = 6;
+            table[4, 1] = 1;
+            table[4, 2] = 8;
+
+            table[4, 3] = 7;
+            table[4, 4] = 2;
+            table[4, 5] = 3;
+
+            table[4, 6] = 5;
+            table[4, 7] = 9;
+            table[4, 8] = 4;
+
+            //·∂«∑’Ë 5
+            table[5, 0] = 7;
+            table[5, 1] = 2;
+            table[5, 2] = 3;
+
+            table[5, 3] = 4;
+            table[5, 4] = 9;
+            table[5, 5] = 5;
+
+            table[5, 6] = 6;
+            table[5, 7] = 8;
+            table[5, 8] = 1;
+
+            //·∂«∑’Ë 6
+            table[6, 0] = 3;
+            table[6, 1] = 9;
+            table[6, 2] = 2;
+
+            table[6, 3] = 5;
+            table[6, 4] = 6;
+            table[6, 5] = 7;
+
+            table[6, 6] = 1;
+            table[6, 7] = 4;
+            table[6, 8] = 8;
+
+            //·∂«∑’Ë 7
+            table[7, 0] = 4;
+            table[7, 1] = 7;
+            table[7, 2] = 5;
+
+            table[7, 3] = 1;
+            table[7, 4] = 3;
+            table[7, 5] = 8;
+
+            table[7, 6] = 9;
+            table[7, 7] = 2;
+            table[7, 8] = 6;
+
+            //·∂«∑’Ë 8
+            table[8, 0] = 8;
+            table[8, 1] = 6;
+            table[8, 2] = 1;
+
+            table[8, 3] = 2;
+            table[8, 4] = 4;
+            table[8, 5] = 9;
+
+            table[8, 6] = 3;
+            table[8, 7] = 7;
+            table[8, 8] = 5;
+            table = genSolve99();
+
+            return table;
+        }
+        public List<int> fullValue99()
+        {
+            List<int> list = new List<int>();
+            for (int i = 1; i < 10; i++)
+            {
+                list.Add(i);
+            }
+            return list;
+        }
+        public int[,] genSolve99()
+        {
+            int[,] table = new int[9, 9];
+            Random ran = new Random();
+            List<int> rr = new List<int>();
+            int index;
+            /**----------
+             *table One
+             */
+            rr = fullValue99();
+            //input indext 00
+            index = ran.Next(9);
+            table[0, 0] = rr[index];
+            rr.Remove(table[0, 0]);
+
+            //input indext 01
+            index = ran.Next(8);
+            table[0, 1] = rr[index];
+            rr.Remove(table[0, 1]);
+
+            //input indext 02
+            index = ran.Next(7);
+            table[0, 2] = rr[index];
+            rr.Remove(table[0, 2]);
+
+            //input indext 10
+            index = ran.Next(6);
+            table[1, 0] = rr[index];
+            rr.Remove(table[1, 0]);
+
+            //input indext 11
+            index = ran.Next(5);
+            table[1, 1] = rr[index];
+            rr.Remove(table[1, 1]);
+
+            //input indext 12
+            index = ran.Next(4);
+            table[1, 2] = rr[index];
+            rr.Remove(table[1, 2]);
+
+            //input indext 20
+            index = ran.Next(3);
+            table[2, 0] = rr[index];
+            rr.Remove(table[2, 0]);
+
+            //input indext 21
+            index = ran.Next(2);
+            table[2, 1] = rr[index];
+            rr.Remove(table[2, 1]);
+
+            //input indext 22
+            index = ran.Next(1);
+            table[2, 2] = rr[index];
+            rr.Remove(table[2, 2]);
+
+            /**----------
+             *table Five
+             */
+            rr = fullValue99();
+            //input indext 33
+            index = ran.Next(9);
+            table[3, 3] = rr[index];
+            rr.Remove(table[3, 3]);
+
+            //input indext 34
+            index = ran.Next(8);
+            table[3, 4] = rr[index];
+            rr.Remove(table[3, 4]);
+
+            //input indext 35
+            index = ran.Next(7);
+            table[3, 5] = rr[index];
+            rr.Remove(table[3, 5]);
+
+            //input indext 43
+            index = ran.Next(6);
+            table[4, 3] = rr[index];
+            rr.Remove(table[4, 3]);
+
+            //input indext 44
+            index = ran.Next(5);
+            table[4, 4] = rr[index];
+            rr.Remove(table[4, 4]);
+
+            //input indext 45
+            index = ran.Next(4);
+            table[4, 5] = rr[index];
+            rr.Remove(table[4, 5]);
+
+            //input indext 53
+            index = ran.Next(3);
+            table[5, 5] = rr[index];
+            rr.Remove(table[5, 3]);
+
+            //input indext 54
+            index = ran.Next(2);
+            table[5, 4] = rr[index];
+            rr.Remove(table[5, 4]);
+
+            //input indext 55
+            index = ran.Next(1);
+            table[5, 5] = rr[index];
+            rr.Remove(table[5, 5]);
+
+            /**----------
+             *table Two
+             */
+            //input indext 03
+            rr = fullValue99();
+            rr.Remove(table[0, 0]);
+            rr.Remove(table[0, 1]);
+            rr.Remove(table[0, 2]);
+            rr.Remove(table[3, 3]);
+            rr.Remove(table[4, 3]);
+            rr.Remove(table[5, 3]);
+            index = ran.Next(rr.Count);
+            table[0, 3] = rr[index];
+
+            //input indext 13
+            rr = fullValue99();
+            rr.Remove(table[1, 0]);
+            rr.Remove(table[1, 1]);
+            rr.Remove(table[1, 2]);
+            rr.Remove(table[3, 3]);
+            rr.Remove(table[4, 3]);
+            rr.Remove(table[5, 3]);
+            rr.Remove(table[0, 3]);
+            index = ran.Next(rr.Count);
+            table[1, 3] = rr[index];
+
+            //input indext 23
+            rr = fullValue99();
+            rr.Remove(table[2, 0]);
+            rr.Remove(table[2, 1]);
+            rr.Remove(table[2, 2]);
+            rr.Remove(table[3, 3]);
+            rr.Remove(table[4, 3]);
+            rr.Remove(table[5, 3]);
+            rr.Remove(table[0, 3]);
+            rr.Remove(table[1, 3]);
+            index = ran.Next(rr.Count);
+            table[2, 3] = rr[index];
+
+            //input indext 04
+            rr = fullValue99();
+            rr.Remove(table[0, 0]);
+            rr.Remove(table[0, 1]);
+            rr.Remove(table[0, 2]);
+            rr.Remove(table[3, 4]);
+            rr.Remove(table[4, 4]);
+            rr.Remove(table[5, 4]);
+            rr.Remove(table[0, 3]);
+            rr.Remove(table[1, 3]);
+            rr.Remove(table[2, 3]);
+            index = ran.Next(rr.Count);
+            table[0, 4] = rr[index];
+
+            //input indext 14
+            rr = fullValue99();
+            rr.Remove(table[1, 0]);
+            rr.Remove(table[1, 1]);
+            rr.Remove(table[1, 2]);
+            rr.Remove(table[3, 4]);
+            rr.Remove(table[4, 4]);
+            rr.Remove(table[5, 4]);
+            rr.Remove(table[0, 3]);
+            rr.Remove(table[1, 3]);
+            rr.Remove(table[2, 3]);
+            rr.Remove(table[0, 4]);
+            index = ran.Next(rr.Count);
+            table[1, 4] = rr[index];
+
+            //input indext 24
+            rr = fullValue99();
+            rr.Remove(table[2, 0]);
+            rr.Remove(table[2, 1]);
+            rr.Remove(table[2, 2]);
+            rr.Remove(table[3, 4]);
+            rr.Remove(table[4, 4]);
+            rr.Remove(table[5, 4]);
+            rr.Remove(table[0, 3]);
+            rr.Remove(table[1, 3]);
+            rr.Remove(table[2, 3]);
+            rr.Remove(table[0, 4]);
+            rr.Remove(table[1, 4]);
+            index = ran.Next(rr.Count);
+            table[2, 4] = rr[index];
+
+            //input indext 05
+            rr = fullValue99();
+            rr.Remove(table[0, 0]);
+            rr.Remove(table[0, 1]);
+            rr.Remove(table[0, 2]);
+            rr.Remove(table[3, 5]);
+            rr.Remove(table[4, 5]);
+            rr.Remove(table[5, 5]);
+            rr.Remove(table[0, 3]);
+            rr.Remove(table[1, 3]);
+            rr.Remove(table[2, 3]);
+            rr.Remove(table[0, 4]);
+            rr.Remove(table[1, 4]);
+            rr.Remove(table[2, 4]);
+            index = ran.Next(rr.Count);
+            table[0, 5] = rr[index];
+
+            //input indext 15
+            rr = fullValue99();
+            rr.Remove(table[1, 0]);
+            rr.Remove(table[1, 1]);
+            rr.Remove(table[1, 2]);
+            rr.Remove(table[3, 5]);
+            rr.Remove(table[4, 5]);
+            rr.Remove(table[5, 5]);
+            rr.Remove(table[0, 3]);
+            rr.Remove(table[1, 3]);
+            rr.Remove(table[2, 3]);
+            rr.Remove(table[0, 4]);
+            rr.Remove(table[1, 4]);
+            rr.Remove(table[2, 4]);
+            rr.Remove(table[0, 5]);
+            index = ran.Next(rr.Count);
+            table[1, 5] = rr[index];
+
+            //input indext 25
+            rr = fullValue99();
+            rr.Remove(table[2, 0]);
+            rr.Remove(table[2, 1]);
+            rr.Remove(table[2, 2]);
+            rr.Remove(table[3, 5]);
+            rr.Remove(table[4, 5]);
+            rr.Remove(table[5, 5]);
+            rr.Remove(table[0, 3]);
+            rr.Remove(table[1, 3]);
+            rr.Remove(table[2, 3]);
+            rr.Remove(table[0, 4]);
+            rr.Remove(table[1, 4]);
+            rr.Remove(table[2, 4]);
+            rr.Remove(table[0, 5]);
+            rr.Remove(table[1, 5]);
+            index = ran.Next(rr.Count);
+            table[2, 5] = rr[index];
+
+            /**----------
+             *table Four
+             */
+            //input indext 30
+            rr = fullValue99();
+            rr.Remove(table[0, 0]);
+            rr.Remove(table[1, 0]);
+            rr.Remove(table[2, 1]);
+            rr.Remove(table[3, 3]);
+            rr.Remove(table[3, 4]);
+            rr.Remove(table[3, 5]);
+            index = ran.Next(rr.Count);
+            table[3, 0] = rr[index];
+
+            //input indext 31
+            rr = fullValue99();
+            rr.Remove(table[0, 1]);
+            rr.Remove(table[1, 1]);
+            rr.Remove(table[2, 1]);
+            rr.Remove(table[3, 3]);
+            rr.Remove(table[3, 4]);
+            rr.Remove(table[3, 5]);
+            rr.Remove(table[3, 0]);
+            index = ran.Next(rr.Count);
+            table[3, 1] = rr[index];
+
+            //input indext 32
+            rr = fullValue99();
+            rr.Remove(table[0, 2]);
+            rr.Remove(table[1, 2]);
+            rr.Remove(table[2, 2]);
+            rr.Remove(table[3, 3]);
+            rr.Remove(table[3, 4]);
+            rr.Remove(table[3, 5]);
+            rr.Remove(table[3, 0]);
+            rr.Remove(table[3, 1]);
+            index = ran.Next(rr.Count);
+            table[3, 2] = rr[index];
+
+            //input indext 40
+            rr = fullValue99();
+            rr.Remove(table[0, 0]);
+            rr.Remove(table[1, 0]);
+            rr.Remove(table[2, 0]);
+            rr.Remove(table[4, 3]);
+            rr.Remove(table[4, 4]);
+            rr.Remove(table[4, 5]);
+            rr.Remove(table[3, 0]);
+            rr.Remove(table[3, 1]);
+            rr.Remove(table[3, 2]);
+            index = ran.Next(rr.Count);
+            table[4, 0] = rr[index];
+
+            //input indext 41
+            rr = fullValue99();
+            rr.Remove(table[0, 1]);
+            rr.Remove(table[1, 1]);
+            rr.Remove(table[2, 1]);
+            rr.Remove(table[4, 3]);
+            rr.Remove(table[4, 4]);
+            rr.Remove(table[4, 5]);
+            rr.Remove(table[3, 0]);
+            rr.Remove(table[3, 1]);
+            rr.Remove(table[3, 1]);
+            rr.Remove(table[4, 0]);
+            index = ran.Next(rr.Count);
+            table[4, 1] = rr[index];
+
+            //input indext 42
+            rr = fullValue99();
+            rr.Remove(table[0, 2]);
+            rr.Remove(table[1, 2]);
+            rr.Remove(table[2, 2]);
+            rr.Remove(table[4, 3]);
+            rr.Remove(table[4, 4]);
+            rr.Remove(table[4, 5]);
+            rr.Remove(table[3, 0]);
+            rr.Remove(table[3, 1]);
+            rr.Remove(table[3, 2]);
+            rr.Remove(table[4, 0]);
+            rr.Remove(table[4, 1]);
+            index = ran.Next(rr.Count);
+            table[4, 2] = rr[index];
+
+            //input indext 50
+            rr = fullValue99();
+            rr.Remove(table[0, 0]);
+            rr.Remove(table[1, 0]);
+            rr.Remove(table[2, 0]);
+            rr.Remove(table[5, 3]);
+            rr.Remove(table[5, 4]);
+            rr.Remove(table[5, 5]);
+            rr.Remove(table[3, 0]);
+            rr.Remove(table[3, 1]);
+            rr.Remove(table[3, 2]);
+            rr.Remove(table[4, 0]);
+            rr.Remove(table[4, 1]);
+            rr.Remove(table[4, 2]);
+            index = ran.Next(rr.Count);
+            table[5, 0] = rr[index];
+
+            //input indext 51
+            rr = fullValue99();
+            rr.Remove(table[0, 1]);
+            rr.Remove(table[1, 1]);
+            rr.Remove(table[2, 1]);
+            rr.Remove(table[5, 3]);
+            rr.Remove(table[5, 4]);
+            rr.Remove(table[5, 5]);
+            rr.Remove(table[3, 0]);
+            rr.Remove(table[3, 1]);
+            rr.Remove(table[3, 2]);
+            rr.Remove(table[4, 0]);
+            rr.Remove(table[4, 1]);
+            rr.Remove(table[4, 2]);
+            rr.Remove(table[5, 0]);
+            index = ran.Next(rr.Count);
+            table[5, 1] = rr[index];
+
+            //input indext 52
+            rr = fullValue99();
+            rr.Remove(table[0, 2]);
+            rr.Remove(table[1, 2]);
+            rr.Remove(table[2, 2]);
+            rr.Remove(table[5, 3]);
+            rr.Remove(table[5, 4]);
+            rr.Remove(table[5, 5]);
+            rr.Remove(table[3, 0]);
+            rr.Remove(table[3, 1]);
+            rr.Remove(table[3, 2]);
+            rr.Remove(table[4, 0]);
+            rr.Remove(table[4, 1]);
+            rr.Remove(table[4, 2]);
+            rr.Remove(table[5, 0]);
+            rr.Remove(table[5, 1]);
+            index = ran.Next(rr.Count);
+            table[5, 2] = rr[index];
+
+            /**----------
+             *table three
+             */
+            //input indext 06
+            rr = fullValue99();
+            rr.Remove(table[0, 0]);
+            rr.Remove(table[0, 1]);
+            rr.Remove(table[0, 2]);
+            rr.Remove(table[0, 3]);
+            rr.Remove(table[0, 4]);
+            rr.Remove(table[0, 5]);
+            index = ran.Next(rr.Count);
+            table[0, 6] = rr[index];
+
+            //input indext 16
+            rr = fullValue99();
+            rr.Remove(table[1, 0]);
+            rr.Remove(table[1, 1]);
+            rr.Remove(table[1, 2]);
+            rr.Remove(table[1, 3]);
+            rr.Remove(table[1, 4]);
+            rr.Remove(table[1, 5]);
+            rr.Remove(table[0, 6]);
+            index = ran.Next(rr.Count);
+            table[1, 6] = rr[index];
+
+            //input indext 26
+            rr = fullValue99();
+            rr.Remove(table[2, 0]);
+            rr.Remove(table[2, 1]);
+            rr.Remove(table[2, 2]);
+            rr.Remove(table[2, 3]);
+            rr.Remove(table[2, 4]);
+            rr.Remove(table[2, 5]);
+            rr.Remove(table[0, 6]);
+            rr.Remove(table[1, 6]);
+            index = ran.Next(rr.Count);
+            table[2, 6] = rr[index];
+
+            //input indext 07
+            rr = fullValue99();
+            rr.Remove(table[0, 0]);
+            rr.Remove(table[0, 1]);
+            rr.Remove(table[0, 2]);
+            rr.Remove(table[0, 3]);
+            rr.Remove(table[0, 4]);
+            rr.Remove(table[0, 5]);
+            rr.Remove(table[0, 6]);
+            rr.Remove(table[1, 6]);
+            rr.Remove(table[2, 6]);
+            index = ran.Next(rr.Count);
+            table[0, 7] = rr[index];
+
+            //input indext 17
+            rr = fullValue99();
+            rr.Remove(table[1, 0]);
+            rr.Remove(table[1, 1]);
+            rr.Remove(table[1, 2]);
+            rr.Remove(table[1, 3]);
+            rr.Remove(table[1, 4]);
+            rr.Remove(table[1, 5]);
+            rr.Remove(table[0, 6]);
+            rr.Remove(table[1, 6]);
+            rr.Remove(table[2, 6]);
+            rr.Remove(table[0, 7]);
+            index = ran.Next(rr.Count);
+            table[1, 7] = rr[index];
+
+            //input indext 27
+            rr = fullValue99();
+            rr.Remove(table[2, 0]);
+            rr.Remove(table[2, 1]);
+            rr.Remove(table[2, 2]);
+            rr.Remove(table[2, 3]);
+            rr.Remove(table[2, 4]);
+            rr.Remove(table[2, 5]);
+            rr.Remove(table[0, 6]);
+            rr.Remove(table[1, 6]);
+            rr.Remove(table[2, 6]);
+            rr.Remove(table[0, 7]);
+            rr.Remove(table[1, 7]);
+            index = ran.Next(rr.Count);
+            table[2, 7] = rr[index];
+
+            //input indext 08
+            rr = fullValue99();
+            rr.Remove(table[0, 0]);
+            rr.Remove(table[0, 1]);
+            rr.Remove(table[0, 2]);
+            rr.Remove(table[0, 3]);
+            rr.Remove(table[0, 4]);
+            rr.Remove(table[0, 5]);
+            rr.Remove(table[0, 6]);
+            rr.Remove(table[1, 6]);
+            rr.Remove(table[2, 6]);
+            rr.Remove(table[0, 7]);
+            rr.Remove(table[1, 7]);
+            rr.Remove(table[2, 7]);
+            index = ran.Next(rr.Count);
+            table[0, 8] = rr[index];
+
+            //input indext 18
+            rr = fullValue99();
+            rr.Remove(table[1, 0]);
+            rr.Remove(table[1, 1]);
+            rr.Remove(table[1, 2]);
+            rr.Remove(table[1, 3]);
+            rr.Remove(table[1, 4]);
+            rr.Remove(table[1, 5]);
+            rr.Remove(table[0, 6]);
+            rr.Remove(table[1, 6]);
+            rr.Remove(table[2, 6]);
+            rr.Remove(table[0, 7]);
+            rr.Remove(table[1, 7]);
+            rr.Remove(table[2, 7]);
+            rr.Remove(table[0, 8]);
+            index = ran.Next(rr.Count);
+            table[1, 8] = rr[index];
+
+            //input indext 28
+            rr = fullValue99();
+            rr.Remove(table[2, 0]);
+            rr.Remove(table[2, 1]);
+            rr.Remove(table[2, 2]);
+            rr.Remove(table[2, 3]);
+            rr.Remove(table[2, 4]);
+            rr.Remove(table[2, 5]);
+            rr.Remove(table[0, 6]);
+            rr.Remove(table[1, 6]);
+            rr.Remove(table[2, 6]);
+            rr.Remove(table[0, 7]);
+            rr.Remove(table[1, 7]);
+            rr.Remove(table[2, 7]);
+            rr.Remove(table[0, 8]);
+            rr.Remove(table[1, 8]);
+            index = ran.Next(rr.Count);
+            table[2, 8] = rr[index];
+
+            /**----------
+             *table Seven
+             */
+            //input indext 60
+            rr = fullValue99();
+            rr.Remove(table[0, 0]);
+            rr.Remove(table[1, 0]);
+            rr.Remove(table[2, 0]);
+            rr.Remove(table[3, 0]);
+            rr.Remove(table[4, 0]);
+            rr.Remove(table[5, 0]);
+            index = ran.Next(rr.Count);
+            table[6, 0] = rr[index];
+
+            //input indext 61
+            rr = fullValue99();
+            rr.Remove(table[0, 1]);
+            rr.Remove(table[1, 1]);
+            rr.Remove(table[2, 1]);
+            rr.Remove(table[3, 1]);
+            rr.Remove(table[4, 1]);
+            rr.Remove(table[5, 1]);
+            rr.Remove(table[6, 0]);
+            index = ran.Next(rr.Count);
+            table[6, 1] = rr[index];
+
+            //input indext 62
+            rr = fullValue99();
+            rr.Remove(table[0, 2]);
+            rr.Remove(table[1, 2]);
+            rr.Remove(table[2, 2]);
+            rr.Remove(table[3, 2]);
+            rr.Remove(table[4, 2]);
+            rr.Remove(table[5, 2]);
+            rr.Remove(table[6, 0]);
+            rr.Remove(table[6, 1]);
+            index = ran.Next(rr.Count);
+            table[6, 2] = rr[index];
+
+            //input indext 70
+            rr = fullValue99();
+            rr.Remove(table[0, 0]);
+            rr.Remove(table[1, 0]);
+            rr.Remove(table[2, 0]);
+            rr.Remove(table[3, 0]);
+            rr.Remove(table[4, 0]);
+            rr.Remove(table[5, 0]);
+            rr.Remove(table[6, 0]);
+            rr.Remove(table[6, 1]);
+            rr.Remove(table[6, 2]);
+            index = ran.Next(rr.Count);
+            table[7, 0] = rr[index];
+
+            //input indext 71
+            rr = fullValue99();
+            rr.Remove(table[0, 1]);
+            rr.Remove(table[1, 1]);
+            rr.Remove(table[2, 1]);
+            rr.Remove(table[3, 1]);
+            rr.Remove(table[4, 1]);
+            rr.Remove(table[5, 1]);
+            rr.Remove(table[6, 0]);
+            rr.Remove(table[6, 1]);
+            rr.Remove(table[6, 2]);
+            rr.Remove(table[7, 0]);
+            index = ran.Next(rr.Count);
+            table[7, 1] = rr[index];
+
+            //input indext 72
+            rr = fullValue99();
+            rr.Remove(table[0, 2]);
+            rr.Remove(table[1, 2]);
+            rr.Remove(table[2, 2]);
+            rr.Remove(table[3, 2]);
+            rr.Remove(table[4, 2]);
+            rr.Remove(table[5, 2]);
+            rr.Remove(table[6, 0]);
+            rr.Remove(table[6, 1]);
+            rr.Remove(table[6, 2]);
+            rr.Remove(table[7, 0]);
+            rr.Remove(table[7, 1]);
+            index = ran.Next(rr.Count);
+            table[7, 2] = rr[index];
+
+            //input indext 80
+            rr = fullValue99();
+            rr.Remove(table[0, 0]);
+            rr.Remove(table[1, 0]);
+            rr.Remove(table[2, 0]);
+            rr.Remove(table[3, 0]);
+            rr.Remove(table[4, 0]);
+            rr.Remove(table[5, 0]);
+            rr.Remove(table[6, 0]);
+            rr.Remove(table[6, 1]);
+            rr.Remove(table[6, 2]);
+            rr.Remove(table[7, 0]);
+            rr.Remove(table[7, 1]);
+            rr.Remove(table[7, 2]);
+            index = ran.Next(rr.Count);
+            table[8, 0] = rr[index];
+
+            //input indext 81
+            rr = fullValue99();
+            rr.Remove(table[0, 1]);
+            rr.Remove(table[1, 1]);
+            rr.Remove(table[2, 1]);
+            rr.Remove(table[3, 1]);
+            rr.Remove(table[4, 1]);
+            rr.Remove(table[5, 1]);
+            rr.Remove(table[6, 0]);
+            rr.Remove(table[6, 1]);
+            rr.Remove(table[6, 2]);
+            rr.Remove(table[7, 0]);
+            rr.Remove(table[7, 1]);
+            rr.Remove(table[7, 2]);
+            rr.Remove(table[8, 1]);
+            index = ran.Next(rr.Count);
+            table[8, 1] = rr[index];
+
+            //input indext 82
+            rr = fullValue99();
+            rr.Remove(table[0, 2]);
+            rr.Remove(table[1, 2]);
+            rr.Remove(table[2, 2]);
+            rr.Remove(table[3, 2]);
+            rr.Remove(table[4, 2]);
+            rr.Remove(table[5, 2]);
+            rr.Remove(table[6, 0]);
+            rr.Remove(table[6, 1]);
+            rr.Remove(table[6, 2]);
+            rr.Remove(table[7, 0]);
+            rr.Remove(table[7, 1]);
+            rr.Remove(table[7, 2]);
+            rr.Remove(table[8, 1]);
+            rr.Remove(table[8, 2]);
+            index = ran.Next(rr.Count);
+            table[8, 2] = rr[index];
+
+            /**----------
+             *table Six
+             */
+            //input index 36
+            rr = fullValue99();
+            rr.Remove(table[3, 0]);
+            rr.Remove(table[3, 1]);
+            rr.Remove(table[3, 2]);
+            rr.Remove(table[3, 3]);
+            rr.Remove(table[3, 4]);
+            rr.Remove(table[3, 5]);
+            rr.Remove(table[0, 6]);
+            rr.Remove(table[1, 6]);
+            rr.Remove(table[2, 6]);
+            index = ran.Next(rr.Count);
+            table[3, 6] = rr[index];
+
+            //input index 46
+            rr = fullValue99();
+            rr.Remove(table[4, 0]);
+            rr.Remove(table[4, 1]);
+            rr.Remove(table[4, 2]);
+            rr.Remove(table[4, 3]);
+            rr.Remove(table[4, 4]);
+            rr.Remove(table[4, 5]);
+            rr.Remove(table[0, 6]);
+            rr.Remove(table[1, 6]);
+            rr.Remove(table[2, 6]);
+            rr.Remove(table[3, 6]);
+            index = ran.Next(rr.Count);
+            table[4, 6] = rr[index];
+
+            //input index 56
+            rr = fullValue99();
+            rr.Remove(table[5, 0]);
+            rr.Remove(table[5, 1]);
+            rr.Remove(table[5, 2]);
+            rr.Remove(table[5, 3]);
+            rr.Remove(table[5, 4]);
+            rr.Remove(table[5, 5]);
+            rr.Remove(table[0, 6]);
+            rr.Remove(table[1, 6]);
+            rr.Remove(table[2, 6]);
+            rr.Remove(table[3, 6]);
+            rr.Remove(table[4, 6]);
+            index = ran.Next(rr.Count);
+            table[5, 6] = rr[index];
+
+            //input index 37
+            rr = fullValue99();
+            rr.Remove(table[3, 0]);
+            rr.Remove(table[3, 1]);
+            rr.Remove(table[3, 2]);
+            rr.Remove(table[3, 3]);
+            rr.Remove(table[3, 4]);
+            rr.Remove(table[3, 5]);
+            rr.Remove(table[0, 7]);
+            rr.Remove(table[1, 7]);
+            rr.Remove(table[2, 7]);
+            rr.Remove(table[3, 6]);
+            rr.Remove(table[4, 6]);
+            rr.Remove(table[5, 6]);
+            index = ran.Next(rr.Count);
+            table[3, 7] = rr[index];
+
+            //input index 47
+            rr = fullValue99();
+            rr.Remove(table[4, 0]);
+            rr.Remove(table[4, 1]);
+            rr.Remove(table[4, 2]);
+            rr.Remove(table[4, 3]);
+            rr.Remove(table[4, 4]);
+            rr.Remove(table[4, 5]);
+            rr.Remove(table[0, 7]);
+            rr.Remove(table[1, 7]);
+            rr.Remove(table[2, 7]);
+            rr.Remove(table[3, 6]);
+            rr.Remove(table[4, 6]);
+            rr.Remove(table[5, 6]);
+            rr.Remove(table[3, 7]);
+            index = ran.Next(rr.Count);
+            table[4, 7] = rr[index];
+
+            //input index 57
+            rr = fullValue99();
+            rr.Remove(table[5, 0]);
+            rr.Remove(table[5, 1]);
+            rr.Remove(table[5, 2]);
+            rr.Remove(table[5, 3]);
+            rr.Remove(table[5, 4]);
+            rr.Remove(table[5, 5]);
+            rr.Remove(table[0, 7]);
+            rr.Remove(table[1, 7]);
+            rr.Remove(table[2, 7]);
+            rr.Remove(table[3, 6]);
+            rr.Remove(table[4, 6]);
+            rr.Remove(table[5, 6]);
+            rr.Remove(table[3, 7]);
+            rr.Remove(table[4, 7]);
+            index = ran.Next(rr.Count);
+            table[5, 7] = rr[index];
+
+            //input index 38
+            rr = fullValue99();
+            rr.Remove(table[3, 0]);
+            rr.Remove(table[3, 1]);
+            rr.Remove(table[3, 2]);
+            rr.Remove(table[3, 3]);
+            rr.Remove(table[3, 4]);
+            rr.Remove(table[3, 5]);
+            rr.Remove(table[3, 6]);
+            rr.Remove(table[3, 7]);
+            index = ran.Next(rr.Count);
+            table[3, 8] = rr[index];
+
+            //input index 48
+            rr = fullValue99();
+            rr.Remove(table[4, 0]);
+            rr.Remove(table[4, 1]);
+            rr.Remove(table[4, 2]);
+            rr.Remove(table[4, 3]);
+            rr.Remove(table[4, 4]);
+            rr.Remove(table[4, 5]);
+            rr.Remove(table[4, 6]);
+            rr.Remove(table[4, 7]);
+            index = ran.Next(rr.Count);
+            table[4, 8] = rr[index];
+
+            //input index 58
+            rr = fullValue99();
+            rr.Remove(table[5, 0]);
+            rr.Remove(table[5, 1]);
+            rr.Remove(table[5, 2]);
+            rr.Remove(table[5, 3]);
+            rr.Remove(table[5, 4]);
+            rr.Remove(table[5, 5]);
+            rr.Remove(table[5, 6]);
+            rr.Remove(table[5, 7]);
+            index = ran.Next(rr.Count);
+            table[5, 8] = rr[index];
+
+            /**----------
+             *table Six
+             */
+            //input index 63
+            rr = fullValue99();
+            rr.Remove(table[0, 3]);
+            rr.Remove(table[1, 3]);
+            rr.Remove(table[2, 3]);
+            rr.Remove(table[3, 3]);
+            rr.Remove(table[4, 3]);
+            rr.Remove(table[5, 3]);
+            rr.Remove(table[6, 0]);
+            rr.Remove(table[6, 1]);
+            rr.Remove(table[6, 2]);
+            index = ran.Next(rr.Count);
+            table[6, 3] = rr[index];
+
+            //input index 64
+            rr = fullValue99();
+            rr.Remove(table[0, 4]);
+            rr.Remove(table[1, 4]);
+            rr.Remove(table[2, 4]);
+            rr.Remove(table[3, 4]);
+            rr.Remove(table[4, 4]);
+            rr.Remove(table[5, 4]);
+            rr.Remove(table[6, 0]);
+            rr.Remove(table[6, 1]);
+            rr.Remove(table[6, 2]);
+            rr.Remove(table[6, 3]);
+            index = ran.Next(rr.Count);
+            table[6, 4] = rr[index];
+
+            //input index 65
+            rr = fullValue99();
+            rr.Remove(table[0, 5]);
+            rr.Remove(table[1, 5]);
+            rr.Remove(table[2, 5]);
+            rr.Remove(table[3, 5]);
+            rr.Remove(table[4, 5]);
+            rr.Remove(table[5, 5]);
+            rr.Remove(table[6, 0]);
+            rr.Remove(table[6, 1]);
+            rr.Remove(table[6, 2]);
+            rr.Remove(table[6, 3]);
+            rr.Remove(table[6, 4]);
+            index = ran.Next(rr.Count);
+            table[6, 5] = rr[index];
+
+            //input index 73
+            rr = fullValue99();
+            rr.Remove(table[0, 3]);
+            rr.Remove(table[1, 3]);
+            rr.Remove(table[2, 3]);
+            rr.Remove(table[3, 3]);
+            rr.Remove(table[4, 3]);
+            rr.Remove(table[5, 3]);
+            rr.Remove(table[7, 0]);
+            rr.Remove(table[7, 1]);
+            rr.Remove(table[7, 2]);
+            rr.Remove(table[6, 3]);
+            rr.Remove(table[6, 4]);
+            rr.Remove(table[6, 5]);
+            index = ran.Next(rr.Count);
+            table[7, 3] = rr[index];
+
+            //input index 74
+            rr = fullValue99();
+            rr.Remove(table[0, 4]);
+            rr.Remove(table[1, 4]);
+            rr.Remove(table[2, 4]);
+            rr.Remove(table[3, 4]);
+            rr.Remove(table[4, 4]);
+            rr.Remove(table[5, 4]);
+            rr.Remove(table[7, 0]);
+            rr.Remove(table[7, 1]);
+            rr.Remove(table[7, 2]);
+            rr.Remove(table[6, 3]);
+            rr.Remove(table[6, 4]);
+            rr.Remove(table[6, 5]);
+            rr.Remove(table[7, 3]);
+            index = ran.Next(rr.Count);
+            table[7, 4] = rr[index];
+
+            //input index 75
+            rr = fullValue99();
+            rr.Remove(table[0, 5]);
+            rr.Remove(table[1, 5]);
+            rr.Remove(table[2, 5]);
+            rr.Remove(table[3, 5]);
+            rr.Remove(table[4, 5]);
+            rr.Remove(table[5, 5]);
+            rr.Remove(table[7, 0]);
+            rr.Remove(table[7, 1]);
+            rr.Remove(table[7, 2]);
+            rr.Remove(table[6, 3]);
+            rr.Remove(table[6, 4]);
+            rr.Remove(table[6, 5]);
+            rr.Remove(table[7, 3]);
+            rr.Remove(table[7, 4]);
+            index = ran.Next(rr.Count);
+            table[7, 5] = rr[index];
+
+            //input index 83
+            rr = fullValue99();
+            rr.Remove(table[0, 3]);
+            rr.Remove(table[1, 3]);
+            rr.Remove(table[2, 3]);
+            rr.Remove(table[3, 3]);
+            rr.Remove(table[4, 3]);
+            rr.Remove(table[5, 3]);
+            rr.Remove(table[6, 3]);
+            rr.Remove(table[7, 3]);
+            index = ran.Next(rr.Count);
+            table[8, 3] = rr[index];
+
+            //input index 84
+            rr = fullValue99();
+            rr.Remove(table[0, 4]);
+            rr.Remove(table[1, 4]);
+            rr.Remove(table[2, 4]);
+            rr.Remove(table[3, 4]);
+            rr.Remove(table[4, 4]);
+            rr.Remove(table[5, 4]);
+            rr.Remove(table[6, 4]);
+            rr.Remove(table[7, 4]);
+            index = ran.Next(rr.Count);
+            table[8, 4] = rr[index];
+
+            //input index 85
+            rr = fullValue99();
+            rr.Remove(table[0, 5]);
+            rr.Remove(table[1, 5]);
+            rr.Remove(table[2, 5]);
+            rr.Remove(table[3, 5]);
+            rr.Remove(table[4, 5]);
+            rr.Remove(table[5, 5]);
+            rr.Remove(table[6, 5]);
+            rr.Remove(table[7, 5]);
+            index = ran.Next(rr.Count);
+            table[8, 5] = rr[index];
+
+            /**----------
+             *table 9
+             */
+            //input index 66
+            rr = fullValue99();
+            rr.Remove(table[0, 6]);
+            rr.Remove(table[1, 6]);
+            rr.Remove(table[2, 6]);
+            rr.Remove(table[3, 6]);
+            rr.Remove(table[4, 6]);
+            rr.Remove(table[5, 6]);
+            rr.Remove(table[6, 0]);
+            rr.Remove(table[6, 1]);
+            rr.Remove(table[6, 2]);
+            rr.Remove(table[6, 3]);
+            rr.Remove(table[6, 4]);
+            rr.Remove(table[6, 5]);
+            index = ran.Next(rr.Count);
+            table[6, 6] = rr[index];
+
+            //input index 67
+            rr = fullValue99();
+            rr.Remove(table[0, 7]);
+            rr.Remove(table[1, 7]);
+            rr.Remove(table[2, 7]);
+            rr.Remove(table[3, 7]);
+            rr.Remove(table[4, 7]);
+            rr.Remove(table[5, 7]);
+            rr.Remove(table[6, 0]);
+            rr.Remove(table[6, 1]);
+            rr.Remove(table[6, 2]);
+            rr.Remove(table[6, 3]);
+            rr.Remove(table[6, 4]);
+            rr.Remove(table[6, 5]);
+            rr.Remove(table[6, 6]);
+            index = ran.Next(rr.Count);
+            table[6, 7] = rr[index];
+
+            //input index 76
+            rr = fullValue99();
+            rr.Remove(table[0, 6]);
+            rr.Remove(table[1, 6]);
+            rr.Remove(table[2, 6]);
+            rr.Remove(table[3, 6]);
+            rr.Remove(table[4, 6]);
+            rr.Remove(table[5, 6]);
+            rr.Remove(table[6, 6]);
+            rr.Remove(table[7, 0]);
+            rr.Remove(table[7, 1]);
+            rr.Remove(table[7, 2]);
+            rr.Remove(table[7, 3]);
+            rr.Remove(table[7, 4]);
+            rr.Remove(table[7, 5]);
+            rr.Remove(table[6, 7]);
+            index = ran.Next(rr.Count);
+            table[7, 6] = rr[index];
+
+            //input index 77
+            rr = fullValue99();
+            rr.Remove(table[0, 7]);
+            rr.Remove(table[1, 7]);
+            rr.Remove(table[2, 7]);
+            rr.Remove(table[3, 7]);
+            rr.Remove(table[4, 7]);
+            rr.Remove(table[5, 7]);
+            rr.Remove(table[6, 7]);
+            rr.Remove(table[7, 0]);
+            rr.Remove(table[7, 1]);
+            rr.Remove(table[7, 2]);
+            rr.Remove(table[7, 3]);
+            rr.Remove(table[7, 4]);
+            rr.Remove(table[7, 5]);
+            rr.Remove(table[7, 6]);
+            index = ran.Next(rr.Count);
+            table[7, 7] = rr[index];
+
+            //input index 68
+            rr = fullValue99();
+            rr.Remove(table[6, 0]);
+            rr.Remove(table[6, 1]);
+            rr.Remove(table[6, 2]);
+            rr.Remove(table[6, 3]);
+            rr.Remove(table[6, 4]);
+            rr.Remove(table[6, 5]);
+            rr.Remove(table[6, 6]);
+            rr.Remove(table[6, 7]);
+            index = ran.Next(rr.Count);
+            table[6, 8] = rr[index];
+
+            //input index 78
+            rr = fullValue99();
+            rr.Remove(table[7, 0]);
+            rr.Remove(table[7, 1]);
+            rr.Remove(table[7, 2]);
+            rr.Remove(table[7, 3]);
+            rr.Remove(table[7, 4]);
+            rr.Remove(table[7, 5]);
+            rr.Remove(table[7, 6]);
+            rr.Remove(table[7, 7]);
+            index = ran.Next(rr.Count);
+            table[7, 8] = rr[index];
+
+            //input index 86
+            rr = fullValue99();
+            rr.Remove(table[0, 6]);
+            rr.Remove(table[1, 6]);
+            rr.Remove(table[2, 6]);
+            rr.Remove(table[3, 6]);
+            rr.Remove(table[4, 6]);
+            rr.Remove(table[5, 6]);
+            rr.Remove(table[6, 6]);
+            rr.Remove(table[7, 6]);
+            index = ran.Next(rr.Count);
+            table[8, 6] = rr[index];
+
+            //input index 87
+            rr = fullValue99();
+            rr.Remove(table[0, 7]);
+            rr.Remove(table[1, 7]);
+            rr.Remove(table[2, 7]);
+            rr.Remove(table[3, 7]);
+            rr.Remove(table[4, 7]);
+            rr.Remove(table[5, 7]);
+            rr.Remove(table[6, 7]);
+            rr.Remove(table[7, 7]);
+            index = ran.Next(rr.Count);
+            table[8, 7] = rr[index];
+
+            //input index 88
+            rr = fullValue99();
+            rr.Remove(table[0, 8]);
+            rr.Remove(table[1, 8]);
+            rr.Remove(table[2, 8]);
+            rr.Remove(table[3, 8]);
+            rr.Remove(table[4, 8]);
+            rr.Remove(table[5, 8]);
+            rr.Remove(table[6, 8]);
+            rr.Remove(table[7, 8]);
+
+            index = ran.Next(rr.Count);
+            table[8, 8] = rr[index];
 
             return table;
         }
