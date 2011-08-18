@@ -333,12 +333,12 @@ namespace Sudoku
             table[0, 2] = 4;
 
             table[0, 3] = 9;
-            table[0, 3] = 5;
-            table[0, 3] = 6;
+            table[0, 4] = 5;
+            table[0, 5] = 6;
 
-            table[0, 3] = 8;
-            table[0, 3] = 1;
-            table[0, 3] = 7;
+            table[0, 6] = 8;
+            table[0, 7] = 1;
+            table[0, 8] = 7;
 
 
             //แถวที่ 1
