@@ -57,89 +57,6 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.Box1 = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.Box2 = new System.Windows.Forms.TextBox();
-            this.Box3 = new System.Windows.Forms.TextBox();
-            this.Box10 = new System.Windows.Forms.TextBox();
-            this.Box11 = new System.Windows.Forms.TextBox();
-            this.Box12 = new System.Windows.Forms.TextBox();
-            this.Box19 = new System.Windows.Forms.TextBox();
-            this.Box20 = new System.Windows.Forms.TextBox();
-            this.Box21 = new System.Windows.Forms.TextBox();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.Box24 = new System.Windows.Forms.TextBox();
-            this.Box23 = new System.Windows.Forms.TextBox();
-            this.Box22 = new System.Windows.Forms.TextBox();
-            this.Box15 = new System.Windows.Forms.TextBox();
-            this.Box14 = new System.Windows.Forms.TextBox();
-            this.Box13 = new System.Windows.Forms.TextBox();
-            this.Box6 = new System.Windows.Forms.TextBox();
-            this.Box5 = new System.Windows.Forms.TextBox();
-            this.Box4 = new System.Windows.Forms.TextBox();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.Box27 = new System.Windows.Forms.TextBox();
-            this.Box26 = new System.Windows.Forms.TextBox();
-            this.Box25 = new System.Windows.Forms.TextBox();
-            this.Box18 = new System.Windows.Forms.TextBox();
-            this.Box17 = new System.Windows.Forms.TextBox();
-            this.Box16 = new System.Windows.Forms.TextBox();
-            this.Box9 = new System.Windows.Forms.TextBox();
-            this.Box8 = new System.Windows.Forms.TextBox();
-            this.Box7 = new System.Windows.Forms.TextBox();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.Box48 = new System.Windows.Forms.TextBox();
-            this.Box47 = new System.Windows.Forms.TextBox();
-            this.Box46 = new System.Windows.Forms.TextBox();
-            this.Box39 = new System.Windows.Forms.TextBox();
-            this.Box38 = new System.Windows.Forms.TextBox();
-            this.Box37 = new System.Windows.Forms.TextBox();
-            this.Box30 = new System.Windows.Forms.TextBox();
-            this.Box29 = new System.Windows.Forms.TextBox();
-            this.Box28 = new System.Windows.Forms.TextBox();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.Box51 = new System.Windows.Forms.TextBox();
-            this.Box50 = new System.Windows.Forms.TextBox();
-            this.Box49 = new System.Windows.Forms.TextBox();
-            this.Box42 = new System.Windows.Forms.TextBox();
-            this.Box41 = new System.Windows.Forms.TextBox();
-            this.Box40 = new System.Windows.Forms.TextBox();
-            this.Box33 = new System.Windows.Forms.TextBox();
-            this.Box32 = new System.Windows.Forms.TextBox();
-            this.Box31 = new System.Windows.Forms.TextBox();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.Box54 = new System.Windows.Forms.TextBox();
-            this.Box53 = new System.Windows.Forms.TextBox();
-            this.Box52 = new System.Windows.Forms.TextBox();
-            this.Box45 = new System.Windows.Forms.TextBox();
-            this.Box44 = new System.Windows.Forms.TextBox();
-            this.Box43 = new System.Windows.Forms.TextBox();
-            this.Box36 = new System.Windows.Forms.TextBox();
-            this.Box35 = new System.Windows.Forms.TextBox();
-            this.Box34 = new System.Windows.Forms.TextBox();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.Box75 = new System.Windows.Forms.TextBox();
-            this.Box74 = new System.Windows.Forms.TextBox();
-            this.Box73 = new System.Windows.Forms.TextBox();
-            this.Box66 = new System.Windows.Forms.TextBox();
-            this.Box65 = new System.Windows.Forms.TextBox();
-            this.Box64 = new System.Windows.Forms.TextBox();
-            this.Box57 = new System.Windows.Forms.TextBox();
-            this.Box56 = new System.Windows.Forms.TextBox();
-            this.Box55 = new System.Windows.Forms.TextBox();
-            this.panel14 = new System.Windows.Forms.Panel();
-            this.Box78 = new System.Windows.Forms.TextBox();
-            this.Box77 = new System.Windows.Forms.TextBox();
-            this.Box76 = new System.Windows.Forms.TextBox();
-            this.Box69 = new System.Windows.Forms.TextBox();
-            this.Box68 = new System.Windows.Forms.TextBox();
-            this.Box67 = new System.Windows.Forms.TextBox();
-            this.Box60 = new System.Windows.Forms.TextBox();
-            this.Box59 = new System.Windows.Forms.TextBox();
-            this.Box58 = new System.Windows.Forms.TextBox();
             this.panel15 = new System.Windows.Forms.Panel();
             this.Box81 = new System.Windows.Forms.TextBox();
             this.Box80 = new System.Windows.Forms.TextBox();
@@ -150,6 +67,89 @@
             this.Box63 = new System.Windows.Forms.TextBox();
             this.Box62 = new System.Windows.Forms.TextBox();
             this.Box61 = new System.Windows.Forms.TextBox();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.Box78 = new System.Windows.Forms.TextBox();
+            this.Box77 = new System.Windows.Forms.TextBox();
+            this.Box76 = new System.Windows.Forms.TextBox();
+            this.Box69 = new System.Windows.Forms.TextBox();
+            this.Box68 = new System.Windows.Forms.TextBox();
+            this.Box67 = new System.Windows.Forms.TextBox();
+            this.Box60 = new System.Windows.Forms.TextBox();
+            this.Box59 = new System.Windows.Forms.TextBox();
+            this.Box58 = new System.Windows.Forms.TextBox();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.Box75 = new System.Windows.Forms.TextBox();
+            this.Box74 = new System.Windows.Forms.TextBox();
+            this.Box73 = new System.Windows.Forms.TextBox();
+            this.Box66 = new System.Windows.Forms.TextBox();
+            this.Box65 = new System.Windows.Forms.TextBox();
+            this.Box64 = new System.Windows.Forms.TextBox();
+            this.Box57 = new System.Windows.Forms.TextBox();
+            this.Box56 = new System.Windows.Forms.TextBox();
+            this.Box55 = new System.Windows.Forms.TextBox();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.Box54 = new System.Windows.Forms.TextBox();
+            this.Box53 = new System.Windows.Forms.TextBox();
+            this.Box52 = new System.Windows.Forms.TextBox();
+            this.Box45 = new System.Windows.Forms.TextBox();
+            this.Box44 = new System.Windows.Forms.TextBox();
+            this.Box43 = new System.Windows.Forms.TextBox();
+            this.Box36 = new System.Windows.Forms.TextBox();
+            this.Box35 = new System.Windows.Forms.TextBox();
+            this.Box34 = new System.Windows.Forms.TextBox();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.Box51 = new System.Windows.Forms.TextBox();
+            this.Box50 = new System.Windows.Forms.TextBox();
+            this.Box49 = new System.Windows.Forms.TextBox();
+            this.Box42 = new System.Windows.Forms.TextBox();
+            this.Box41 = new System.Windows.Forms.TextBox();
+            this.Box40 = new System.Windows.Forms.TextBox();
+            this.Box33 = new System.Windows.Forms.TextBox();
+            this.Box32 = new System.Windows.Forms.TextBox();
+            this.Box31 = new System.Windows.Forms.TextBox();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.Box48 = new System.Windows.Forms.TextBox();
+            this.Box47 = new System.Windows.Forms.TextBox();
+            this.Box46 = new System.Windows.Forms.TextBox();
+            this.Box39 = new System.Windows.Forms.TextBox();
+            this.Box38 = new System.Windows.Forms.TextBox();
+            this.Box37 = new System.Windows.Forms.TextBox();
+            this.Box30 = new System.Windows.Forms.TextBox();
+            this.Box29 = new System.Windows.Forms.TextBox();
+            this.Box28 = new System.Windows.Forms.TextBox();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.Box27 = new System.Windows.Forms.TextBox();
+            this.Box26 = new System.Windows.Forms.TextBox();
+            this.Box25 = new System.Windows.Forms.TextBox();
+            this.Box18 = new System.Windows.Forms.TextBox();
+            this.Box17 = new System.Windows.Forms.TextBox();
+            this.Box16 = new System.Windows.Forms.TextBox();
+            this.Box9 = new System.Windows.Forms.TextBox();
+            this.Box8 = new System.Windows.Forms.TextBox();
+            this.Box7 = new System.Windows.Forms.TextBox();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.Box24 = new System.Windows.Forms.TextBox();
+            this.Box23 = new System.Windows.Forms.TextBox();
+            this.Box22 = new System.Windows.Forms.TextBox();
+            this.Box15 = new System.Windows.Forms.TextBox();
+            this.Box14 = new System.Windows.Forms.TextBox();
+            this.Box13 = new System.Windows.Forms.TextBox();
+            this.Box6 = new System.Windows.Forms.TextBox();
+            this.Box5 = new System.Windows.Forms.TextBox();
+            this.Box4 = new System.Windows.Forms.TextBox();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.Box21 = new System.Windows.Forms.TextBox();
+            this.Box20 = new System.Windows.Forms.TextBox();
+            this.Box19 = new System.Windows.Forms.TextBox();
+            this.Box12 = new System.Windows.Forms.TextBox();
+            this.Box11 = new System.Windows.Forms.TextBox();
+            this.Box10 = new System.Windows.Forms.TextBox();
+            this.Box3 = new System.Windows.Forms.TextBox();
+            this.Box2 = new System.Windows.Forms.TextBox();
+            this.Box1 = new System.Windows.Forms.TextBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -158,15 +158,15 @@
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.panel6.SuspendLayout();
-            this.panel8.SuspendLayout();
-            this.panel7.SuspendLayout();
-            this.panel9.SuspendLayout();
-            this.panel10.SuspendLayout();
-            this.panel11.SuspendLayout();
-            this.panel12.SuspendLayout();
-            this.panel13.SuspendLayout();
-            this.panel14.SuspendLayout();
             this.panel15.SuspendLayout();
+            this.panel14.SuspendLayout();
+            this.panel13.SuspendLayout();
+            this.panel12.SuspendLayout();
+            this.panel11.SuspendLayout();
+            this.panel10.SuspendLayout();
+            this.panel9.SuspendLayout();
+            this.panel7.SuspendLayout();
+            this.panel8.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -482,714 +482,102 @@
             this.panel6.Size = new System.Drawing.Size(280, 269);
             this.panel6.TabIndex = 1;
             // 
-            // panel8
-            // 
-            this.panel8.Controls.Add(this.Box21);
-            this.panel8.Controls.Add(this.Box20);
-            this.panel8.Controls.Add(this.Box19);
-            this.panel8.Controls.Add(this.Box12);
-            this.panel8.Controls.Add(this.Box11);
-            this.panel8.Controls.Add(this.Box10);
-            this.panel8.Controls.Add(this.Box3);
-            this.panel8.Controls.Add(this.Box2);
-            this.panel8.Controls.Add(this.Box1);
-            this.panel8.Location = new System.Drawing.Point(9, 9);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(81, 83);
-            this.panel8.TabIndex = 1;
-            // 
-            // Box1
-            // 
-            this.Box1.BackColor = System.Drawing.SystemColors.Window;
-            this.Box1.Location = new System.Drawing.Point(3, 3);
-            this.Box1.Name = "Box1";
-            this.Box1.Size = new System.Drawing.Size(20, 20);
-            this.Box1.TabIndex = 0;
-            this.Box1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(351, 141);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Solve";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(315, 19);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(111, 45);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "New Game";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Forte", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Crimson;
-            this.label2.Location = new System.Drawing.Point(89, 291);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(277, 38);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Congratulation!";
-            this.label2.Visible = false;
-            // 
-            // Box2
-            // 
-            this.Box2.BackColor = System.Drawing.SystemColors.Window;
-            this.Box2.Location = new System.Drawing.Point(29, 3);
-            this.Box2.Name = "Box2";
-            this.Box2.Size = new System.Drawing.Size(20, 20);
-            this.Box2.TabIndex = 1;
-            this.Box2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // Box3
-            // 
-            this.Box3.BackColor = System.Drawing.SystemColors.Window;
-            this.Box3.Location = new System.Drawing.Point(55, 3);
-            this.Box3.Name = "Box3";
-            this.Box3.Size = new System.Drawing.Size(20, 20);
-            this.Box3.TabIndex = 2;
-            this.Box3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // Box10
-            // 
-            this.Box10.BackColor = System.Drawing.SystemColors.Window;
-            this.Box10.Location = new System.Drawing.Point(3, 29);
-            this.Box10.Name = "Box10";
-            this.Box10.Size = new System.Drawing.Size(20, 20);
-            this.Box10.TabIndex = 3;
-            this.Box10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // Box11
-            // 
-            this.Box11.BackColor = System.Drawing.SystemColors.Window;
-            this.Box11.Location = new System.Drawing.Point(29, 29);
-            this.Box11.Name = "Box11";
-            this.Box11.Size = new System.Drawing.Size(20, 20);
-            this.Box11.TabIndex = 4;
-            this.Box11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // Box12
-            // 
-            this.Box12.BackColor = System.Drawing.SystemColors.Window;
-            this.Box12.Location = new System.Drawing.Point(55, 29);
-            this.Box12.Name = "Box12";
-            this.Box12.Size = new System.Drawing.Size(20, 20);
-            this.Box12.TabIndex = 5;
-            this.Box12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // Box19
-            // 
-            this.Box19.BackColor = System.Drawing.SystemColors.Window;
-            this.Box19.Location = new System.Drawing.Point(3, 55);
-            this.Box19.Name = "Box19";
-            this.Box19.Size = new System.Drawing.Size(20, 20);
-            this.Box19.TabIndex = 6;
-            this.Box19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // Box20
-            // 
-            this.Box20.BackColor = System.Drawing.SystemColors.Window;
-            this.Box20.Location = new System.Drawing.Point(29, 55);
-            this.Box20.Name = "Box20";
-            this.Box20.Size = new System.Drawing.Size(20, 20);
-            this.Box20.TabIndex = 7;
-            this.Box20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // Box21
-            // 
-            this.Box21.BackColor = System.Drawing.SystemColors.Window;
-            this.Box21.Location = new System.Drawing.Point(55, 55);
-            this.Box21.Name = "Box21";
-            this.Box21.Size = new System.Drawing.Size(20, 20);
-            this.Box21.TabIndex = 8;
-            this.Box21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // panel7
-            // 
-            this.panel7.Controls.Add(this.Box24);
-            this.panel7.Controls.Add(this.Box23);
-            this.panel7.Controls.Add(this.Box22);
-            this.panel7.Controls.Add(this.Box15);
-            this.panel7.Controls.Add(this.Box14);
-            this.panel7.Controls.Add(this.Box13);
-            this.panel7.Controls.Add(this.Box6);
-            this.panel7.Controls.Add(this.Box5);
-            this.panel7.Controls.Add(this.Box4);
-            this.panel7.Location = new System.Drawing.Point(90, 9);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(81, 83);
-            this.panel7.TabIndex = 9;
-            // 
-            // Box24
-            // 
-            this.Box24.BackColor = System.Drawing.SystemColors.Window;
-            this.Box24.Location = new System.Drawing.Point(55, 55);
-            this.Box24.Name = "Box24";
-            this.Box24.Size = new System.Drawing.Size(20, 20);
-            this.Box24.TabIndex = 8;
-            this.Box24.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // Box23
-            // 
-            this.Box23.BackColor = System.Drawing.SystemColors.Window;
-            this.Box23.Location = new System.Drawing.Point(29, 55);
-            this.Box23.Name = "Box23";
-            this.Box23.Size = new System.Drawing.Size(20, 20);
-            this.Box23.TabIndex = 7;
-            this.Box23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // Box22
-            // 
-            this.Box22.BackColor = System.Drawing.SystemColors.Window;
-            this.Box22.Location = new System.Drawing.Point(3, 55);
-            this.Box22.Name = "Box22";
-            this.Box22.Size = new System.Drawing.Size(20, 20);
-            this.Box22.TabIndex = 6;
-            this.Box22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // Box15
-            // 
-            this.Box15.BackColor = System.Drawing.SystemColors.Window;
-            this.Box15.Location = new System.Drawing.Point(55, 29);
-            this.Box15.Name = "Box15";
-            this.Box15.Size = new System.Drawing.Size(20, 20);
-            this.Box15.TabIndex = 5;
-            this.Box15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // Box14
-            // 
-            this.Box14.BackColor = System.Drawing.SystemColors.Window;
-            this.Box14.Location = new System.Drawing.Point(29, 29);
-            this.Box14.Name = "Box14";
-            this.Box14.Size = new System.Drawing.Size(20, 20);
-            this.Box14.TabIndex = 4;
-            this.Box14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // Box13
-            // 
-            this.Box13.BackColor = System.Drawing.SystemColors.Window;
-            this.Box13.Location = new System.Drawing.Point(3, 29);
-            this.Box13.Name = "Box13";
-            this.Box13.Size = new System.Drawing.Size(20, 20);
-            this.Box13.TabIndex = 3;
-            this.Box13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // Box6
-            // 
-            this.Box6.BackColor = System.Drawing.SystemColors.Window;
-            this.Box6.Location = new System.Drawing.Point(55, 3);
-            this.Box6.Name = "Box6";
-            this.Box6.Size = new System.Drawing.Size(20, 20);
-            this.Box6.TabIndex = 2;
-            this.Box6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // Box5
-            // 
-            this.Box5.BackColor = System.Drawing.SystemColors.Window;
-            this.Box5.Location = new System.Drawing.Point(29, 3);
-            this.Box5.Name = "Box5";
-            this.Box5.Size = new System.Drawing.Size(20, 20);
-            this.Box5.TabIndex = 1;
-            this.Box5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // Box4
-            // 
-            this.Box4.BackColor = System.Drawing.SystemColors.Window;
-            this.Box4.Location = new System.Drawing.Point(3, 3);
-            this.Box4.Name = "Box4";
-            this.Box4.Size = new System.Drawing.Size(20, 20);
-            this.Box4.TabIndex = 0;
-            this.Box4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // panel9
-            // 
-            this.panel9.Controls.Add(this.Box27);
-            this.panel9.Controls.Add(this.Box26);
-            this.panel9.Controls.Add(this.Box25);
-            this.panel9.Controls.Add(this.Box18);
-            this.panel9.Controls.Add(this.Box17);
-            this.panel9.Controls.Add(this.Box16);
-            this.panel9.Controls.Add(this.Box9);
-            this.panel9.Controls.Add(this.Box8);
-            this.panel9.Controls.Add(this.Box7);
-            this.panel9.Location = new System.Drawing.Point(171, 9);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(81, 83);
-            this.panel9.TabIndex = 10;
-            // 
-            // Box27
-            // 
-            this.Box27.BackColor = System.Drawing.SystemColors.Window;
-            this.Box27.Location = new System.Drawing.Point(55, 55);
-            this.Box27.Name = "Box27";
-            this.Box27.Size = new System.Drawing.Size(20, 20);
-            this.Box27.TabIndex = 8;
-            this.Box27.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // Box26
-            // 
-            this.Box26.BackColor = System.Drawing.SystemColors.Window;
-            this.Box26.Location = new System.Drawing.Point(29, 55);
-            this.Box26.Name = "Box26";
-            this.Box26.Size = new System.Drawing.Size(20, 20);
-            this.Box26.TabIndex = 7;
-            this.Box26.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // Box25
-            // 
-            this.Box25.BackColor = System.Drawing.SystemColors.Window;
-            this.Box25.Location = new System.Drawing.Point(3, 55);
-            this.Box25.Name = "Box25";
-            this.Box25.Size = new System.Drawing.Size(20, 20);
-            this.Box25.TabIndex = 6;
-            this.Box25.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // Box18
-            // 
-            this.Box18.BackColor = System.Drawing.SystemColors.Window;
-            this.Box18.Location = new System.Drawing.Point(55, 29);
-            this.Box18.Name = "Box18";
-            this.Box18.Size = new System.Drawing.Size(20, 20);
-            this.Box18.TabIndex = 5;
-            this.Box18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // Box17
-            // 
-            this.Box17.BackColor = System.Drawing.SystemColors.Window;
-            this.Box17.Location = new System.Drawing.Point(29, 29);
-            this.Box17.Name = "Box17";
-            this.Box17.Size = new System.Drawing.Size(20, 20);
-            this.Box17.TabIndex = 4;
-            this.Box17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // Box16
-            // 
-            this.Box16.BackColor = System.Drawing.SystemColors.Window;
-            this.Box16.Location = new System.Drawing.Point(3, 29);
-            this.Box16.Name = "Box16";
-            this.Box16.Size = new System.Drawing.Size(20, 20);
-            this.Box16.TabIndex = 3;
-            this.Box16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // Box9
-            // 
-            this.Box9.BackColor = System.Drawing.SystemColors.Window;
-            this.Box9.Location = new System.Drawing.Point(55, 3);
-            this.Box9.Name = "Box9";
-            this.Box9.Size = new System.Drawing.Size(20, 20);
-            this.Box9.TabIndex = 2;
-            this.Box9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // Box8
-            // 
-            this.Box8.BackColor = System.Drawing.SystemColors.Window;
-            this.Box8.Location = new System.Drawing.Point(29, 3);
-            this.Box8.Name = "Box8";
-            this.Box8.Size = new System.Drawing.Size(20, 20);
-            this.Box8.TabIndex = 1;
-            this.Box8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // Box7
-            // 
-            this.Box7.BackColor = System.Drawing.SystemColors.Window;
-            this.Box7.Location = new System.Drawing.Point(3, 3);
-            this.Box7.Name = "Box7";
-            this.Box7.Size = new System.Drawing.Size(20, 20);
-            this.Box7.TabIndex = 0;
-            this.Box7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // panel10
-            // 
-            this.panel10.Controls.Add(this.Box48);
-            this.panel10.Controls.Add(this.Box47);
-            this.panel10.Controls.Add(this.Box46);
-            this.panel10.Controls.Add(this.Box39);
-            this.panel10.Controls.Add(this.Box38);
-            this.panel10.Controls.Add(this.Box37);
-            this.panel10.Controls.Add(this.Box30);
-            this.panel10.Controls.Add(this.Box29);
-            this.panel10.Controls.Add(this.Box28);
-            this.panel10.Location = new System.Drawing.Point(9, 98);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(81, 83);
-            this.panel10.TabIndex = 11;
-            // 
-            // Box48
-            // 
-            this.Box48.BackColor = System.Drawing.SystemColors.Window;
-            this.Box48.Location = new System.Drawing.Point(55, 55);
-            this.Box48.Name = "Box48";
-            this.Box48.Size = new System.Drawing.Size(20, 20);
-            this.Box48.TabIndex = 8;
-            this.Box48.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // Box47
-            // 
-            this.Box47.BackColor = System.Drawing.SystemColors.Window;
-            this.Box47.Location = new System.Drawing.Point(29, 55);
-            this.Box47.Name = "Box47";
-            this.Box47.Size = new System.Drawing.Size(20, 20);
-            this.Box47.TabIndex = 7;
-            this.Box47.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // Box46
-            // 
-            this.Box46.BackColor = System.Drawing.SystemColors.Window;
-            this.Box46.Location = new System.Drawing.Point(3, 55);
-            this.Box46.Name = "Box46";
-            this.Box46.Size = new System.Drawing.Size(20, 20);
-            this.Box46.TabIndex = 6;
-            this.Box46.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // Box39
-            // 
-            this.Box39.BackColor = System.Drawing.SystemColors.Window;
-            this.Box39.Location = new System.Drawing.Point(55, 29);
-            this.Box39.Name = "Box39";
-            this.Box39.Size = new System.Drawing.Size(20, 20);
-            this.Box39.TabIndex = 5;
-            this.Box39.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // Box38
-            // 
-            this.Box38.BackColor = System.Drawing.SystemColors.Window;
-            this.Box38.Location = new System.Drawing.Point(29, 29);
-            this.Box38.Name = "Box38";
-            this.Box38.Size = new System.Drawing.Size(20, 20);
-            this.Box38.TabIndex = 4;
-            this.Box38.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // Box37
-            // 
-            this.Box37.BackColor = System.Drawing.SystemColors.Window;
-            this.Box37.Location = new System.Drawing.Point(3, 29);
-            this.Box37.Name = "Box37";
-            this.Box37.Size = new System.Drawing.Size(20, 20);
-            this.Box37.TabIndex = 3;
-            this.Box37.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // Box30
-            // 
-            this.Box30.BackColor = System.Drawing.SystemColors.Window;
-            this.Box30.Location = new System.Drawing.Point(55, 3);
-            this.Box30.Name = "Box30";
-            this.Box30.Size = new System.Drawing.Size(20, 20);
-            this.Box30.TabIndex = 2;
-            this.Box30.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // Box29
-            // 
-            this.Box29.BackColor = System.Drawing.SystemColors.Window;
-            this.Box29.Location = new System.Drawing.Point(29, 3);
-            this.Box29.Name = "Box29";
-            this.Box29.Size = new System.Drawing.Size(20, 20);
-            this.Box29.TabIndex = 1;
-            this.Box29.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // Box28
-            // 
-            this.Box28.BackColor = System.Drawing.SystemColors.Window;
-            this.Box28.Location = new System.Drawing.Point(3, 3);
-            this.Box28.Name = "Box28";
-            this.Box28.Size = new System.Drawing.Size(20, 20);
-            this.Box28.TabIndex = 0;
-            this.Box28.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // panel11
-            // 
-            this.panel11.Controls.Add(this.Box51);
-            this.panel11.Controls.Add(this.Box50);
-            this.panel11.Controls.Add(this.Box49);
-            this.panel11.Controls.Add(this.Box42);
-            this.panel11.Controls.Add(this.Box41);
-            this.panel11.Controls.Add(this.Box40);
-            this.panel11.Controls.Add(this.Box33);
-            this.panel11.Controls.Add(this.Box32);
-            this.panel11.Controls.Add(this.Box31);
-            this.panel11.Location = new System.Drawing.Point(90, 98);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(81, 83);
-            this.panel11.TabIndex = 12;
-            // 
-            // Box51
-            // 
-            this.Box51.BackColor = System.Drawing.SystemColors.Window;
-            this.Box51.Location = new System.Drawing.Point(55, 55);
-            this.Box51.Name = "Box51";
-            this.Box51.Size = new System.Drawing.Size(20, 20);
-            this.Box51.TabIndex = 8;
-            this.Box51.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // Box50
-            // 
-            this.Box50.BackColor = System.Drawing.SystemColors.Window;
-            this.Box50.Location = new System.Drawing.Point(29, 55);
-            this.Box50.Name = "Box50";
-            this.Box50.Size = new System.Drawing.Size(20, 20);
-            this.Box50.TabIndex = 7;
-            this.Box50.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // Box49
-            // 
-            this.Box49.BackColor = System.Drawing.SystemColors.Window;
-            this.Box49.Location = new System.Drawing.Point(3, 55);
-            this.Box49.Name = "Box49";
-            this.Box49.Size = new System.Drawing.Size(20, 20);
-            this.Box49.TabIndex = 6;
-            this.Box49.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // Box42
-            // 
-            this.Box42.BackColor = System.Drawing.SystemColors.Window;
-            this.Box42.Location = new System.Drawing.Point(55, 29);
-            this.Box42.Name = "Box42";
-            this.Box42.Size = new System.Drawing.Size(20, 20);
-            this.Box42.TabIndex = 5;
-            this.Box42.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // Box41
-            // 
-            this.Box41.BackColor = System.Drawing.SystemColors.Window;
-            this.Box41.Location = new System.Drawing.Point(29, 29);
-            this.Box41.Name = "Box41";
-            this.Box41.Size = new System.Drawing.Size(20, 20);
-            this.Box41.TabIndex = 4;
-            this.Box41.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // Box40
-            // 
-            this.Box40.BackColor = System.Drawing.SystemColors.Window;
-            this.Box40.Location = new System.Drawing.Point(3, 29);
-            this.Box40.Name = "Box40";
-            this.Box40.Size = new System.Drawing.Size(20, 20);
-            this.Box40.TabIndex = 3;
-            this.Box40.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // Box33
-            // 
-            this.Box33.BackColor = System.Drawing.SystemColors.Window;
-            this.Box33.Location = new System.Drawing.Point(55, 3);
-            this.Box33.Name = "Box33";
-            this.Box33.Size = new System.Drawing.Size(20, 20);
-            this.Box33.TabIndex = 2;
-            this.Box33.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // Box32
-            // 
-            this.Box32.BackColor = System.Drawing.SystemColors.Window;
-            this.Box32.Location = new System.Drawing.Point(29, 3);
-            this.Box32.Name = "Box32";
-            this.Box32.Size = new System.Drawing.Size(20, 20);
-            this.Box32.TabIndex = 1;
-            this.Box32.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // Box31
-            // 
-            this.Box31.BackColor = System.Drawing.SystemColors.Window;
-            this.Box31.Location = new System.Drawing.Point(3, 3);
-            this.Box31.Name = "Box31";
-            this.Box31.Size = new System.Drawing.Size(20, 20);
-            this.Box31.TabIndex = 0;
-            this.Box31.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // panel12
-            // 
-            this.panel12.Controls.Add(this.Box54);
-            this.panel12.Controls.Add(this.Box53);
-            this.panel12.Controls.Add(this.Box52);
-            this.panel12.Controls.Add(this.Box45);
-            this.panel12.Controls.Add(this.Box44);
-            this.panel12.Controls.Add(this.Box43);
-            this.panel12.Controls.Add(this.Box36);
-            this.panel12.Controls.Add(this.Box35);
-            this.panel12.Controls.Add(this.Box34);
-            this.panel12.Location = new System.Drawing.Point(171, 98);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(81, 83);
-            this.panel12.TabIndex = 13;
-            // 
-            // Box54
-            // 
-            this.Box54.BackColor = System.Drawing.SystemColors.Window;
-            this.Box54.Location = new System.Drawing.Point(55, 55);
-            this.Box54.Name = "Box54";
-            this.Box54.Size = new System.Drawing.Size(20, 20);
-            this.Box54.TabIndex = 8;
-            this.Box54.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // Box53
-            // 
-            this.Box53.BackColor = System.Drawing.SystemColors.Window;
-            this.Box53.Location = new System.Drawing.Point(29, 55);
-            this.Box53.Name = "Box53";
-            this.Box53.Size = new System.Drawing.Size(20, 20);
-            this.Box53.TabIndex = 7;
-            this.Box53.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // Box52
-            // 
-            this.Box52.BackColor = System.Drawing.SystemColors.Window;
-            this.Box52.Location = new System.Drawing.Point(3, 55);
-            this.Box52.Name = "Box52";
-            this.Box52.Size = new System.Drawing.Size(20, 20);
-            this.Box52.TabIndex = 6;
-            this.Box52.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // Box45
-            // 
-            this.Box45.BackColor = System.Drawing.SystemColors.Window;
-            this.Box45.Location = new System.Drawing.Point(55, 29);
-            this.Box45.Name = "Box45";
-            this.Box45.Size = new System.Drawing.Size(20, 20);
-            this.Box45.TabIndex = 5;
-            this.Box45.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // Box44
-            // 
-            this.Box44.BackColor = System.Drawing.SystemColors.Window;
-            this.Box44.Location = new System.Drawing.Point(29, 29);
-            this.Box44.Name = "Box44";
-            this.Box44.Size = new System.Drawing.Size(20, 20);
-            this.Box44.TabIndex = 4;
-            this.Box44.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // Box43
-            // 
-            this.Box43.BackColor = System.Drawing.SystemColors.Window;
-            this.Box43.Location = new System.Drawing.Point(3, 29);
-            this.Box43.Name = "Box43";
-            this.Box43.Size = new System.Drawing.Size(20, 20);
-            this.Box43.TabIndex = 3;
-            this.Box43.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // Box36
-            // 
-            this.Box36.BackColor = System.Drawing.SystemColors.Window;
-            this.Box36.Location = new System.Drawing.Point(55, 3);
-            this.Box36.Name = "Box36";
-            this.Box36.Size = new System.Drawing.Size(20, 20);
-            this.Box36.TabIndex = 2;
-            this.Box36.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // Box35
-            // 
-            this.Box35.BackColor = System.Drawing.SystemColors.Window;
-            this.Box35.Location = new System.Drawing.Point(29, 3);
-            this.Box35.Name = "Box35";
-            this.Box35.Size = new System.Drawing.Size(20, 20);
-            this.Box35.TabIndex = 1;
-            this.Box35.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // Box34
-            // 
-            this.Box34.BackColor = System.Drawing.SystemColors.Window;
-            this.Box34.Location = new System.Drawing.Point(3, 3);
-            this.Box34.Name = "Box34";
-            this.Box34.Size = new System.Drawing.Size(20, 20);
-            this.Box34.TabIndex = 0;
-            this.Box34.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // panel13
-            // 
-            this.panel13.Controls.Add(this.Box75);
-            this.panel13.Controls.Add(this.Box74);
-            this.panel13.Controls.Add(this.Box73);
-            this.panel13.Controls.Add(this.Box66);
-            this.panel13.Controls.Add(this.Box65);
-            this.panel13.Controls.Add(this.Box64);
-            this.panel13.Controls.Add(this.Box57);
-            this.panel13.Controls.Add(this.Box56);
-            this.panel13.Controls.Add(this.Box55);
-            this.panel13.Location = new System.Drawing.Point(9, 183);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(81, 83);
-            this.panel13.TabIndex = 14;
-            // 
-            // Box75
-            // 
-            this.Box75.BackColor = System.Drawing.SystemColors.Window;
-            this.Box75.Location = new System.Drawing.Point(55, 55);
-            this.Box75.Name = "Box75";
-            this.Box75.Size = new System.Drawing.Size(20, 20);
-            this.Box75.TabIndex = 8;
-            this.Box75.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // Box74
-            // 
-            this.Box74.BackColor = System.Drawing.SystemColors.Window;
-            this.Box74.Location = new System.Drawing.Point(29, 55);
-            this.Box74.Name = "Box74";
-            this.Box74.Size = new System.Drawing.Size(20, 20);
-            this.Box74.TabIndex = 7;
-            this.Box74.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // Box73
-            // 
-            this.Box73.BackColor = System.Drawing.SystemColors.Window;
-            this.Box73.Location = new System.Drawing.Point(3, 55);
-            this.Box73.Name = "Box73";
-            this.Box73.Size = new System.Drawing.Size(20, 20);
-            this.Box73.TabIndex = 6;
-            this.Box73.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // Box66
-            // 
-            this.Box66.BackColor = System.Drawing.SystemColors.Window;
-            this.Box66.Location = new System.Drawing.Point(55, 29);
-            this.Box66.Name = "Box66";
-            this.Box66.Size = new System.Drawing.Size(20, 20);
-            this.Box66.TabIndex = 5;
-            this.Box66.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // Box65
-            // 
-            this.Box65.BackColor = System.Drawing.SystemColors.Window;
-            this.Box65.Location = new System.Drawing.Point(29, 29);
-            this.Box65.Name = "Box65";
-            this.Box65.Size = new System.Drawing.Size(20, 20);
-            this.Box65.TabIndex = 4;
-            this.Box65.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // Box64
-            // 
-            this.Box64.BackColor = System.Drawing.SystemColors.Window;
-            this.Box64.Location = new System.Drawing.Point(3, 29);
-            this.Box64.Name = "Box64";
-            this.Box64.Size = new System.Drawing.Size(20, 20);
-            this.Box64.TabIndex = 3;
-            this.Box64.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // Box57
-            // 
-            this.Box57.BackColor = System.Drawing.SystemColors.Window;
-            this.Box57.Location = new System.Drawing.Point(55, 3);
-            this.Box57.Name = "Box57";
-            this.Box57.Size = new System.Drawing.Size(20, 20);
-            this.Box57.TabIndex = 2;
-            this.Box57.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // Box56
-            // 
-            this.Box56.BackColor = System.Drawing.SystemColors.Window;
-            this.Box56.Location = new System.Drawing.Point(29, 3);
-            this.Box56.Name = "Box56";
-            this.Box56.Size = new System.Drawing.Size(20, 20);
-            this.Box56.TabIndex = 1;
-            this.Box56.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // Box55
-            // 
-            this.Box55.BackColor = System.Drawing.SystemColors.Window;
-            this.Box55.Location = new System.Drawing.Point(3, 3);
-            this.Box55.Name = "Box55";
-            this.Box55.Size = new System.Drawing.Size(20, 20);
-            this.Box55.TabIndex = 0;
-            this.Box55.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // panel15
+            // 
+            this.panel15.Controls.Add(this.Box81);
+            this.panel15.Controls.Add(this.Box80);
+            this.panel15.Controls.Add(this.Box79);
+            this.panel15.Controls.Add(this.Box72);
+            this.panel15.Controls.Add(this.Box71);
+            this.panel15.Controls.Add(this.Box70);
+            this.panel15.Controls.Add(this.Box63);
+            this.panel15.Controls.Add(this.Box62);
+            this.panel15.Controls.Add(this.Box61);
+            this.panel15.Location = new System.Drawing.Point(171, 183);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(81, 83);
+            this.panel15.TabIndex = 16;
+            // 
+            // Box81
+            // 
+            this.Box81.BackColor = System.Drawing.SystemColors.Window;
+            this.Box81.Location = new System.Drawing.Point(55, 55);
+            this.Box81.Name = "Box81";
+            this.Box81.Size = new System.Drawing.Size(20, 20);
+            this.Box81.TabIndex = 8;
+            this.Box81.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Box80
+            // 
+            this.Box80.BackColor = System.Drawing.SystemColors.Window;
+            this.Box80.Location = new System.Drawing.Point(29, 55);
+            this.Box80.Name = "Box80";
+            this.Box80.Size = new System.Drawing.Size(20, 20);
+            this.Box80.TabIndex = 7;
+            this.Box80.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Box79
+            // 
+            this.Box79.BackColor = System.Drawing.SystemColors.Window;
+            this.Box79.Location = new System.Drawing.Point(3, 55);
+            this.Box79.Name = "Box79";
+            this.Box79.Size = new System.Drawing.Size(20, 20);
+            this.Box79.TabIndex = 6;
+            this.Box79.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Box72
+            // 
+            this.Box72.BackColor = System.Drawing.SystemColors.Window;
+            this.Box72.Location = new System.Drawing.Point(55, 29);
+            this.Box72.Name = "Box72";
+            this.Box72.Size = new System.Drawing.Size(20, 20);
+            this.Box72.TabIndex = 5;
+            this.Box72.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Box71
+            // 
+            this.Box71.BackColor = System.Drawing.SystemColors.Window;
+            this.Box71.Location = new System.Drawing.Point(29, 29);
+            this.Box71.Name = "Box71";
+            this.Box71.Size = new System.Drawing.Size(20, 20);
+            this.Box71.TabIndex = 4;
+            this.Box71.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Box70
+            // 
+            this.Box70.BackColor = System.Drawing.SystemColors.Window;
+            this.Box70.Location = new System.Drawing.Point(3, 29);
+            this.Box70.Name = "Box70";
+            this.Box70.Size = new System.Drawing.Size(20, 20);
+            this.Box70.TabIndex = 3;
+            this.Box70.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Box63
+            // 
+            this.Box63.BackColor = System.Drawing.SystemColors.Window;
+            this.Box63.Location = new System.Drawing.Point(55, 3);
+            this.Box63.Name = "Box63";
+            this.Box63.Size = new System.Drawing.Size(20, 20);
+            this.Box63.TabIndex = 2;
+            this.Box63.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Box62
+            // 
+            this.Box62.BackColor = System.Drawing.SystemColors.Window;
+            this.Box62.Location = new System.Drawing.Point(29, 3);
+            this.Box62.Name = "Box62";
+            this.Box62.Size = new System.Drawing.Size(20, 20);
+            this.Box62.TabIndex = 1;
+            this.Box62.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Box61
+            // 
+            this.Box61.BackColor = System.Drawing.SystemColors.Window;
+            this.Box61.Location = new System.Drawing.Point(3, 3);
+            this.Box61.Name = "Box61";
+            this.Box61.Size = new System.Drawing.Size(20, 20);
+            this.Box61.TabIndex = 0;
+            this.Box61.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel14
             // 
@@ -1288,102 +676,715 @@
             this.Box58.TabIndex = 0;
             this.Box58.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // panel15
+            // panel13
             // 
-            this.panel15.Controls.Add(this.Box81);
-            this.panel15.Controls.Add(this.Box80);
-            this.panel15.Controls.Add(this.Box79);
-            this.panel15.Controls.Add(this.Box72);
-            this.panel15.Controls.Add(this.Box71);
-            this.panel15.Controls.Add(this.Box70);
-            this.panel15.Controls.Add(this.Box63);
-            this.panel15.Controls.Add(this.Box62);
-            this.panel15.Controls.Add(this.Box61);
-            this.panel15.Location = new System.Drawing.Point(171, 183);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(81, 83);
-            this.panel15.TabIndex = 16;
+            this.panel13.Controls.Add(this.Box75);
+            this.panel13.Controls.Add(this.Box74);
+            this.panel13.Controls.Add(this.Box73);
+            this.panel13.Controls.Add(this.Box66);
+            this.panel13.Controls.Add(this.Box65);
+            this.panel13.Controls.Add(this.Box64);
+            this.panel13.Controls.Add(this.Box57);
+            this.panel13.Controls.Add(this.Box56);
+            this.panel13.Controls.Add(this.Box55);
+            this.panel13.Location = new System.Drawing.Point(9, 183);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(81, 83);
+            this.panel13.TabIndex = 14;
             // 
-            // Box81
+            // Box75
             // 
-            this.Box81.BackColor = System.Drawing.SystemColors.Window;
-            this.Box81.Location = new System.Drawing.Point(55, 55);
-            this.Box81.Name = "Box81";
-            this.Box81.Size = new System.Drawing.Size(20, 20);
-            this.Box81.TabIndex = 8;
-            this.Box81.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Box75.BackColor = System.Drawing.SystemColors.Window;
+            this.Box75.Location = new System.Drawing.Point(55, 55);
+            this.Box75.Name = "Box75";
+            this.Box75.Size = new System.Drawing.Size(20, 20);
+            this.Box75.TabIndex = 8;
+            this.Box75.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // Box80
+            // Box74
             // 
-            this.Box80.BackColor = System.Drawing.SystemColors.Window;
-            this.Box80.Location = new System.Drawing.Point(29, 55);
-            this.Box80.Name = "Box80";
-            this.Box80.Size = new System.Drawing.Size(20, 20);
-            this.Box80.TabIndex = 7;
-            this.Box80.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Box74.BackColor = System.Drawing.SystemColors.Window;
+            this.Box74.Location = new System.Drawing.Point(29, 55);
+            this.Box74.Name = "Box74";
+            this.Box74.Size = new System.Drawing.Size(20, 20);
+            this.Box74.TabIndex = 7;
+            this.Box74.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // Box79
+            // Box73
             // 
-            this.Box79.BackColor = System.Drawing.SystemColors.Window;
-            this.Box79.Location = new System.Drawing.Point(3, 55);
-            this.Box79.Name = "Box79";
-            this.Box79.Size = new System.Drawing.Size(20, 20);
-            this.Box79.TabIndex = 6;
-            this.Box79.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Box73.BackColor = System.Drawing.SystemColors.Window;
+            this.Box73.Location = new System.Drawing.Point(3, 55);
+            this.Box73.Name = "Box73";
+            this.Box73.Size = new System.Drawing.Size(20, 20);
+            this.Box73.TabIndex = 6;
+            this.Box73.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // Box72
+            // Box66
             // 
-            this.Box72.BackColor = System.Drawing.SystemColors.Window;
-            this.Box72.Location = new System.Drawing.Point(55, 29);
-            this.Box72.Name = "Box72";
-            this.Box72.Size = new System.Drawing.Size(20, 20);
-            this.Box72.TabIndex = 5;
-            this.Box72.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Box66.BackColor = System.Drawing.SystemColors.Window;
+            this.Box66.Location = new System.Drawing.Point(55, 29);
+            this.Box66.Name = "Box66";
+            this.Box66.Size = new System.Drawing.Size(20, 20);
+            this.Box66.TabIndex = 5;
+            this.Box66.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // Box71
+            // Box65
             // 
-            this.Box71.BackColor = System.Drawing.SystemColors.Window;
-            this.Box71.Location = new System.Drawing.Point(29, 29);
-            this.Box71.Name = "Box71";
-            this.Box71.Size = new System.Drawing.Size(20, 20);
-            this.Box71.TabIndex = 4;
-            this.Box71.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Box65.BackColor = System.Drawing.SystemColors.Window;
+            this.Box65.Location = new System.Drawing.Point(29, 29);
+            this.Box65.Name = "Box65";
+            this.Box65.Size = new System.Drawing.Size(20, 20);
+            this.Box65.TabIndex = 4;
+            this.Box65.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // Box70
+            // Box64
             // 
-            this.Box70.BackColor = System.Drawing.SystemColors.Window;
-            this.Box70.Location = new System.Drawing.Point(3, 29);
-            this.Box70.Name = "Box70";
-            this.Box70.Size = new System.Drawing.Size(20, 20);
-            this.Box70.TabIndex = 3;
-            this.Box70.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Box64.BackColor = System.Drawing.SystemColors.Window;
+            this.Box64.Location = new System.Drawing.Point(3, 29);
+            this.Box64.Name = "Box64";
+            this.Box64.Size = new System.Drawing.Size(20, 20);
+            this.Box64.TabIndex = 3;
+            this.Box64.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // Box63
+            // Box57
             // 
-            this.Box63.BackColor = System.Drawing.SystemColors.Window;
-            this.Box63.Location = new System.Drawing.Point(55, 3);
-            this.Box63.Name = "Box63";
-            this.Box63.Size = new System.Drawing.Size(20, 20);
-            this.Box63.TabIndex = 2;
-            this.Box63.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Box57.BackColor = System.Drawing.SystemColors.Window;
+            this.Box57.Location = new System.Drawing.Point(55, 3);
+            this.Box57.Name = "Box57";
+            this.Box57.Size = new System.Drawing.Size(20, 20);
+            this.Box57.TabIndex = 2;
+            this.Box57.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // Box62
+            // Box56
             // 
-            this.Box62.BackColor = System.Drawing.SystemColors.Window;
-            this.Box62.Location = new System.Drawing.Point(29, 3);
-            this.Box62.Name = "Box62";
-            this.Box62.Size = new System.Drawing.Size(20, 20);
-            this.Box62.TabIndex = 1;
-            this.Box62.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Box56.BackColor = System.Drawing.SystemColors.Window;
+            this.Box56.Location = new System.Drawing.Point(29, 3);
+            this.Box56.Name = "Box56";
+            this.Box56.Size = new System.Drawing.Size(20, 20);
+            this.Box56.TabIndex = 1;
+            this.Box56.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // Box61
+            // Box55
             // 
-            this.Box61.BackColor = System.Drawing.SystemColors.Window;
-            this.Box61.Location = new System.Drawing.Point(3, 3);
-            this.Box61.Name = "Box61";
-            this.Box61.Size = new System.Drawing.Size(20, 20);
-            this.Box61.TabIndex = 0;
-            this.Box61.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Box55.BackColor = System.Drawing.SystemColors.Window;
+            this.Box55.Location = new System.Drawing.Point(3, 3);
+            this.Box55.Name = "Box55";
+            this.Box55.Size = new System.Drawing.Size(20, 20);
+            this.Box55.TabIndex = 0;
+            this.Box55.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // panel12
+            // 
+            this.panel12.Controls.Add(this.Box54);
+            this.panel12.Controls.Add(this.Box53);
+            this.panel12.Controls.Add(this.Box52);
+            this.panel12.Controls.Add(this.Box45);
+            this.panel12.Controls.Add(this.Box44);
+            this.panel12.Controls.Add(this.Box43);
+            this.panel12.Controls.Add(this.Box36);
+            this.panel12.Controls.Add(this.Box35);
+            this.panel12.Controls.Add(this.Box34);
+            this.panel12.Location = new System.Drawing.Point(171, 98);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(81, 83);
+            this.panel12.TabIndex = 13;
+            // 
+            // Box54
+            // 
+            this.Box54.BackColor = System.Drawing.SystemColors.Window;
+            this.Box54.Location = new System.Drawing.Point(55, 55);
+            this.Box54.Name = "Box54";
+            this.Box54.Size = new System.Drawing.Size(20, 20);
+            this.Box54.TabIndex = 8;
+            this.Box54.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Box53
+            // 
+            this.Box53.BackColor = System.Drawing.SystemColors.Window;
+            this.Box53.Location = new System.Drawing.Point(29, 55);
+            this.Box53.Name = "Box53";
+            this.Box53.Size = new System.Drawing.Size(20, 20);
+            this.Box53.TabIndex = 7;
+            this.Box53.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Box52
+            // 
+            this.Box52.BackColor = System.Drawing.SystemColors.Window;
+            this.Box52.Location = new System.Drawing.Point(3, 55);
+            this.Box52.Name = "Box52";
+            this.Box52.Size = new System.Drawing.Size(20, 20);
+            this.Box52.TabIndex = 6;
+            this.Box52.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Box45
+            // 
+            this.Box45.BackColor = System.Drawing.SystemColors.Window;
+            this.Box45.Location = new System.Drawing.Point(55, 29);
+            this.Box45.Name = "Box45";
+            this.Box45.Size = new System.Drawing.Size(20, 20);
+            this.Box45.TabIndex = 5;
+            this.Box45.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Box44
+            // 
+            this.Box44.BackColor = System.Drawing.SystemColors.Window;
+            this.Box44.Location = new System.Drawing.Point(29, 29);
+            this.Box44.Name = "Box44";
+            this.Box44.Size = new System.Drawing.Size(20, 20);
+            this.Box44.TabIndex = 4;
+            this.Box44.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Box43
+            // 
+            this.Box43.BackColor = System.Drawing.SystemColors.Window;
+            this.Box43.Location = new System.Drawing.Point(3, 29);
+            this.Box43.Name = "Box43";
+            this.Box43.Size = new System.Drawing.Size(20, 20);
+            this.Box43.TabIndex = 3;
+            this.Box43.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Box36
+            // 
+            this.Box36.BackColor = System.Drawing.SystemColors.Window;
+            this.Box36.Location = new System.Drawing.Point(55, 3);
+            this.Box36.Name = "Box36";
+            this.Box36.Size = new System.Drawing.Size(20, 20);
+            this.Box36.TabIndex = 2;
+            this.Box36.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Box35
+            // 
+            this.Box35.BackColor = System.Drawing.SystemColors.Window;
+            this.Box35.Location = new System.Drawing.Point(29, 3);
+            this.Box35.Name = "Box35";
+            this.Box35.Size = new System.Drawing.Size(20, 20);
+            this.Box35.TabIndex = 1;
+            this.Box35.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Box34
+            // 
+            this.Box34.BackColor = System.Drawing.SystemColors.Window;
+            this.Box34.Location = new System.Drawing.Point(3, 3);
+            this.Box34.Name = "Box34";
+            this.Box34.Size = new System.Drawing.Size(20, 20);
+            this.Box34.TabIndex = 0;
+            this.Box34.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // panel11
+            // 
+            this.panel11.Controls.Add(this.Box51);
+            this.panel11.Controls.Add(this.Box50);
+            this.panel11.Controls.Add(this.Box49);
+            this.panel11.Controls.Add(this.Box42);
+            this.panel11.Controls.Add(this.Box41);
+            this.panel11.Controls.Add(this.Box40);
+            this.panel11.Controls.Add(this.Box33);
+            this.panel11.Controls.Add(this.Box32);
+            this.panel11.Controls.Add(this.Box31);
+            this.panel11.Location = new System.Drawing.Point(90, 98);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(81, 83);
+            this.panel11.TabIndex = 12;
+            // 
+            // Box51
+            // 
+            this.Box51.BackColor = System.Drawing.SystemColors.Window;
+            this.Box51.Location = new System.Drawing.Point(55, 55);
+            this.Box51.Name = "Box51";
+            this.Box51.Size = new System.Drawing.Size(20, 20);
+            this.Box51.TabIndex = 8;
+            this.Box51.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Box50
+            // 
+            this.Box50.BackColor = System.Drawing.SystemColors.Window;
+            this.Box50.Location = new System.Drawing.Point(29, 55);
+            this.Box50.Name = "Box50";
+            this.Box50.Size = new System.Drawing.Size(20, 20);
+            this.Box50.TabIndex = 7;
+            this.Box50.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Box49
+            // 
+            this.Box49.BackColor = System.Drawing.SystemColors.Window;
+            this.Box49.Location = new System.Drawing.Point(3, 55);
+            this.Box49.Name = "Box49";
+            this.Box49.Size = new System.Drawing.Size(20, 20);
+            this.Box49.TabIndex = 6;
+            this.Box49.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Box42
+            // 
+            this.Box42.BackColor = System.Drawing.SystemColors.Window;
+            this.Box42.Location = new System.Drawing.Point(55, 29);
+            this.Box42.Name = "Box42";
+            this.Box42.Size = new System.Drawing.Size(20, 20);
+            this.Box42.TabIndex = 5;
+            this.Box42.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Box41
+            // 
+            this.Box41.BackColor = System.Drawing.SystemColors.Window;
+            this.Box41.Location = new System.Drawing.Point(29, 29);
+            this.Box41.Name = "Box41";
+            this.Box41.Size = new System.Drawing.Size(20, 20);
+            this.Box41.TabIndex = 4;
+            this.Box41.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Box40
+            // 
+            this.Box40.BackColor = System.Drawing.SystemColors.Window;
+            this.Box40.Location = new System.Drawing.Point(3, 29);
+            this.Box40.Name = "Box40";
+            this.Box40.Size = new System.Drawing.Size(20, 20);
+            this.Box40.TabIndex = 3;
+            this.Box40.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Box33
+            // 
+            this.Box33.BackColor = System.Drawing.SystemColors.Window;
+            this.Box33.Location = new System.Drawing.Point(55, 3);
+            this.Box33.Name = "Box33";
+            this.Box33.Size = new System.Drawing.Size(20, 20);
+            this.Box33.TabIndex = 2;
+            this.Box33.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Box32
+            // 
+            this.Box32.BackColor = System.Drawing.SystemColors.Window;
+            this.Box32.Location = new System.Drawing.Point(29, 3);
+            this.Box32.Name = "Box32";
+            this.Box32.Size = new System.Drawing.Size(20, 20);
+            this.Box32.TabIndex = 1;
+            this.Box32.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Box31
+            // 
+            this.Box31.BackColor = System.Drawing.SystemColors.Window;
+            this.Box31.Location = new System.Drawing.Point(3, 3);
+            this.Box31.Name = "Box31";
+            this.Box31.Size = new System.Drawing.Size(20, 20);
+            this.Box31.TabIndex = 0;
+            this.Box31.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // panel10
+            // 
+            this.panel10.Controls.Add(this.Box48);
+            this.panel10.Controls.Add(this.Box47);
+            this.panel10.Controls.Add(this.Box46);
+            this.panel10.Controls.Add(this.Box39);
+            this.panel10.Controls.Add(this.Box38);
+            this.panel10.Controls.Add(this.Box37);
+            this.panel10.Controls.Add(this.Box30);
+            this.panel10.Controls.Add(this.Box29);
+            this.panel10.Controls.Add(this.Box28);
+            this.panel10.Location = new System.Drawing.Point(9, 98);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(81, 83);
+            this.panel10.TabIndex = 11;
+            // 
+            // Box48
+            // 
+            this.Box48.BackColor = System.Drawing.SystemColors.Window;
+            this.Box48.Location = new System.Drawing.Point(55, 55);
+            this.Box48.Name = "Box48";
+            this.Box48.Size = new System.Drawing.Size(20, 20);
+            this.Box48.TabIndex = 8;
+            this.Box48.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Box47
+            // 
+            this.Box47.BackColor = System.Drawing.SystemColors.Window;
+            this.Box47.Location = new System.Drawing.Point(29, 55);
+            this.Box47.Name = "Box47";
+            this.Box47.Size = new System.Drawing.Size(20, 20);
+            this.Box47.TabIndex = 7;
+            this.Box47.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Box46
+            // 
+            this.Box46.BackColor = System.Drawing.SystemColors.Window;
+            this.Box46.Location = new System.Drawing.Point(3, 55);
+            this.Box46.Name = "Box46";
+            this.Box46.Size = new System.Drawing.Size(20, 20);
+            this.Box46.TabIndex = 6;
+            this.Box46.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Box39
+            // 
+            this.Box39.BackColor = System.Drawing.SystemColors.Window;
+            this.Box39.Location = new System.Drawing.Point(55, 29);
+            this.Box39.Name = "Box39";
+            this.Box39.Size = new System.Drawing.Size(20, 20);
+            this.Box39.TabIndex = 5;
+            this.Box39.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Box38
+            // 
+            this.Box38.BackColor = System.Drawing.SystemColors.Window;
+            this.Box38.Location = new System.Drawing.Point(29, 29);
+            this.Box38.Name = "Box38";
+            this.Box38.Size = new System.Drawing.Size(20, 20);
+            this.Box38.TabIndex = 4;
+            this.Box38.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Box37
+            // 
+            this.Box37.BackColor = System.Drawing.SystemColors.Window;
+            this.Box37.Location = new System.Drawing.Point(3, 29);
+            this.Box37.Name = "Box37";
+            this.Box37.Size = new System.Drawing.Size(20, 20);
+            this.Box37.TabIndex = 3;
+            this.Box37.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Box30
+            // 
+            this.Box30.BackColor = System.Drawing.SystemColors.Window;
+            this.Box30.Location = new System.Drawing.Point(55, 3);
+            this.Box30.Name = "Box30";
+            this.Box30.Size = new System.Drawing.Size(20, 20);
+            this.Box30.TabIndex = 2;
+            this.Box30.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Box29
+            // 
+            this.Box29.BackColor = System.Drawing.SystemColors.Window;
+            this.Box29.Location = new System.Drawing.Point(29, 3);
+            this.Box29.Name = "Box29";
+            this.Box29.Size = new System.Drawing.Size(20, 20);
+            this.Box29.TabIndex = 1;
+            this.Box29.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Box28
+            // 
+            this.Box28.BackColor = System.Drawing.SystemColors.Window;
+            this.Box28.Location = new System.Drawing.Point(3, 3);
+            this.Box28.Name = "Box28";
+            this.Box28.Size = new System.Drawing.Size(20, 20);
+            this.Box28.TabIndex = 0;
+            this.Box28.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // panel9
+            // 
+            this.panel9.Controls.Add(this.Box27);
+            this.panel9.Controls.Add(this.Box26);
+            this.panel9.Controls.Add(this.Box25);
+            this.panel9.Controls.Add(this.Box18);
+            this.panel9.Controls.Add(this.Box17);
+            this.panel9.Controls.Add(this.Box16);
+            this.panel9.Controls.Add(this.Box9);
+            this.panel9.Controls.Add(this.Box8);
+            this.panel9.Controls.Add(this.Box7);
+            this.panel9.Location = new System.Drawing.Point(171, 9);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(81, 83);
+            this.panel9.TabIndex = 10;
+            // 
+            // Box27
+            // 
+            this.Box27.BackColor = System.Drawing.SystemColors.Window;
+            this.Box27.Location = new System.Drawing.Point(55, 55);
+            this.Box27.Name = "Box27";
+            this.Box27.Size = new System.Drawing.Size(20, 20);
+            this.Box27.TabIndex = 8;
+            this.Box27.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Box26
+            // 
+            this.Box26.BackColor = System.Drawing.SystemColors.Window;
+            this.Box26.Location = new System.Drawing.Point(29, 55);
+            this.Box26.Name = "Box26";
+            this.Box26.Size = new System.Drawing.Size(20, 20);
+            this.Box26.TabIndex = 7;
+            this.Box26.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Box25
+            // 
+            this.Box25.BackColor = System.Drawing.SystemColors.Window;
+            this.Box25.Location = new System.Drawing.Point(3, 55);
+            this.Box25.Name = "Box25";
+            this.Box25.Size = new System.Drawing.Size(20, 20);
+            this.Box25.TabIndex = 6;
+            this.Box25.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Box18
+            // 
+            this.Box18.BackColor = System.Drawing.SystemColors.Window;
+            this.Box18.Location = new System.Drawing.Point(55, 29);
+            this.Box18.Name = "Box18";
+            this.Box18.Size = new System.Drawing.Size(20, 20);
+            this.Box18.TabIndex = 5;
+            this.Box18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Box17
+            // 
+            this.Box17.BackColor = System.Drawing.SystemColors.Window;
+            this.Box17.Location = new System.Drawing.Point(29, 29);
+            this.Box17.Name = "Box17";
+            this.Box17.Size = new System.Drawing.Size(20, 20);
+            this.Box17.TabIndex = 4;
+            this.Box17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Box16
+            // 
+            this.Box16.BackColor = System.Drawing.SystemColors.Window;
+            this.Box16.Location = new System.Drawing.Point(3, 29);
+            this.Box16.Name = "Box16";
+            this.Box16.Size = new System.Drawing.Size(20, 20);
+            this.Box16.TabIndex = 3;
+            this.Box16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Box9
+            // 
+            this.Box9.BackColor = System.Drawing.SystemColors.Window;
+            this.Box9.Location = new System.Drawing.Point(55, 3);
+            this.Box9.Name = "Box9";
+            this.Box9.Size = new System.Drawing.Size(20, 20);
+            this.Box9.TabIndex = 2;
+            this.Box9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Box8
+            // 
+            this.Box8.BackColor = System.Drawing.SystemColors.Window;
+            this.Box8.Location = new System.Drawing.Point(29, 3);
+            this.Box8.Name = "Box8";
+            this.Box8.Size = new System.Drawing.Size(20, 20);
+            this.Box8.TabIndex = 1;
+            this.Box8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Box7
+            // 
+            this.Box7.BackColor = System.Drawing.SystemColors.Window;
+            this.Box7.Location = new System.Drawing.Point(3, 3);
+            this.Box7.Name = "Box7";
+            this.Box7.Size = new System.Drawing.Size(20, 20);
+            this.Box7.TabIndex = 0;
+            this.Box7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.Box24);
+            this.panel7.Controls.Add(this.Box23);
+            this.panel7.Controls.Add(this.Box22);
+            this.panel7.Controls.Add(this.Box15);
+            this.panel7.Controls.Add(this.Box14);
+            this.panel7.Controls.Add(this.Box13);
+            this.panel7.Controls.Add(this.Box6);
+            this.panel7.Controls.Add(this.Box5);
+            this.panel7.Controls.Add(this.Box4);
+            this.panel7.Location = new System.Drawing.Point(90, 9);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(81, 83);
+            this.panel7.TabIndex = 9;
+            // 
+            // Box24
+            // 
+            this.Box24.BackColor = System.Drawing.SystemColors.Window;
+            this.Box24.Location = new System.Drawing.Point(55, 55);
+            this.Box24.Name = "Box24";
+            this.Box24.Size = new System.Drawing.Size(20, 20);
+            this.Box24.TabIndex = 8;
+            this.Box24.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Box23
+            // 
+            this.Box23.BackColor = System.Drawing.SystemColors.Window;
+            this.Box23.Location = new System.Drawing.Point(29, 55);
+            this.Box23.Name = "Box23";
+            this.Box23.Size = new System.Drawing.Size(20, 20);
+            this.Box23.TabIndex = 7;
+            this.Box23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Box22
+            // 
+            this.Box22.BackColor = System.Drawing.SystemColors.Window;
+            this.Box22.Location = new System.Drawing.Point(3, 55);
+            this.Box22.Name = "Box22";
+            this.Box22.Size = new System.Drawing.Size(20, 20);
+            this.Box22.TabIndex = 6;
+            this.Box22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Box15
+            // 
+            this.Box15.BackColor = System.Drawing.SystemColors.Window;
+            this.Box15.Location = new System.Drawing.Point(55, 29);
+            this.Box15.Name = "Box15";
+            this.Box15.Size = new System.Drawing.Size(20, 20);
+            this.Box15.TabIndex = 5;
+            this.Box15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Box14
+            // 
+            this.Box14.BackColor = System.Drawing.SystemColors.Window;
+            this.Box14.Location = new System.Drawing.Point(29, 29);
+            this.Box14.Name = "Box14";
+            this.Box14.Size = new System.Drawing.Size(20, 20);
+            this.Box14.TabIndex = 4;
+            this.Box14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Box13
+            // 
+            this.Box13.BackColor = System.Drawing.SystemColors.Window;
+            this.Box13.Location = new System.Drawing.Point(3, 29);
+            this.Box13.Name = "Box13";
+            this.Box13.Size = new System.Drawing.Size(20, 20);
+            this.Box13.TabIndex = 3;
+            this.Box13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Box6
+            // 
+            this.Box6.BackColor = System.Drawing.SystemColors.Window;
+            this.Box6.Location = new System.Drawing.Point(55, 3);
+            this.Box6.Name = "Box6";
+            this.Box6.Size = new System.Drawing.Size(20, 20);
+            this.Box6.TabIndex = 2;
+            this.Box6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Box5
+            // 
+            this.Box5.BackColor = System.Drawing.SystemColors.Window;
+            this.Box5.Location = new System.Drawing.Point(29, 3);
+            this.Box5.Name = "Box5";
+            this.Box5.Size = new System.Drawing.Size(20, 20);
+            this.Box5.TabIndex = 1;
+            this.Box5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Box4
+            // 
+            this.Box4.BackColor = System.Drawing.SystemColors.Window;
+            this.Box4.Location = new System.Drawing.Point(3, 3);
+            this.Box4.Name = "Box4";
+            this.Box4.Size = new System.Drawing.Size(20, 20);
+            this.Box4.TabIndex = 0;
+            this.Box4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // panel8
+            // 
+            this.panel8.Controls.Add(this.Box21);
+            this.panel8.Controls.Add(this.Box20);
+            this.panel8.Controls.Add(this.Box19);
+            this.panel8.Controls.Add(this.Box12);
+            this.panel8.Controls.Add(this.Box11);
+            this.panel8.Controls.Add(this.Box10);
+            this.panel8.Controls.Add(this.Box3);
+            this.panel8.Controls.Add(this.Box2);
+            this.panel8.Controls.Add(this.Box1);
+            this.panel8.Location = new System.Drawing.Point(9, 9);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(81, 83);
+            this.panel8.TabIndex = 1;
+            // 
+            // Box21
+            // 
+            this.Box21.BackColor = System.Drawing.SystemColors.Window;
+            this.Box21.Location = new System.Drawing.Point(55, 55);
+            this.Box21.Name = "Box21";
+            this.Box21.Size = new System.Drawing.Size(20, 20);
+            this.Box21.TabIndex = 8;
+            this.Box21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Box20
+            // 
+            this.Box20.BackColor = System.Drawing.SystemColors.Window;
+            this.Box20.Location = new System.Drawing.Point(29, 55);
+            this.Box20.Name = "Box20";
+            this.Box20.Size = new System.Drawing.Size(20, 20);
+            this.Box20.TabIndex = 7;
+            this.Box20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Box19
+            // 
+            this.Box19.BackColor = System.Drawing.SystemColors.Window;
+            this.Box19.Location = new System.Drawing.Point(3, 55);
+            this.Box19.Name = "Box19";
+            this.Box19.Size = new System.Drawing.Size(20, 20);
+            this.Box19.TabIndex = 6;
+            this.Box19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Box12
+            // 
+            this.Box12.BackColor = System.Drawing.SystemColors.Window;
+            this.Box12.Location = new System.Drawing.Point(55, 29);
+            this.Box12.Name = "Box12";
+            this.Box12.Size = new System.Drawing.Size(20, 20);
+            this.Box12.TabIndex = 5;
+            this.Box12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Box11
+            // 
+            this.Box11.BackColor = System.Drawing.SystemColors.Window;
+            this.Box11.Location = new System.Drawing.Point(29, 29);
+            this.Box11.Name = "Box11";
+            this.Box11.Size = new System.Drawing.Size(20, 20);
+            this.Box11.TabIndex = 4;
+            this.Box11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Box10
+            // 
+            this.Box10.BackColor = System.Drawing.SystemColors.Window;
+            this.Box10.Location = new System.Drawing.Point(3, 29);
+            this.Box10.Name = "Box10";
+            this.Box10.Size = new System.Drawing.Size(20, 20);
+            this.Box10.TabIndex = 3;
+            this.Box10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Box3
+            // 
+            this.Box3.BackColor = System.Drawing.SystemColors.Window;
+            this.Box3.Location = new System.Drawing.Point(55, 3);
+            this.Box3.Name = "Box3";
+            this.Box3.Size = new System.Drawing.Size(20, 20);
+            this.Box3.TabIndex = 2;
+            this.Box3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Box2
+            // 
+            this.Box2.BackColor = System.Drawing.SystemColors.Window;
+            this.Box2.Location = new System.Drawing.Point(29, 3);
+            this.Box2.Name = "Box2";
+            this.Box2.Size = new System.Drawing.Size(20, 20);
+            this.Box2.TabIndex = 1;
+            this.Box2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Box1
+            // 
+            this.Box1.BackColor = System.Drawing.SystemColors.Window;
+            this.Box1.Location = new System.Drawing.Point(3, 3);
+            this.Box1.Name = "Box1";
+            this.Box1.Size = new System.Drawing.Size(20, 20);
+            this.Box1.TabIndex = 0;
+            this.Box1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(351, 141);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "Solve";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(315, 19);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(111, 45);
+            this.button4.TabIndex = 4;
+            this.button4.Text = "New Game";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Forte", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Crimson;
+            this.label2.Location = new System.Drawing.Point(89, 291);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(277, 38);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Congratulation!";
+            this.label2.Visible = false;
             // 
             // Form1
             // 
@@ -1410,24 +1411,24 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.panel6.ResumeLayout(false);
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
-            this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
-            this.panel10.ResumeLayout(false);
-            this.panel10.PerformLayout();
-            this.panel11.ResumeLayout(false);
-            this.panel11.PerformLayout();
-            this.panel12.ResumeLayout(false);
-            this.panel12.PerformLayout();
-            this.panel13.ResumeLayout(false);
-            this.panel13.PerformLayout();
-            this.panel14.ResumeLayout(false);
-            this.panel14.PerformLayout();
             this.panel15.ResumeLayout(false);
             this.panel15.PerformLayout();
+            this.panel14.ResumeLayout(false);
+            this.panel14.PerformLayout();
+            this.panel13.ResumeLayout(false);
+            this.panel13.PerformLayout();
+            this.panel12.ResumeLayout(false);
+            this.panel12.PerformLayout();
+            this.panel11.ResumeLayout(false);
+            this.panel11.PerformLayout();
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
+            this.panel9.ResumeLayout(false);
+            this.panel9.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
