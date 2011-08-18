@@ -625,5 +625,17 @@ namespace Sudoku
             }
         }
 
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            groupBox1.Visible = false;
+            groupBox2.Visible = true;
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            groupBox1.Visible = true;
+            groupBox2.Visible = false;
+        }
+
     }
 }
