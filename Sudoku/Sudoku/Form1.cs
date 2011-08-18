@@ -20,6 +20,8 @@ namespace Sudoku
         solve s = new solve();
         private int[,] table = new int[4,4];
         private int[,] table9x9 = new int[9, 9];
+        private int valueLevel4x4;
+        private int valueLevel9x9;
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -1105,7 +1107,7 @@ namespace Sudoku
             int x, y;
             int[,] arrGen = new int[4, 4];
 
-            for (int i = 0; i < 7; i++)
+            for (int i = 0; i < valueLevel4x4; i++)
             {
                 x = r.Next(4);
                 y = r.Next(4);
@@ -1194,7 +1196,7 @@ namespace Sudoku
             Random r = new Random();
             int x, y;
 
-            for (int i = 0; i < 36; i++)
+            for (int i = 0; i < valueLevel9x9; i++)
             {
                 x = r.Next(9);
                 y = r.Next(9);
@@ -1446,5 +1448,60 @@ namespace Sudoku
             Box81.Text = "";
 
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            //load table currennt
+
+          
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {             
+             if (comboBox1.Text.Equals("Easy"))
+             {
+                 valueLevel9x9 = 50;
+
+             }else if (comboBox1.Text.Equals("Normal"))
+             {
+                 valueLevel9x9 = 40;
+
+             }
+             else if (comboBox1.Text.Equals("Hard"))
+             {
+                 valueLevel9x9 = 30;
+
+             }
+             else
+             {
+                 valueLevel9x9 = 0;
+             }
+
+        }
+              
+
+        private void comboBox2_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            if (comboBox2.Text.Equals("Easy"))
+            {
+                valueLevel4x4 = 7;
+
+            }
+            else if (comboBox2.Text.Equals("Normal"))
+            {
+                valueLevel4x4 = 6;
+
+            }
+            else if (comboBox2.Text.Equals("Hard"))
+            {
+                valueLevel4x4 = 5;
+
+            }
+            else
+            {
+                valueLevel4x4 = 0;
+            }
+        }
+
     }
 }
