@@ -1426,5 +1426,104 @@ namespace Sudoku
             Box81.Text = "";
 
         }
+
+
+        private int[,] mapTableToArray()
+        {
+            int[,] map = new int[9, 9];
+
+            map[0, 0] = Convert.ToInt32(Box1.Text);
+            map[0, 1] = Convert.ToInt32(Box2.Text);
+            map[0, 2] = Convert.ToInt32(Box3.Text);
+            map[0, 3] = Convert.ToInt32(Box4.Text);
+            map[0, 4] = Convert.ToInt32(Box5.Text);
+            map[0, 5] = Convert.ToInt32(Box6.Text);
+            map[0, 6] = Convert.ToInt32(Box7.Text);
+            map[0, 7] = Convert.ToInt32(Box8.Text);
+            map[0, 8] = Convert.ToInt32(Box9.Text);
+
+            map[1, 0] = Convert.ToInt32(Box10.Text);
+            map[1, 1] = Convert.ToInt32(Box11.Text);
+            map[1, 2] = Convert.ToInt32(Box12.Text);
+            map[1, 3] = Convert.ToInt32(Box13.Text);
+            map[1, 4] = Convert.ToInt32(Box14.Text);
+            map[1, 5] = Convert.ToInt32(Box15.Text);
+            map[1, 6] = Convert.ToInt32(Box16.Text);
+            map[1, 7] = Convert.ToInt32(Box17.Text);
+            map[1, 8] = Convert.ToInt32(Box18.Text);
+
+            map[2, 0] = Convert.ToInt32(Box19.Text);
+            map[2, 1] = Convert.ToInt32(Box20.Text);
+            map[2, 2] = Convert.ToInt32(Box21.Text);
+            map[2, 3] = Convert.ToInt32(Box22.Text);
+            map[2, 4] = Convert.ToInt32(Box23.Text);
+            map[2, 5] = Convert.ToInt32(Box24.Text);
+            map[2, 6] = Convert.ToInt32(Box25.Text);
+            map[2, 7] = Convert.ToInt32(Box26.Text);
+            map[2, 8] = Convert.ToInt32(Box27.Text);
+
+            map[3, 0] = Convert.ToInt32(Box28.Text);
+            map[3, 1] = Convert.ToInt32(Box29.Text);
+            map[3, 2] = Convert.ToInt32(Box30.Text);
+            map[3, 3] = Convert.ToInt32(Box31.Text);
+            map[3, 4] = Convert.ToInt32(Box32.Text);
+            map[3, 5] = Convert.ToInt32(Box33.Text);
+            map[3, 6] = Convert.ToInt32(Box34.Text);
+            map[3, 7] = Convert.ToInt32(Box35.Text);
+            map[3, 8] = Convert.ToInt32(Box36.Text);
+
+            map[4, 0] = Convert.ToInt32(Box37.Text);
+            map[4, 1] = Convert.ToInt32(Box38.Text);
+            map[4, 2] = Convert.ToInt32(Box39.Text);
+            map[4, 3] = Convert.ToInt32(Box40.Text);
+            map[4, 4] = Convert.ToInt32(Box41.Text);
+            map[4, 5] = Convert.ToInt32(Box42.Text);
+            map[4, 6] = Convert.ToInt32(Box43.Text);
+            map[4, 7] = Convert.ToInt32(Box44.Text);
+            map[4, 8] = Convert.ToInt32(Box45.Text);
+
+            map[5, 0] = Convert.ToInt32(Box46.Text);
+            map[5, 1] = Convert.ToInt32(Box47.Text);
+            map[5, 2] = Convert.ToInt32(Box48.Text);
+            map[5, 3] = Convert.ToInt32(Box49.Text);
+            map[5, 4] = Convert.ToInt32(Box50.Text);
+            map[5, 5] = Convert.ToInt32(Box51.Text);
+            map[5, 6] = Convert.ToInt32(Box52.Text);
+            map[5, 7] = Convert.ToInt32(Box53.Text);
+            map[5, 8] = Convert.ToInt32(Box54.Text);
+
+            map[6, 0] = Convert.ToInt32(Box55.Text);
+            map[6, 1] = Convert.ToInt32(Box56.Text);
+            map[6, 2] = Convert.ToInt32(Box57.Text);
+            map[6, 3] = Convert.ToInt32(Box58.Text);
+            map[6, 4] = Convert.ToInt32(Box59.Text);
+            map[6, 5] = Convert.ToInt32(Box60.Text);
+            map[6, 6] = Convert.ToInt32(Box61.Text);
+            map[6, 7] = Convert.ToInt32(Box62.Text);
+            map[6, 8] = Convert.ToInt32(Box63.Text);
+
+            map[7, 0] = Convert.ToInt32(Box64.Text);
+            map[7, 1] = Convert.ToInt32(Box65.Text);
+            map[7, 2] = Convert.ToInt32(Box66.Text);
+            map[7, 3] = Convert.ToInt32(Box67.Text);
+            map[7, 4] = Convert.ToInt32(Box68.Text);
+            map[7, 5] = Convert.ToInt32(Box69.Text);
+            map[7, 6] = Convert.ToInt32(Box70.Text);
+            map[7, 7] = Convert.ToInt32(Box71.Text);
+            map[7, 8] = Convert.ToInt32(Box72.Text);
+
+            map[8, 0] = Convert.ToInt32(Box73.Text);
+            map[8, 1] = Convert.ToInt32(Box74.Text);
+            map[8, 2] = Convert.ToInt32(Box75.Text);
+            map[8, 3] = Convert.ToInt32(Box76.Text);
+            map[8, 4] = Convert.ToInt32(Box77.Text);
+            map[8, 5] = Convert.ToInt32(Box78.Text);
+            map[8, 6] = Convert.ToInt32(Box79.Text);
+            map[8, 7] = Convert.ToInt32(Box80.Text);
+            map[8, 8] = Convert.ToInt32(Box81.Text);
+
+
+            return map;
+        }
     }
 }
