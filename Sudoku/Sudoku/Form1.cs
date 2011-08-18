@@ -1190,7 +1190,27 @@ namespace Sudoku
         private void button4_Click(object sender, EventArgs e)
         {
             table9x9 = s.getSolve9x9();
-            mapArrayToTable9x9(table9x9);
+            int[,] gen = new int[9, 9];
+            Random r = new Random();
+            int x, y;
+
+            for (int i = 0; i < 36; i++)
+            {
+                x = r.Next(9);
+                y = r.Next(9);
+                
+                if (gen[x, y] != 0 && i != 0)
+                {
+                    i--;
+                }
+                else
+                {
+                    gen[x, y] = table9x9[x, y];
+                }
+
+                gen[x, y] = table9x9[x, y];
+            }           
+            mapArrayToTable9x9(gen);
         }
 
         private void enableTable()
