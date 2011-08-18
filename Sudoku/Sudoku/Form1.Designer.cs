@@ -55,7 +55,9 @@
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel15 = new System.Windows.Forms.Panel();
             this.Box81 = new System.Windows.Forms.TextBox();
@@ -396,7 +398,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(168, 19);
+            this.button2.Location = new System.Drawing.Point(178, 57);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(111, 45);
             this.button2.TabIndex = 4;
@@ -442,6 +444,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.comboBox2);
             this.groupBox1.Controls.Add(this.panel1);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.button2);
@@ -453,8 +456,22 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Sudoku 4x4";
             // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "Easy",
+            "Normal",
+            "Hard"});
+            this.comboBox2.Location = new System.Drawing.Point(173, 25);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(116, 21);
+            this.comboBox2.TabIndex = 8;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged_1);
+            // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.comboBox1);
             this.groupBox2.Controls.Add(this.panel6);
             this.groupBox2.Controls.Add(this.button3);
             this.groupBox2.Controls.Add(this.button4);
@@ -465,6 +482,19 @@
             this.groupBox2.TabIndex = 9;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Sudoku 9x9";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Easy",
+            "Normal",
+            "Hard"});
+            this.comboBox1.Location = new System.Drawing.Point(315, 28);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(116, 21);
+            this.comboBox1.TabIndex = 7;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // panel6
             // 
@@ -1357,7 +1387,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(351, 141);
+            this.button3.Location = new System.Drawing.Point(351, 177);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 2;
@@ -1367,7 +1397,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(315, 19);
+            this.button4.Location = new System.Drawing.Point(315, 66);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(111, 45);
             this.button4.TabIndex = 4;
@@ -1559,6 +1589,8 @@
         private System.Windows.Forms.TextBox Box57;
         private System.Windows.Forms.TextBox Box56;
         private System.Windows.Forms.TextBox Box55;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBox2;
     }
 }
 
