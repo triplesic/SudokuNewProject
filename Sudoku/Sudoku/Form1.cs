@@ -1653,6 +1653,7 @@ namespace Sudoku
             }
             else
                 Box1.BackColor = Color.White;
+            congratulations9x9();
 
         }
 
@@ -1670,13 +1671,16 @@ namespace Sudoku
             }
             else
                 Box2.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box3_TextChanged(object sender, EventArgs e) {int[,] arr = mapTableToArray(); CCC = new CheckCorrectCell(arr);
          if (CCC.checkCorrectCell9x9(0, 2) &&
              Box3.Text != ""){
                 Box3.BackColor = Color.Red;} else
-                Box3.BackColor = Color.White;}
+                Box3.BackColor = Color.White;
+         congratulations9x9();
+        }
 
         private void Box4_TextChanged(object sender, EventArgs e)
         {
@@ -1688,6 +1692,7 @@ namespace Sudoku
             }
             else
                 Box4.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box5_TextChanged(object sender, EventArgs e)
@@ -1700,6 +1705,7 @@ namespace Sudoku
             }
             else
                 Box5.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box6_TextChanged(object sender, EventArgs e)
@@ -1712,6 +1718,7 @@ namespace Sudoku
             }
             else
                 Box6.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box7_TextChanged(object sender, EventArgs e)
@@ -1724,6 +1731,7 @@ namespace Sudoku
             }
             else
                 Box7.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box8_TextChanged(object sender, EventArgs e)
@@ -1736,6 +1744,7 @@ namespace Sudoku
             }
             else
                 Box8.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box9_TextChanged(object sender, EventArgs e)
@@ -1748,6 +1757,7 @@ namespace Sudoku
             }
             else
                 Box9.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box10_TextChanged(object sender, EventArgs e)
@@ -1760,6 +1770,7 @@ namespace Sudoku
             }
             else
                 Box10.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box11_TextChanged(object sender, EventArgs e)
@@ -1772,6 +1783,7 @@ namespace Sudoku
             }
             else
                 Box11.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box12_TextChanged(object sender, EventArgs e)
@@ -1784,6 +1796,7 @@ namespace Sudoku
             }
             else
                 Box12.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box13_TextChanged(object sender, EventArgs e)
@@ -1796,6 +1809,7 @@ namespace Sudoku
             }
             else
                 Box13.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box14_TextChanged(object sender, EventArgs e)
@@ -1808,6 +1822,7 @@ namespace Sudoku
             }
             else
                 Box14.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box15_TextChanged(object sender, EventArgs e)
@@ -1820,6 +1835,7 @@ namespace Sudoku
             }
             else
                 Box15.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box16_TextChanged(object sender, EventArgs e)
@@ -1832,6 +1848,7 @@ namespace Sudoku
             }
             else
                 Box16.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box17_TextChanged(object sender, EventArgs e)
@@ -1844,6 +1861,7 @@ namespace Sudoku
             }
             else
                 Box17.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box18_TextChanged(object sender, EventArgs e)
@@ -1856,6 +1874,7 @@ namespace Sudoku
             }
             else
                 Box18.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box19_TextChanged(object sender, EventArgs e)
@@ -1868,6 +1887,7 @@ namespace Sudoku
             }
             else
                 Box19.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box20_TextChanged(object sender, EventArgs e)
@@ -1880,6 +1900,7 @@ namespace Sudoku
             }
             else
                 Box20.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box21_TextChanged(object sender, EventArgs e)
@@ -1892,6 +1913,7 @@ namespace Sudoku
             }
             else
                 Box21.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box22_TextChanged(object sender, EventArgs e)
@@ -1904,6 +1926,7 @@ namespace Sudoku
             }
             else
                 Box22.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box23_TextChanged(object sender, EventArgs e)
@@ -1916,6 +1939,7 @@ namespace Sudoku
             }
             else
                 Box23.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box24_TextChanged(object sender, EventArgs e)
@@ -1928,6 +1952,7 @@ namespace Sudoku
             }
             else
                 Box24.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box25_TextChanged(object sender, EventArgs e)
@@ -1940,6 +1965,7 @@ namespace Sudoku
             }
             else
                 Box25.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box26_TextChanged(object sender, EventArgs e)
@@ -1952,6 +1978,7 @@ namespace Sudoku
             }
             else
                 Box26.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box27_TextChanged(object sender, EventArgs e)
@@ -1964,6 +1991,7 @@ namespace Sudoku
             }
             else
                 Box27.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box28_TextChanged(object sender, EventArgs e)
@@ -1976,6 +2004,7 @@ namespace Sudoku
             }
             else
                 Box28.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box29_TextChanged(object sender, EventArgs e)
@@ -1988,6 +2017,7 @@ namespace Sudoku
             }
             else
                 Box29.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box30_TextChanged(object sender, EventArgs e)
@@ -2000,6 +2030,7 @@ namespace Sudoku
             }
             else
                 Box30.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box31_TextChanged(object sender, EventArgs e)
@@ -2012,6 +2043,7 @@ namespace Sudoku
             }
             else
                 Box31.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box32_TextChanged(object sender, EventArgs e)
@@ -2024,6 +2056,7 @@ namespace Sudoku
             }
             else
                 Box32.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box33_TextChanged(object sender, EventArgs e)
@@ -2036,6 +2069,7 @@ namespace Sudoku
             }
             else
                 Box33.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box34_TextChanged(object sender, EventArgs e)
@@ -2048,6 +2082,7 @@ namespace Sudoku
             }
             else
                 Box34.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box35_TextChanged(object sender, EventArgs e)
@@ -2060,6 +2095,7 @@ namespace Sudoku
             }
             else
                 Box35.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box36_TextChanged(object sender, EventArgs e)
@@ -2072,6 +2108,7 @@ namespace Sudoku
             }
             else
                 Box36.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box37_TextChanged(object sender, EventArgs e)
@@ -2084,6 +2121,7 @@ namespace Sudoku
             }
             else
                 Box37.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box38_TextChanged(object sender, EventArgs e)
@@ -2096,6 +2134,7 @@ namespace Sudoku
             }
             else
                 Box38.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box39_TextChanged(object sender, EventArgs e)
@@ -2108,6 +2147,7 @@ namespace Sudoku
             }
             else
                 Box39.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box40_TextChanged(object sender, EventArgs e)
@@ -2120,6 +2160,7 @@ namespace Sudoku
             }
             else
                 Box40.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box41_TextChanged(object sender, EventArgs e)
@@ -2132,6 +2173,7 @@ namespace Sudoku
             }
             else
                 Box41.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box42_TextChanged(object sender, EventArgs e)
@@ -2144,6 +2186,7 @@ namespace Sudoku
             }
             else
                 Box42.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box43_TextChanged(object sender, EventArgs e)
@@ -2156,6 +2199,7 @@ namespace Sudoku
             }
             else
                 Box43.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box44_TextChanged(object sender, EventArgs e)
@@ -2168,6 +2212,7 @@ namespace Sudoku
             }
             else
                 Box44.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box45_TextChanged(object sender, EventArgs e)
@@ -2180,6 +2225,7 @@ namespace Sudoku
             }
             else
                 Box45.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box46_TextChanged(object sender, EventArgs e)
@@ -2192,6 +2238,7 @@ namespace Sudoku
             }
             else
                 Box46.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box47_TextChanged(object sender, EventArgs e)
@@ -2204,6 +2251,7 @@ namespace Sudoku
             }
             else
                 Box47.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box48_TextChanged(object sender, EventArgs e)
@@ -2216,6 +2264,7 @@ namespace Sudoku
             }
             else
                 Box48.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box49_TextChanged(object sender, EventArgs e)
@@ -2228,6 +2277,7 @@ namespace Sudoku
             }
             else
                 Box49.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box50_TextChanged(object sender, EventArgs e)
@@ -2240,6 +2290,7 @@ namespace Sudoku
             }
             else
                 Box50.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box51_TextChanged(object sender, EventArgs e)
@@ -2252,6 +2303,7 @@ namespace Sudoku
             }
             else
                 Box51.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box52_TextChanged(object sender, EventArgs e)
@@ -2264,6 +2316,7 @@ namespace Sudoku
             }
             else
                 Box52.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box53_TextChanged(object sender, EventArgs e)
@@ -2276,6 +2329,7 @@ namespace Sudoku
             }
             else
                 Box53.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box54_TextChanged(object sender, EventArgs e)
@@ -2288,6 +2342,7 @@ namespace Sudoku
             }
             else
                 Box54.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box55_TextChanged(object sender, EventArgs e)
@@ -2300,6 +2355,7 @@ namespace Sudoku
             }
             else
                 Box55.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box56_TextChanged(object sender, EventArgs e)
@@ -2312,6 +2368,7 @@ namespace Sudoku
             }
             else
                 Box56.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box57_TextChanged(object sender, EventArgs e)
@@ -2324,6 +2381,7 @@ namespace Sudoku
             }
             else
                 Box57.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box58_TextChanged(object sender, EventArgs e)
@@ -2336,6 +2394,7 @@ namespace Sudoku
             }
             else
                 Box58.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box59_TextChanged(object sender, EventArgs e)
@@ -2348,6 +2407,7 @@ namespace Sudoku
             }
             else
                 Box59.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box60_TextChanged(object sender, EventArgs e)
@@ -2360,6 +2420,7 @@ namespace Sudoku
             }
             else
                 Box60.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box61_TextChanged(object sender, EventArgs e)
@@ -2372,6 +2433,7 @@ namespace Sudoku
             }
             else
                 Box61.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box62_TextChanged(object sender, EventArgs e)
@@ -2384,6 +2446,7 @@ namespace Sudoku
             }
             else
                 Box62.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box63_TextChanged(object sender, EventArgs e)
@@ -2396,6 +2459,7 @@ namespace Sudoku
             }
             else
                 Box63.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box64_TextChanged(object sender, EventArgs e)
@@ -2408,6 +2472,7 @@ namespace Sudoku
             }
             else
                 Box64.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box65_TextChanged(object sender, EventArgs e)
@@ -2420,6 +2485,7 @@ namespace Sudoku
             }
             else
                 Box65.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box66_TextChanged(object sender, EventArgs e)
@@ -2432,6 +2498,7 @@ namespace Sudoku
             }
             else
                 Box66.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box67_TextChanged(object sender, EventArgs e)
@@ -2444,6 +2511,7 @@ namespace Sudoku
             }
             else
                 Box67.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box68_TextChanged(object sender, EventArgs e)
@@ -2456,6 +2524,7 @@ namespace Sudoku
             }
             else
                 Box68.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box69_TextChanged(object sender, EventArgs e)
@@ -2468,6 +2537,7 @@ namespace Sudoku
             }
             else
                 Box69.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box70_TextChanged(object sender, EventArgs e)
@@ -2480,6 +2550,7 @@ namespace Sudoku
             }
             else
                 Box70.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box71_TextChanged(object sender, EventArgs e)
@@ -2492,6 +2563,7 @@ namespace Sudoku
             }
             else
                 Box71.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box72_TextChanged(object sender, EventArgs e)
@@ -2504,6 +2576,7 @@ namespace Sudoku
             }
             else
                 Box72.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box73_TextChanged(object sender, EventArgs e)
@@ -2516,6 +2589,7 @@ namespace Sudoku
             }
             else
                 Box73.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box74_TextChanged(object sender, EventArgs e)
@@ -2528,6 +2602,7 @@ namespace Sudoku
             }
             else
                 Box74.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box75_TextChanged(object sender, EventArgs e)
@@ -2540,6 +2615,7 @@ namespace Sudoku
             }
             else
                 Box75.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box76_TextChanged(object sender, EventArgs e)
@@ -2552,6 +2628,7 @@ namespace Sudoku
             }
             else
                 Box76.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box77_TextChanged(object sender, EventArgs e)
@@ -2564,6 +2641,7 @@ namespace Sudoku
             }
             else
                 Box77.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box78_TextChanged(object sender, EventArgs e)
@@ -2576,6 +2654,7 @@ namespace Sudoku
             }
             else
                 Box78.BackColor = Color.White;
+            congratulations9x9();
         }
 
         private void Box79_TextChanged(object sender, EventArgs e)
@@ -2588,6 +2667,8 @@ namespace Sudoku
             }
             else
                 Box79.BackColor = Color.White;
+
+            congratulations9x9();
         }
 
         private void Box80_TextChanged(object sender, EventArgs e)
@@ -2600,6 +2681,8 @@ namespace Sudoku
             }
             else
                 Box80.BackColor = Color.White;
+
+            congratulations9x9();
         }
 
         private void Box81_TextChanged(object sender, EventArgs e)
@@ -2612,6 +2695,8 @@ namespace Sudoku
             }
             else
                 Box81.BackColor = Color.White;
+
+            congratulations9x9();
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -2659,5 +2744,94 @@ namespace Sudoku
                 valueLevel4x4 = 0;
             }
         }
+
+
+        public void congratulations9x9()
+        {
+            if (Box1.Text != "" && Box2.Text != "" && Box3.Text != "" &&
+                Box4.Text != "" && Box5.Text != "" && Box6.Text != "" &&
+                Box7.Text != "" && Box8.Text != "" && Box9.Text != "" &&
+
+                Box10.Text != "" && Box11.Text != "" && Box12.Text != "" &&
+                Box13.Text != "" && Box14.Text != "" && Box15.Text != "" &&
+                Box16.Text != "" && Box17.Text != "" && Box18.Text != "" &&
+
+                Box19.Text != "" && Box20.Text != "" && Box21.Text != "" &&
+                Box22.Text != "" && Box23.Text != "" && Box24.Text != "" &&
+                Box25.Text != "" && Box26.Text != "" && Box27.Text != "" &&
+
+                Box28.Text != "" && Box29.Text != "" && Box30.Text != "" &&
+                Box31.Text != "" && Box32.Text != "" && Box33.Text != "" &&
+                Box34.Text != "" && Box35.Text != "" && Box36.Text != "" &&
+
+                Box37.Text != "" && Box38.Text != "" && Box39.Text != "" &&
+                Box40.Text != "" && Box41.Text != "" && Box42.Text != "" &&
+                Box43.Text != "" && Box44.Text != "" && Box45.Text != "" &&
+
+                Box46.Text != "" && Box47.Text != "" && Box48.Text != "" &&
+                Box49.Text != "" && Box50.Text != "" && Box51.Text != "" &&
+                Box52.Text != "" && Box53.Text != "" && Box54.Text != "" &&
+
+                Box55.Text != "" && Box56.Text != "" && Box57.Text != "" &&
+                Box58.Text != "" && Box59.Text != "" && Box60.Text != "" &&
+                Box61.Text != "" && Box62.Text != "" && Box63.Text != "" &&
+
+                Box64.Text != "" && Box65.Text != "" && Box66.Text != "" &&
+                Box67.Text != "" && Box68.Text != "" && Box69.Text != "" &&
+                Box70.Text != "" && Box71.Text != "" && Box72.Text != "" &&
+
+                Box73.Text != "" && Box74.Text != "" && Box75.Text != "" &&
+                Box76.Text != "" && Box77.Text != "" && Box78.Text != "" &&
+                Box79.Text != "" && Box80.Text != "" && Box81.Text != "")
+            {
+
+                if (Box1.BackColor != Color.Red && Box2.BackColor != Color.Red && Box3.BackColor != Color.Red &&
+                    Box4.BackColor != Color.Red && Box5.BackColor != Color.Red && Box6.BackColor != Color.Red &&
+                    Box7.BackColor != Color.Red && Box8.BackColor != Color.Red && Box9.BackColor != Color.Red &&
+
+                    Box10.BackColor != Color.Red && Box11.BackColor != Color.Red && Box12.BackColor != Color.Red &&
+                    Box13.BackColor != Color.Red && Box14.BackColor != Color.Red && Box15.BackColor != Color.Red &&
+                    Box16.BackColor != Color.Red && Box17.BackColor != Color.Red && Box18.BackColor != Color.Red &&
+
+                    Box19.BackColor != Color.Red && Box20.BackColor != Color.Red && Box21.BackColor != Color.Red &&
+                    Box22.BackColor != Color.Red && Box23.BackColor != Color.Red && Box24.BackColor != Color.Red &&
+                    Box25.BackColor != Color.Red && Box26.BackColor != Color.Red && Box27.BackColor != Color.Red &&
+
+                    Box28.BackColor != Color.Red && Box29.BackColor != Color.Red && Box30.BackColor != Color.Red &&
+                    Box31.BackColor != Color.Red && Box32.BackColor != Color.Red && Box33.BackColor != Color.Red &&
+                    Box34.BackColor != Color.Red && Box35.BackColor != Color.Red && Box36.BackColor != Color.Red &&
+
+                    Box37.BackColor != Color.Red && Box38.BackColor != Color.Red && Box39.BackColor != Color.Red &&
+                    Box40.BackColor != Color.Red && Box41.BackColor != Color.Red && Box42.BackColor != Color.Red &&
+                    Box43.BackColor != Color.Red && Box44.BackColor != Color.Red && Box45.BackColor != Color.Red &&
+
+                    Box46.BackColor != Color.Red && Box47.BackColor != Color.Red && Box48.BackColor != Color.Red &&
+                    Box49.BackColor != Color.Red && Box50.BackColor != Color.Red && Box51.BackColor != Color.Red &&
+                    Box52.BackColor != Color.Red && Box53.BackColor != Color.Red && Box54.BackColor != Color.Red &&
+
+                    Box55.BackColor != Color.Red && Box56.BackColor != Color.Red && Box57.BackColor != Color.Red &&
+                    Box58.BackColor != Color.Red && Box59.BackColor != Color.Red && Box60.BackColor != Color.Red &&
+                    Box61.BackColor != Color.Red && Box62.BackColor != Color.Red && Box63.BackColor != Color.Red &&
+
+                    Box64.BackColor != Color.Red && Box65.BackColor != Color.Red && Box66.BackColor != Color.Red &&
+                    Box67.BackColor != Color.Red && Box68.BackColor != Color.Red && Box69.BackColor != Color.Red &&
+                    Box70.BackColor != Color.Red && Box71.BackColor != Color.Red && Box72.BackColor != Color.Red &&
+
+                    Box73.BackColor != Color.Red && Box74.BackColor != Color.Red && Box75.BackColor != Color.Red &&
+                    Box76.BackColor != Color.Red && Box77.BackColor != Color.Red && Box78.BackColor != Color.Red &&
+                    Box79.BackColor != Color.Red && Box80.BackColor != Color.Red && Box81.BackColor != Color.Red)
+                {
+                    label2.Visible = true;
+                }
+
+            }
+            else
+            {
+
+                label2.Visible = false;
+            }
+        }
+
+    
     }
 }
