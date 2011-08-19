@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="false">
   <TopNode>[0-1000]C:\Users\NULENG\Desktop\Sudoku\Sudoku\Sudoku.csproj</TopNode>
-  <SelectedNode>[0-1001]Sudoku.CheckCorrectCellTest</SelectedNode>
+  <SelectedNode>[0-1027]Sudoku</SelectedNode>
   <ExcludeCategories>false</ExcludeCategories>
   <Nodes>
     <Node UniqueName="[0-1000]C:\Users\NULENG\Desktop\Sudoku\Sudoku\Sudoku.csproj" Expanded="true" />
-    <Node UniqueName="[0-1015]C:\Users\NULENG\Desktop\Sudoku\Sudoku\bin\Debug\Sudoku.exe" Expanded="true" />
-    <Node UniqueName="[0-1016]Sudoku" Expanded="true" />
-    <Node UniqueName="[0-1001]Sudoku.CheckCorrectCellTest" Expanded="true" />
+    <Node UniqueName="[0-1026]C:\Users\NULENG\Desktop\Sudoku\Sudoku\bin\Debug\Sudoku.exe" Expanded="true" />
+    <Node UniqueName="[0-1027]Sudoku" Expanded="true" />
+    <Node UniqueName="[0-1008]Sudoku.CheckCorrectCellTest" Expanded="true" />
+    <Node UniqueName="[0-1001]Sudoku.ChooselvTest" Expanded="true" />
+    <Node UniqueName="[0-1022]Sudoku.Generate4Test" Expanded="true" />
+    <Node UniqueName="[0-1004]Sudoku.Generate9Test" Expanded="true" />
   </Nodes>
 </VisualState>

@@ -12,17 +12,17 @@ namespace Sudoku
 
             if (txtlv.Equals("Easy"))
             {
-                return 5;
+                return 7;
 
             }
             else if (txtlv.Equals("Normal"))
             {
-                return 4;
+                return 6;
 
             }
             else if (txtlv.Equals("Hard"))
             {
-                return 3;
+                return 5;
 
             }
             else

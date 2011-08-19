@@ -1178,6 +1178,95 @@ namespace Sudoku
             GenerateNumber gg = new Generate9();
             table = s.getSolve9x9();
             mapArrayToTable9x9(gg.generatePosition(table, valueLevel9x9));
+            Box1.BackColor = Color.White;
+            Box2.BackColor = Color.White;
+            Box3.BackColor = Color.White;
+            Box4.BackColor = Color.White;
+            Box5.BackColor = Color.White;
+            Box6.BackColor = Color.White;
+            Box7.BackColor = Color.White;
+            Box8.BackColor = Color.White;
+            Box9.BackColor = Color.White;
+            Box10.BackColor = Color.White;
+
+            Box11.BackColor = Color.White;
+            Box12.BackColor = Color.White;
+            Box13.BackColor = Color.White;
+            Box14.BackColor = Color.White;
+            Box15.BackColor = Color.White;
+            Box16.BackColor = Color.White;
+            Box17.BackColor = Color.White;
+            Box18.BackColor = Color.White;
+            Box19.BackColor = Color.White;
+            Box20.BackColor = Color.White;
+
+            Box21.BackColor = Color.White;
+            Box22.BackColor = Color.White;
+            Box23.BackColor = Color.White;
+            Box24.BackColor = Color.White;
+            Box25.BackColor = Color.White;
+            Box26.BackColor = Color.White;
+            Box27.BackColor = Color.White;
+            Box28.BackColor = Color.White;
+            Box29.BackColor = Color.White;
+            Box30.BackColor = Color.White;
+
+            Box31.BackColor = Color.White;
+            Box32.BackColor = Color.White;
+            Box33.BackColor = Color.White;
+            Box34.BackColor = Color.White;
+            Box35.BackColor = Color.White;
+            Box36.BackColor = Color.White;
+            Box37.BackColor = Color.White;
+            Box38.BackColor = Color.White;
+            Box39.BackColor = Color.White;
+            Box40.BackColor = Color.White;
+
+            Box41.BackColor = Color.White;
+            Box42.BackColor = Color.White;
+            Box43.BackColor = Color.White;
+            Box44.BackColor = Color.White;
+            Box45.BackColor = Color.White;
+            Box46.BackColor = Color.White;
+            Box47.BackColor = Color.White;
+            Box48.BackColor = Color.White;
+            Box49.BackColor = Color.White;
+            Box50.BackColor = Color.White;
+
+            Box51.BackColor = Color.White;
+            Box52.BackColor = Color.White;
+            Box53.BackColor = Color.White;
+            Box54.BackColor = Color.White;
+            Box55.BackColor = Color.White;
+            Box56.BackColor = Color.White;
+            Box57.BackColor = Color.White;
+            Box58.BackColor = Color.White;
+            Box59.BackColor = Color.White;
+            Box60.BackColor = Color.White;
+
+            Box61.BackColor = Color.White;
+            Box62.BackColor = Color.White;
+            Box63.BackColor = Color.White;
+            Box64.BackColor = Color.White;
+            Box65.BackColor = Color.White;
+            Box66.BackColor = Color.White;
+            Box67.BackColor = Color.White;
+            Box68.BackColor = Color.White;
+            Box69.BackColor = Color.White;
+            Box70.BackColor = Color.White;
+
+            Box71.BackColor = Color.White;
+            Box72.BackColor = Color.White;
+            Box73.BackColor = Color.White;
+            Box74.BackColor = Color.White;
+            Box75.BackColor = Color.White;
+            Box76.BackColor = Color.White;
+            Box77.BackColor = Color.White;
+            Box78.BackColor = Color.White;
+            Box79.BackColor = Color.White;
+            Box80.BackColor = Color.White;
+
+            Box81.BackColor = Color.White;
         }
 
         private void enableTable()

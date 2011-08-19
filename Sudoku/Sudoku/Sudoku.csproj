@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>20110819033108677_easyicon_cn_48.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="nunit.framework, Version=2.5.10.11092, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -52,6 +55,7 @@
     <Compile Include="CheckCorrectCellTest.cs" />
     <Compile Include="Chooselv4.cs" />
     <Compile Include="Chooselv9.cs" />
+    <Compile Include="ChooseTest.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -59,7 +63,9 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Generate4.cs" />
+    <Compile Include="Generate4Test.cs" />
     <Compile Include="Generate9.cs" />
+    <Compile Include="Generate9Test.cs" />
     <Compile Include="GenerateNumber.cs" />
     <Compile Include="LevelChooser.cs" />
     <Compile Include="Program.cs" />
@@ -86,6 +92,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="20110819033108677_easyicon_cn_48.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
