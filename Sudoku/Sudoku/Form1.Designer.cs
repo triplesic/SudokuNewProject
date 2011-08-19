@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.textBox13 = new System.Windows.Forms.TextBox();
@@ -55,7 +56,9 @@
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel15 = new System.Windows.Forms.Panel();
             this.Box81 = new System.Windows.Forms.TextBox();
@@ -150,8 +153,6 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -198,7 +199,7 @@
             this.textBox13.BackColor = System.Drawing.SystemColors.Window;
             this.textBox13.Location = new System.Drawing.Point(29, 29);
             this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(20, 20);
+            this.textBox13.Size = new System.Drawing.Size(20, 24);
             this.textBox13.TabIndex = 5;
             this.textBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox13.TextChanged += new System.EventHandler(this.textBox13_TextChanged);
@@ -208,7 +209,7 @@
             this.textBox14.BackColor = System.Drawing.SystemColors.Window;
             this.textBox14.Location = new System.Drawing.Point(3, 3);
             this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(20, 20);
+            this.textBox14.Size = new System.Drawing.Size(20, 24);
             this.textBox14.TabIndex = 0;
             this.textBox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox14.TextChanged += new System.EventHandler(this.textBox14_TextChanged);
@@ -218,7 +219,7 @@
             this.textBox15.BackColor = System.Drawing.SystemColors.Window;
             this.textBox15.Location = new System.Drawing.Point(29, 3);
             this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(20, 20);
+            this.textBox15.Size = new System.Drawing.Size(20, 24);
             this.textBox15.TabIndex = 1;
             this.textBox15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox15.TextChanged += new System.EventHandler(this.textBox15_TextChanged);
@@ -228,7 +229,7 @@
             this.textBox16.BackColor = System.Drawing.SystemColors.Window;
             this.textBox16.Location = new System.Drawing.Point(3, 29);
             this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(20, 20);
+            this.textBox16.Size = new System.Drawing.Size(20, 24);
             this.textBox16.TabIndex = 4;
             this.textBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox16.TextChanged += new System.EventHandler(this.textBox16_TextChanged);
@@ -249,7 +250,7 @@
             this.textBox6.BackColor = System.Drawing.SystemColors.Window;
             this.textBox6.Location = new System.Drawing.Point(42, 45);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(20, 20);
+            this.textBox6.Size = new System.Drawing.Size(20, 24);
             this.textBox6.TabIndex = 5;
             this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
@@ -259,7 +260,7 @@
             this.textBox1.BackColor = System.Drawing.SystemColors.Window;
             this.textBox1.Location = new System.Drawing.Point(16, 19);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(20, 20);
+            this.textBox1.Size = new System.Drawing.Size(20, 24);
             this.textBox1.TabIndex = 0;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
@@ -269,7 +270,7 @@
             this.textBox2.BackColor = System.Drawing.SystemColors.Window;
             this.textBox2.Location = new System.Drawing.Point(42, 19);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(20, 20);
+            this.textBox2.Size = new System.Drawing.Size(20, 24);
             this.textBox2.TabIndex = 1;
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
@@ -279,7 +280,7 @@
             this.textBox5.BackColor = System.Drawing.SystemColors.Window;
             this.textBox5.Location = new System.Drawing.Point(16, 45);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(20, 20);
+            this.textBox5.Size = new System.Drawing.Size(20, 24);
             this.textBox5.TabIndex = 4;
             this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
@@ -300,7 +301,7 @@
             this.textBox3.BackColor = System.Drawing.SystemColors.Window;
             this.textBox3.Location = new System.Drawing.Point(29, 45);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(20, 20);
+            this.textBox3.Size = new System.Drawing.Size(20, 24);
             this.textBox3.TabIndex = 5;
             this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
@@ -310,7 +311,7 @@
             this.textBox4.BackColor = System.Drawing.SystemColors.Window;
             this.textBox4.Location = new System.Drawing.Point(3, 19);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(20, 20);
+            this.textBox4.Size = new System.Drawing.Size(20, 24);
             this.textBox4.TabIndex = 0;
             this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
@@ -320,7 +321,7 @@
             this.textBox7.BackColor = System.Drawing.SystemColors.Window;
             this.textBox7.Location = new System.Drawing.Point(29, 19);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(20, 20);
+            this.textBox7.Size = new System.Drawing.Size(20, 24);
             this.textBox7.TabIndex = 1;
             this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox7.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
@@ -330,7 +331,7 @@
             this.textBox8.BackColor = System.Drawing.SystemColors.Window;
             this.textBox8.Location = new System.Drawing.Point(3, 45);
             this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(20, 20);
+            this.textBox8.Size = new System.Drawing.Size(20, 24);
             this.textBox8.TabIndex = 4;
             this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox8.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
@@ -351,7 +352,7 @@
             this.textBox9.BackColor = System.Drawing.SystemColors.Window;
             this.textBox9.Location = new System.Drawing.Point(42, 29);
             this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(20, 20);
+            this.textBox9.Size = new System.Drawing.Size(20, 24);
             this.textBox9.TabIndex = 5;
             this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox9.TextChanged += new System.EventHandler(this.textBox9_TextChanged);
@@ -361,7 +362,7 @@
             this.textBox10.BackColor = System.Drawing.SystemColors.Window;
             this.textBox10.Location = new System.Drawing.Point(16, 3);
             this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(20, 20);
+            this.textBox10.Size = new System.Drawing.Size(20, 24);
             this.textBox10.TabIndex = 0;
             this.textBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox10.TextChanged += new System.EventHandler(this.textBox10_TextChanged);
@@ -371,7 +372,7 @@
             this.textBox11.BackColor = System.Drawing.SystemColors.Window;
             this.textBox11.Location = new System.Drawing.Point(42, 3);
             this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(20, 20);
+            this.textBox11.Size = new System.Drawing.Size(20, 24);
             this.textBox11.TabIndex = 1;
             this.textBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox11.TextChanged += new System.EventHandler(this.textBox11_TextChanged);
@@ -381,29 +382,33 @@
             this.textBox12.BackColor = System.Drawing.SystemColors.Window;
             this.textBox12.Location = new System.Drawing.Point(16, 29);
             this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(20, 20);
+            this.textBox12.Size = new System.Drawing.Size(20, 24);
             this.textBox12.TabIndex = 4;
             this.textBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox12.TextChanged += new System.EventHandler(this.textBox12_TextChanged);
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.Silver;
+            this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button1.Location = new System.Drawing.Point(204, 124);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 2;
             this.button1.Text = "Solve";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.Silver;
+            this.button2.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button2.Location = new System.Drawing.Point(173, 50);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(111, 45);
             this.button2.TabIndex = 4;
             this.button2.Text = "New Game";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label1
@@ -421,34 +426,43 @@
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
+            this.radioButton1.BackColor = System.Drawing.Color.Transparent;
+            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.radioButton1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.radioButton1.Location = new System.Drawing.Point(12, 12);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(42, 17);
+            this.radioButton1.Size = new System.Drawing.Size(55, 24);
             this.radioButton1.TabIndex = 6;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "4x4";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.UseVisualStyleBackColor = false;
             this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
+            this.radioButton2.BackColor = System.Drawing.Color.Transparent;
+            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.radioButton2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.radioButton2.Location = new System.Drawing.Point(99, 12);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(42, 17);
+            this.radioButton2.Size = new System.Drawing.Size(55, 24);
             this.radioButton2.TabIndex = 7;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "9x9";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.UseVisualStyleBackColor = false;
             this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.comboBox2);
             this.groupBox1.Controls.Add(this.panel1);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.groupBox1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.groupBox1.Location = new System.Drawing.Point(12, 35);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(305, 230);
@@ -456,13 +470,29 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Sudoku 4x4";
             // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "Easy",
+            "Normal",
+            "Hard"});
+            this.comboBox2.Location = new System.Drawing.Point(168, 19);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(116, 26);
+            this.comboBox2.TabIndex = 9;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+            // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.Color.Transparent;
             this.groupBox2.Controls.Add(this.comboBox1);
             this.groupBox2.Controls.Add(this.panel6);
             this.groupBox2.Controls.Add(this.button3);
             this.groupBox2.Controls.Add(this.button4);
             this.groupBox2.Controls.Add(this.label2);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.groupBox2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.groupBox2.Location = new System.Drawing.Point(12, 35);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(437, 332);
@@ -470,8 +500,23 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Sudoku 9x9";
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Easy",
+            "Normal",
+            "Hard"});
+            this.comboBox1.Location = new System.Drawing.Point(310, 19);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(116, 26);
+            this.comboBox1.TabIndex = 9;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
             // panel6
             // 
+            this.panel6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel6.BackgroundImage")));
+            this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel6.Controls.Add(this.panel15);
             this.panel6.Controls.Add(this.panel14);
             this.panel6.Controls.Add(this.panel13);
@@ -483,11 +528,12 @@
             this.panel6.Controls.Add(this.panel8);
             this.panel6.Location = new System.Drawing.Point(19, 19);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(280, 269);
+            this.panel6.Size = new System.Drawing.Size(265, 278);
             this.panel6.TabIndex = 1;
             // 
             // panel15
             // 
+            this.panel15.BackColor = System.Drawing.Color.Transparent;
             this.panel15.Controls.Add(this.Box81);
             this.panel15.Controls.Add(this.Box80);
             this.panel15.Controls.Add(this.Box79);
@@ -497,7 +543,7 @@
             this.panel15.Controls.Add(this.Box63);
             this.panel15.Controls.Add(this.Box62);
             this.panel15.Controls.Add(this.Box61);
-            this.panel15.Location = new System.Drawing.Point(171, 183);
+            this.panel15.Location = new System.Drawing.Point(179, 187);
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(81, 83);
             this.panel15.TabIndex = 16;
@@ -507,7 +553,7 @@
             this.Box81.BackColor = System.Drawing.SystemColors.Window;
             this.Box81.Location = new System.Drawing.Point(55, 55);
             this.Box81.Name = "Box81";
-            this.Box81.Size = new System.Drawing.Size(20, 20);
+            this.Box81.Size = new System.Drawing.Size(20, 24);
             this.Box81.TabIndex = 8;
             this.Box81.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box81.TextChanged += new System.EventHandler(this.Box81_TextChanged);
@@ -517,7 +563,7 @@
             this.Box80.BackColor = System.Drawing.SystemColors.Window;
             this.Box80.Location = new System.Drawing.Point(29, 55);
             this.Box80.Name = "Box80";
-            this.Box80.Size = new System.Drawing.Size(20, 20);
+            this.Box80.Size = new System.Drawing.Size(20, 24);
             this.Box80.TabIndex = 7;
             this.Box80.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box80.TextChanged += new System.EventHandler(this.Box80_TextChanged);
@@ -527,7 +573,7 @@
             this.Box79.BackColor = System.Drawing.SystemColors.Window;
             this.Box79.Location = new System.Drawing.Point(3, 55);
             this.Box79.Name = "Box79";
-            this.Box79.Size = new System.Drawing.Size(20, 20);
+            this.Box79.Size = new System.Drawing.Size(20, 24);
             this.Box79.TabIndex = 6;
             this.Box79.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box79.TextChanged += new System.EventHandler(this.Box79_TextChanged);
@@ -537,7 +583,7 @@
             this.Box72.BackColor = System.Drawing.SystemColors.Window;
             this.Box72.Location = new System.Drawing.Point(55, 29);
             this.Box72.Name = "Box72";
-            this.Box72.Size = new System.Drawing.Size(20, 20);
+            this.Box72.Size = new System.Drawing.Size(20, 24);
             this.Box72.TabIndex = 5;
             this.Box72.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box72.TextChanged += new System.EventHandler(this.Box72_TextChanged);
@@ -547,7 +593,7 @@
             this.Box71.BackColor = System.Drawing.SystemColors.Window;
             this.Box71.Location = new System.Drawing.Point(29, 29);
             this.Box71.Name = "Box71";
-            this.Box71.Size = new System.Drawing.Size(20, 20);
+            this.Box71.Size = new System.Drawing.Size(20, 24);
             this.Box71.TabIndex = 4;
             this.Box71.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box71.TextChanged += new System.EventHandler(this.Box71_TextChanged);
@@ -557,7 +603,7 @@
             this.Box70.BackColor = System.Drawing.SystemColors.Window;
             this.Box70.Location = new System.Drawing.Point(3, 29);
             this.Box70.Name = "Box70";
-            this.Box70.Size = new System.Drawing.Size(20, 20);
+            this.Box70.Size = new System.Drawing.Size(20, 24);
             this.Box70.TabIndex = 3;
             this.Box70.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box70.TextChanged += new System.EventHandler(this.Box70_TextChanged);
@@ -567,7 +613,7 @@
             this.Box63.BackColor = System.Drawing.SystemColors.Window;
             this.Box63.Location = new System.Drawing.Point(55, 3);
             this.Box63.Name = "Box63";
-            this.Box63.Size = new System.Drawing.Size(20, 20);
+            this.Box63.Size = new System.Drawing.Size(20, 24);
             this.Box63.TabIndex = 2;
             this.Box63.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box63.TextChanged += new System.EventHandler(this.Box63_TextChanged);
@@ -577,7 +623,7 @@
             this.Box62.BackColor = System.Drawing.SystemColors.Window;
             this.Box62.Location = new System.Drawing.Point(29, 3);
             this.Box62.Name = "Box62";
-            this.Box62.Size = new System.Drawing.Size(20, 20);
+            this.Box62.Size = new System.Drawing.Size(20, 24);
             this.Box62.TabIndex = 1;
             this.Box62.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box62.TextChanged += new System.EventHandler(this.Box62_TextChanged);
@@ -587,13 +633,14 @@
             this.Box61.BackColor = System.Drawing.SystemColors.Window;
             this.Box61.Location = new System.Drawing.Point(3, 3);
             this.Box61.Name = "Box61";
-            this.Box61.Size = new System.Drawing.Size(20, 20);
+            this.Box61.Size = new System.Drawing.Size(20, 24);
             this.Box61.TabIndex = 0;
             this.Box61.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box61.TextChanged += new System.EventHandler(this.Box61_TextChanged);
             // 
             // panel14
             // 
+            this.panel14.BackColor = System.Drawing.Color.Transparent;
             this.panel14.Controls.Add(this.Box78);
             this.panel14.Controls.Add(this.Box77);
             this.panel14.Controls.Add(this.Box76);
@@ -603,7 +650,7 @@
             this.panel14.Controls.Add(this.Box60);
             this.panel14.Controls.Add(this.Box59);
             this.panel14.Controls.Add(this.Box58);
-            this.panel14.Location = new System.Drawing.Point(90, 183);
+            this.panel14.Location = new System.Drawing.Point(92, 187);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(81, 83);
             this.panel14.TabIndex = 15;
@@ -613,7 +660,7 @@
             this.Box78.BackColor = System.Drawing.SystemColors.Window;
             this.Box78.Location = new System.Drawing.Point(55, 55);
             this.Box78.Name = "Box78";
-            this.Box78.Size = new System.Drawing.Size(20, 20);
+            this.Box78.Size = new System.Drawing.Size(20, 24);
             this.Box78.TabIndex = 8;
             this.Box78.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box78.TextChanged += new System.EventHandler(this.Box78_TextChanged);
@@ -623,7 +670,7 @@
             this.Box77.BackColor = System.Drawing.SystemColors.Window;
             this.Box77.Location = new System.Drawing.Point(29, 55);
             this.Box77.Name = "Box77";
-            this.Box77.Size = new System.Drawing.Size(20, 20);
+            this.Box77.Size = new System.Drawing.Size(20, 24);
             this.Box77.TabIndex = 7;
             this.Box77.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box77.TextChanged += new System.EventHandler(this.Box77_TextChanged);
@@ -633,7 +680,7 @@
             this.Box76.BackColor = System.Drawing.SystemColors.Window;
             this.Box76.Location = new System.Drawing.Point(3, 55);
             this.Box76.Name = "Box76";
-            this.Box76.Size = new System.Drawing.Size(20, 20);
+            this.Box76.Size = new System.Drawing.Size(20, 24);
             this.Box76.TabIndex = 6;
             this.Box76.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box76.TextChanged += new System.EventHandler(this.Box76_TextChanged);
@@ -643,7 +690,7 @@
             this.Box69.BackColor = System.Drawing.SystemColors.Window;
             this.Box69.Location = new System.Drawing.Point(55, 29);
             this.Box69.Name = "Box69";
-            this.Box69.Size = new System.Drawing.Size(20, 20);
+            this.Box69.Size = new System.Drawing.Size(20, 24);
             this.Box69.TabIndex = 5;
             this.Box69.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box69.TextChanged += new System.EventHandler(this.Box69_TextChanged);
@@ -653,7 +700,7 @@
             this.Box68.BackColor = System.Drawing.SystemColors.Window;
             this.Box68.Location = new System.Drawing.Point(29, 29);
             this.Box68.Name = "Box68";
-            this.Box68.Size = new System.Drawing.Size(20, 20);
+            this.Box68.Size = new System.Drawing.Size(20, 24);
             this.Box68.TabIndex = 4;
             this.Box68.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box68.TextChanged += new System.EventHandler(this.Box68_TextChanged);
@@ -663,7 +710,7 @@
             this.Box67.BackColor = System.Drawing.SystemColors.Window;
             this.Box67.Location = new System.Drawing.Point(3, 29);
             this.Box67.Name = "Box67";
-            this.Box67.Size = new System.Drawing.Size(20, 20);
+            this.Box67.Size = new System.Drawing.Size(20, 24);
             this.Box67.TabIndex = 3;
             this.Box67.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box67.TextChanged += new System.EventHandler(this.Box67_TextChanged);
@@ -673,7 +720,7 @@
             this.Box60.BackColor = System.Drawing.SystemColors.Window;
             this.Box60.Location = new System.Drawing.Point(55, 3);
             this.Box60.Name = "Box60";
-            this.Box60.Size = new System.Drawing.Size(20, 20);
+            this.Box60.Size = new System.Drawing.Size(20, 24);
             this.Box60.TabIndex = 2;
             this.Box60.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box60.TextChanged += new System.EventHandler(this.Box60_TextChanged);
@@ -683,7 +730,7 @@
             this.Box59.BackColor = System.Drawing.SystemColors.Window;
             this.Box59.Location = new System.Drawing.Point(29, 3);
             this.Box59.Name = "Box59";
-            this.Box59.Size = new System.Drawing.Size(20, 20);
+            this.Box59.Size = new System.Drawing.Size(20, 24);
             this.Box59.TabIndex = 1;
             this.Box59.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box59.TextChanged += new System.EventHandler(this.Box59_TextChanged);
@@ -693,13 +740,14 @@
             this.Box58.BackColor = System.Drawing.SystemColors.Window;
             this.Box58.Location = new System.Drawing.Point(3, 3);
             this.Box58.Name = "Box58";
-            this.Box58.Size = new System.Drawing.Size(20, 20);
+            this.Box58.Size = new System.Drawing.Size(20, 24);
             this.Box58.TabIndex = 0;
             this.Box58.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box58.TextChanged += new System.EventHandler(this.Box58_TextChanged);
             // 
             // panel13
             // 
+            this.panel13.BackColor = System.Drawing.Color.Transparent;
             this.panel13.Controls.Add(this.Box75);
             this.panel13.Controls.Add(this.Box74);
             this.panel13.Controls.Add(this.Box73);
@@ -709,7 +757,7 @@
             this.panel13.Controls.Add(this.Box57);
             this.panel13.Controls.Add(this.Box56);
             this.panel13.Controls.Add(this.Box55);
-            this.panel13.Location = new System.Drawing.Point(9, 183);
+            this.panel13.Location = new System.Drawing.Point(9, 187);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(81, 83);
             this.panel13.TabIndex = 14;
@@ -719,7 +767,7 @@
             this.Box75.BackColor = System.Drawing.SystemColors.Window;
             this.Box75.Location = new System.Drawing.Point(55, 55);
             this.Box75.Name = "Box75";
-            this.Box75.Size = new System.Drawing.Size(20, 20);
+            this.Box75.Size = new System.Drawing.Size(20, 24);
             this.Box75.TabIndex = 8;
             this.Box75.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box75.TextChanged += new System.EventHandler(this.Box75_TextChanged);
@@ -729,7 +777,7 @@
             this.Box74.BackColor = System.Drawing.SystemColors.Window;
             this.Box74.Location = new System.Drawing.Point(29, 55);
             this.Box74.Name = "Box74";
-            this.Box74.Size = new System.Drawing.Size(20, 20);
+            this.Box74.Size = new System.Drawing.Size(20, 24);
             this.Box74.TabIndex = 7;
             this.Box74.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box74.TextChanged += new System.EventHandler(this.Box74_TextChanged);
@@ -739,7 +787,7 @@
             this.Box73.BackColor = System.Drawing.SystemColors.Window;
             this.Box73.Location = new System.Drawing.Point(3, 55);
             this.Box73.Name = "Box73";
-            this.Box73.Size = new System.Drawing.Size(20, 20);
+            this.Box73.Size = new System.Drawing.Size(20, 24);
             this.Box73.TabIndex = 6;
             this.Box73.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box73.TextChanged += new System.EventHandler(this.Box73_TextChanged);
@@ -749,7 +797,7 @@
             this.Box66.BackColor = System.Drawing.SystemColors.Window;
             this.Box66.Location = new System.Drawing.Point(55, 29);
             this.Box66.Name = "Box66";
-            this.Box66.Size = new System.Drawing.Size(20, 20);
+            this.Box66.Size = new System.Drawing.Size(20, 24);
             this.Box66.TabIndex = 5;
             this.Box66.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box66.TextChanged += new System.EventHandler(this.Box66_TextChanged);
@@ -759,7 +807,7 @@
             this.Box65.BackColor = System.Drawing.SystemColors.Window;
             this.Box65.Location = new System.Drawing.Point(29, 29);
             this.Box65.Name = "Box65";
-            this.Box65.Size = new System.Drawing.Size(20, 20);
+            this.Box65.Size = new System.Drawing.Size(20, 24);
             this.Box65.TabIndex = 4;
             this.Box65.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box65.TextChanged += new System.EventHandler(this.Box65_TextChanged);
@@ -769,7 +817,7 @@
             this.Box64.BackColor = System.Drawing.SystemColors.Window;
             this.Box64.Location = new System.Drawing.Point(3, 29);
             this.Box64.Name = "Box64";
-            this.Box64.Size = new System.Drawing.Size(20, 20);
+            this.Box64.Size = new System.Drawing.Size(20, 24);
             this.Box64.TabIndex = 3;
             this.Box64.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box64.TextChanged += new System.EventHandler(this.Box64_TextChanged);
@@ -779,7 +827,7 @@
             this.Box57.BackColor = System.Drawing.SystemColors.Window;
             this.Box57.Location = new System.Drawing.Point(55, 3);
             this.Box57.Name = "Box57";
-            this.Box57.Size = new System.Drawing.Size(20, 20);
+            this.Box57.Size = new System.Drawing.Size(20, 24);
             this.Box57.TabIndex = 2;
             this.Box57.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box57.TextChanged += new System.EventHandler(this.Box57_TextChanged);
@@ -789,7 +837,7 @@
             this.Box56.BackColor = System.Drawing.SystemColors.Window;
             this.Box56.Location = new System.Drawing.Point(29, 3);
             this.Box56.Name = "Box56";
-            this.Box56.Size = new System.Drawing.Size(20, 20);
+            this.Box56.Size = new System.Drawing.Size(20, 24);
             this.Box56.TabIndex = 1;
             this.Box56.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box56.TextChanged += new System.EventHandler(this.Box56_TextChanged);
@@ -799,13 +847,14 @@
             this.Box55.BackColor = System.Drawing.SystemColors.Window;
             this.Box55.Location = new System.Drawing.Point(3, 3);
             this.Box55.Name = "Box55";
-            this.Box55.Size = new System.Drawing.Size(20, 20);
+            this.Box55.Size = new System.Drawing.Size(20, 24);
             this.Box55.TabIndex = 0;
             this.Box55.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box55.TextChanged += new System.EventHandler(this.Box55_TextChanged);
             // 
             // panel12
             // 
+            this.panel12.BackColor = System.Drawing.Color.Transparent;
             this.panel12.Controls.Add(this.Box54);
             this.panel12.Controls.Add(this.Box53);
             this.panel12.Controls.Add(this.Box52);
@@ -815,7 +864,7 @@
             this.panel12.Controls.Add(this.Box36);
             this.panel12.Controls.Add(this.Box35);
             this.panel12.Controls.Add(this.Box34);
-            this.panel12.Location = new System.Drawing.Point(171, 98);
+            this.panel12.Location = new System.Drawing.Point(179, 98);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(81, 83);
             this.panel12.TabIndex = 13;
@@ -825,7 +874,7 @@
             this.Box54.BackColor = System.Drawing.SystemColors.Window;
             this.Box54.Location = new System.Drawing.Point(55, 55);
             this.Box54.Name = "Box54";
-            this.Box54.Size = new System.Drawing.Size(20, 20);
+            this.Box54.Size = new System.Drawing.Size(20, 24);
             this.Box54.TabIndex = 8;
             this.Box54.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box54.TextChanged += new System.EventHandler(this.Box54_TextChanged);
@@ -835,7 +884,7 @@
             this.Box53.BackColor = System.Drawing.SystemColors.Window;
             this.Box53.Location = new System.Drawing.Point(29, 55);
             this.Box53.Name = "Box53";
-            this.Box53.Size = new System.Drawing.Size(20, 20);
+            this.Box53.Size = new System.Drawing.Size(20, 24);
             this.Box53.TabIndex = 7;
             this.Box53.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box53.TextChanged += new System.EventHandler(this.Box53_TextChanged);
@@ -845,7 +894,7 @@
             this.Box52.BackColor = System.Drawing.SystemColors.Window;
             this.Box52.Location = new System.Drawing.Point(3, 55);
             this.Box52.Name = "Box52";
-            this.Box52.Size = new System.Drawing.Size(20, 20);
+            this.Box52.Size = new System.Drawing.Size(20, 24);
             this.Box52.TabIndex = 6;
             this.Box52.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box52.TextChanged += new System.EventHandler(this.Box52_TextChanged);
@@ -855,7 +904,7 @@
             this.Box45.BackColor = System.Drawing.SystemColors.Window;
             this.Box45.Location = new System.Drawing.Point(55, 29);
             this.Box45.Name = "Box45";
-            this.Box45.Size = new System.Drawing.Size(20, 20);
+            this.Box45.Size = new System.Drawing.Size(20, 24);
             this.Box45.TabIndex = 5;
             this.Box45.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box45.TextChanged += new System.EventHandler(this.Box45_TextChanged);
@@ -865,7 +914,7 @@
             this.Box44.BackColor = System.Drawing.SystemColors.Window;
             this.Box44.Location = new System.Drawing.Point(29, 29);
             this.Box44.Name = "Box44";
-            this.Box44.Size = new System.Drawing.Size(20, 20);
+            this.Box44.Size = new System.Drawing.Size(20, 24);
             this.Box44.TabIndex = 4;
             this.Box44.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box44.TextChanged += new System.EventHandler(this.Box44_TextChanged);
@@ -875,7 +924,7 @@
             this.Box43.BackColor = System.Drawing.SystemColors.Window;
             this.Box43.Location = new System.Drawing.Point(3, 29);
             this.Box43.Name = "Box43";
-            this.Box43.Size = new System.Drawing.Size(20, 20);
+            this.Box43.Size = new System.Drawing.Size(20, 24);
             this.Box43.TabIndex = 3;
             this.Box43.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box43.TextChanged += new System.EventHandler(this.Box43_TextChanged);
@@ -885,7 +934,7 @@
             this.Box36.BackColor = System.Drawing.SystemColors.Window;
             this.Box36.Location = new System.Drawing.Point(55, 3);
             this.Box36.Name = "Box36";
-            this.Box36.Size = new System.Drawing.Size(20, 20);
+            this.Box36.Size = new System.Drawing.Size(20, 24);
             this.Box36.TabIndex = 2;
             this.Box36.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box36.TextChanged += new System.EventHandler(this.Box36_TextChanged);
@@ -895,7 +944,7 @@
             this.Box35.BackColor = System.Drawing.SystemColors.Window;
             this.Box35.Location = new System.Drawing.Point(29, 3);
             this.Box35.Name = "Box35";
-            this.Box35.Size = new System.Drawing.Size(20, 20);
+            this.Box35.Size = new System.Drawing.Size(20, 24);
             this.Box35.TabIndex = 1;
             this.Box35.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box35.TextChanged += new System.EventHandler(this.Box35_TextChanged);
@@ -905,13 +954,14 @@
             this.Box34.BackColor = System.Drawing.SystemColors.Window;
             this.Box34.Location = new System.Drawing.Point(3, 3);
             this.Box34.Name = "Box34";
-            this.Box34.Size = new System.Drawing.Size(20, 20);
+            this.Box34.Size = new System.Drawing.Size(20, 24);
             this.Box34.TabIndex = 0;
             this.Box34.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box34.TextChanged += new System.EventHandler(this.Box34_TextChanged);
             // 
             // panel11
             // 
+            this.panel11.BackColor = System.Drawing.Color.Transparent;
             this.panel11.Controls.Add(this.Box51);
             this.panel11.Controls.Add(this.Box50);
             this.panel11.Controls.Add(this.Box49);
@@ -921,7 +971,7 @@
             this.panel11.Controls.Add(this.Box33);
             this.panel11.Controls.Add(this.Box32);
             this.panel11.Controls.Add(this.Box31);
-            this.panel11.Location = new System.Drawing.Point(90, 98);
+            this.panel11.Location = new System.Drawing.Point(92, 98);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(81, 83);
             this.panel11.TabIndex = 12;
@@ -931,7 +981,7 @@
             this.Box51.BackColor = System.Drawing.SystemColors.Window;
             this.Box51.Location = new System.Drawing.Point(55, 55);
             this.Box51.Name = "Box51";
-            this.Box51.Size = new System.Drawing.Size(20, 20);
+            this.Box51.Size = new System.Drawing.Size(20, 24);
             this.Box51.TabIndex = 8;
             this.Box51.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box51.TextChanged += new System.EventHandler(this.Box51_TextChanged);
@@ -941,7 +991,7 @@
             this.Box50.BackColor = System.Drawing.SystemColors.Window;
             this.Box50.Location = new System.Drawing.Point(29, 55);
             this.Box50.Name = "Box50";
-            this.Box50.Size = new System.Drawing.Size(20, 20);
+            this.Box50.Size = new System.Drawing.Size(20, 24);
             this.Box50.TabIndex = 7;
             this.Box50.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box50.TextChanged += new System.EventHandler(this.Box50_TextChanged);
@@ -951,7 +1001,7 @@
             this.Box49.BackColor = System.Drawing.SystemColors.Window;
             this.Box49.Location = new System.Drawing.Point(3, 55);
             this.Box49.Name = "Box49";
-            this.Box49.Size = new System.Drawing.Size(20, 20);
+            this.Box49.Size = new System.Drawing.Size(20, 24);
             this.Box49.TabIndex = 6;
             this.Box49.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box49.TextChanged += new System.EventHandler(this.Box49_TextChanged);
@@ -961,7 +1011,7 @@
             this.Box42.BackColor = System.Drawing.SystemColors.Window;
             this.Box42.Location = new System.Drawing.Point(55, 29);
             this.Box42.Name = "Box42";
-            this.Box42.Size = new System.Drawing.Size(20, 20);
+            this.Box42.Size = new System.Drawing.Size(20, 24);
             this.Box42.TabIndex = 5;
             this.Box42.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box42.TextChanged += new System.EventHandler(this.Box42_TextChanged);
@@ -971,7 +1021,7 @@
             this.Box41.BackColor = System.Drawing.SystemColors.Window;
             this.Box41.Location = new System.Drawing.Point(29, 29);
             this.Box41.Name = "Box41";
-            this.Box41.Size = new System.Drawing.Size(20, 20);
+            this.Box41.Size = new System.Drawing.Size(20, 24);
             this.Box41.TabIndex = 4;
             this.Box41.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box41.TextChanged += new System.EventHandler(this.Box41_TextChanged);
@@ -981,7 +1031,7 @@
             this.Box40.BackColor = System.Drawing.SystemColors.Window;
             this.Box40.Location = new System.Drawing.Point(3, 29);
             this.Box40.Name = "Box40";
-            this.Box40.Size = new System.Drawing.Size(20, 20);
+            this.Box40.Size = new System.Drawing.Size(20, 24);
             this.Box40.TabIndex = 3;
             this.Box40.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box40.TextChanged += new System.EventHandler(this.Box40_TextChanged);
@@ -991,7 +1041,7 @@
             this.Box33.BackColor = System.Drawing.SystemColors.Window;
             this.Box33.Location = new System.Drawing.Point(55, 3);
             this.Box33.Name = "Box33";
-            this.Box33.Size = new System.Drawing.Size(20, 20);
+            this.Box33.Size = new System.Drawing.Size(20, 24);
             this.Box33.TabIndex = 2;
             this.Box33.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box33.TextChanged += new System.EventHandler(this.Box33_TextChanged);
@@ -1001,7 +1051,7 @@
             this.Box32.BackColor = System.Drawing.SystemColors.Window;
             this.Box32.Location = new System.Drawing.Point(29, 3);
             this.Box32.Name = "Box32";
-            this.Box32.Size = new System.Drawing.Size(20, 20);
+            this.Box32.Size = new System.Drawing.Size(20, 24);
             this.Box32.TabIndex = 1;
             this.Box32.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box32.TextChanged += new System.EventHandler(this.Box32_TextChanged);
@@ -1011,13 +1061,14 @@
             this.Box31.BackColor = System.Drawing.SystemColors.Window;
             this.Box31.Location = new System.Drawing.Point(3, 3);
             this.Box31.Name = "Box31";
-            this.Box31.Size = new System.Drawing.Size(20, 20);
+            this.Box31.Size = new System.Drawing.Size(20, 24);
             this.Box31.TabIndex = 0;
             this.Box31.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box31.TextChanged += new System.EventHandler(this.Box31_TextChanged);
             // 
             // panel10
             // 
+            this.panel10.BackColor = System.Drawing.Color.Transparent;
             this.panel10.Controls.Add(this.Box48);
             this.panel10.Controls.Add(this.Box47);
             this.panel10.Controls.Add(this.Box46);
@@ -1037,7 +1088,7 @@
             this.Box48.BackColor = System.Drawing.SystemColors.Window;
             this.Box48.Location = new System.Drawing.Point(55, 55);
             this.Box48.Name = "Box48";
-            this.Box48.Size = new System.Drawing.Size(20, 20);
+            this.Box48.Size = new System.Drawing.Size(20, 24);
             this.Box48.TabIndex = 8;
             this.Box48.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box48.TextChanged += new System.EventHandler(this.Box48_TextChanged);
@@ -1047,7 +1098,7 @@
             this.Box47.BackColor = System.Drawing.SystemColors.Window;
             this.Box47.Location = new System.Drawing.Point(29, 55);
             this.Box47.Name = "Box47";
-            this.Box47.Size = new System.Drawing.Size(20, 20);
+            this.Box47.Size = new System.Drawing.Size(20, 24);
             this.Box47.TabIndex = 7;
             this.Box47.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box47.TextChanged += new System.EventHandler(this.Box47_TextChanged);
@@ -1057,7 +1108,7 @@
             this.Box46.BackColor = System.Drawing.SystemColors.Window;
             this.Box46.Location = new System.Drawing.Point(3, 55);
             this.Box46.Name = "Box46";
-            this.Box46.Size = new System.Drawing.Size(20, 20);
+            this.Box46.Size = new System.Drawing.Size(20, 24);
             this.Box46.TabIndex = 6;
             this.Box46.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box46.TextChanged += new System.EventHandler(this.Box46_TextChanged);
@@ -1067,7 +1118,7 @@
             this.Box39.BackColor = System.Drawing.SystemColors.Window;
             this.Box39.Location = new System.Drawing.Point(55, 29);
             this.Box39.Name = "Box39";
-            this.Box39.Size = new System.Drawing.Size(20, 20);
+            this.Box39.Size = new System.Drawing.Size(20, 24);
             this.Box39.TabIndex = 5;
             this.Box39.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box39.TextChanged += new System.EventHandler(this.Box39_TextChanged);
@@ -1077,7 +1128,7 @@
             this.Box38.BackColor = System.Drawing.SystemColors.Window;
             this.Box38.Location = new System.Drawing.Point(29, 29);
             this.Box38.Name = "Box38";
-            this.Box38.Size = new System.Drawing.Size(20, 20);
+            this.Box38.Size = new System.Drawing.Size(20, 24);
             this.Box38.TabIndex = 4;
             this.Box38.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box38.TextChanged += new System.EventHandler(this.Box38_TextChanged);
@@ -1087,7 +1138,7 @@
             this.Box37.BackColor = System.Drawing.SystemColors.Window;
             this.Box37.Location = new System.Drawing.Point(3, 29);
             this.Box37.Name = "Box37";
-            this.Box37.Size = new System.Drawing.Size(20, 20);
+            this.Box37.Size = new System.Drawing.Size(20, 24);
             this.Box37.TabIndex = 3;
             this.Box37.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box37.TextChanged += new System.EventHandler(this.Box37_TextChanged);
@@ -1097,7 +1148,7 @@
             this.Box30.BackColor = System.Drawing.SystemColors.Window;
             this.Box30.Location = new System.Drawing.Point(55, 3);
             this.Box30.Name = "Box30";
-            this.Box30.Size = new System.Drawing.Size(20, 20);
+            this.Box30.Size = new System.Drawing.Size(20, 24);
             this.Box30.TabIndex = 2;
             this.Box30.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box30.TextChanged += new System.EventHandler(this.Box30_TextChanged);
@@ -1107,7 +1158,7 @@
             this.Box29.BackColor = System.Drawing.SystemColors.Window;
             this.Box29.Location = new System.Drawing.Point(29, 3);
             this.Box29.Name = "Box29";
-            this.Box29.Size = new System.Drawing.Size(20, 20);
+            this.Box29.Size = new System.Drawing.Size(20, 24);
             this.Box29.TabIndex = 1;
             this.Box29.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box29.TextChanged += new System.EventHandler(this.Box29_TextChanged);
@@ -1117,13 +1168,14 @@
             this.Box28.BackColor = System.Drawing.SystemColors.Window;
             this.Box28.Location = new System.Drawing.Point(3, 3);
             this.Box28.Name = "Box28";
-            this.Box28.Size = new System.Drawing.Size(20, 20);
+            this.Box28.Size = new System.Drawing.Size(20, 24);
             this.Box28.TabIndex = 0;
             this.Box28.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box28.TextChanged += new System.EventHandler(this.Box28_TextChanged);
             // 
             // panel9
             // 
+            this.panel9.BackColor = System.Drawing.Color.Transparent;
             this.panel9.Controls.Add(this.Box27);
             this.panel9.Controls.Add(this.Box26);
             this.panel9.Controls.Add(this.Box25);
@@ -1133,7 +1185,7 @@
             this.panel9.Controls.Add(this.Box9);
             this.panel9.Controls.Add(this.Box8);
             this.panel9.Controls.Add(this.Box7);
-            this.panel9.Location = new System.Drawing.Point(171, 9);
+            this.panel9.Location = new System.Drawing.Point(179, 9);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(81, 83);
             this.panel9.TabIndex = 10;
@@ -1143,7 +1195,7 @@
             this.Box27.BackColor = System.Drawing.SystemColors.Window;
             this.Box27.Location = new System.Drawing.Point(55, 55);
             this.Box27.Name = "Box27";
-            this.Box27.Size = new System.Drawing.Size(20, 20);
+            this.Box27.Size = new System.Drawing.Size(20, 24);
             this.Box27.TabIndex = 8;
             this.Box27.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box27.TextChanged += new System.EventHandler(this.Box27_TextChanged);
@@ -1153,7 +1205,7 @@
             this.Box26.BackColor = System.Drawing.SystemColors.Window;
             this.Box26.Location = new System.Drawing.Point(29, 55);
             this.Box26.Name = "Box26";
-            this.Box26.Size = new System.Drawing.Size(20, 20);
+            this.Box26.Size = new System.Drawing.Size(20, 24);
             this.Box26.TabIndex = 7;
             this.Box26.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box26.TextChanged += new System.EventHandler(this.Box26_TextChanged);
@@ -1163,7 +1215,7 @@
             this.Box25.BackColor = System.Drawing.SystemColors.Window;
             this.Box25.Location = new System.Drawing.Point(3, 55);
             this.Box25.Name = "Box25";
-            this.Box25.Size = new System.Drawing.Size(20, 20);
+            this.Box25.Size = new System.Drawing.Size(20, 24);
             this.Box25.TabIndex = 6;
             this.Box25.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box25.TextChanged += new System.EventHandler(this.Box25_TextChanged);
@@ -1173,7 +1225,7 @@
             this.Box18.BackColor = System.Drawing.SystemColors.Window;
             this.Box18.Location = new System.Drawing.Point(55, 29);
             this.Box18.Name = "Box18";
-            this.Box18.Size = new System.Drawing.Size(20, 20);
+            this.Box18.Size = new System.Drawing.Size(20, 24);
             this.Box18.TabIndex = 5;
             this.Box18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box18.TextChanged += new System.EventHandler(this.Box18_TextChanged);
@@ -1183,7 +1235,7 @@
             this.Box17.BackColor = System.Drawing.SystemColors.Window;
             this.Box17.Location = new System.Drawing.Point(29, 29);
             this.Box17.Name = "Box17";
-            this.Box17.Size = new System.Drawing.Size(20, 20);
+            this.Box17.Size = new System.Drawing.Size(20, 24);
             this.Box17.TabIndex = 4;
             this.Box17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box17.TextChanged += new System.EventHandler(this.Box17_TextChanged);
@@ -1193,7 +1245,7 @@
             this.Box16.BackColor = System.Drawing.SystemColors.Window;
             this.Box16.Location = new System.Drawing.Point(3, 29);
             this.Box16.Name = "Box16";
-            this.Box16.Size = new System.Drawing.Size(20, 20);
+            this.Box16.Size = new System.Drawing.Size(20, 24);
             this.Box16.TabIndex = 3;
             this.Box16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box16.TextChanged += new System.EventHandler(this.Box16_TextChanged);
@@ -1203,7 +1255,7 @@
             this.Box9.BackColor = System.Drawing.SystemColors.Window;
             this.Box9.Location = new System.Drawing.Point(55, 3);
             this.Box9.Name = "Box9";
-            this.Box9.Size = new System.Drawing.Size(20, 20);
+            this.Box9.Size = new System.Drawing.Size(20, 24);
             this.Box9.TabIndex = 2;
             this.Box9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box9.TextChanged += new System.EventHandler(this.Box9_TextChanged);
@@ -1213,7 +1265,7 @@
             this.Box8.BackColor = System.Drawing.SystemColors.Window;
             this.Box8.Location = new System.Drawing.Point(29, 3);
             this.Box8.Name = "Box8";
-            this.Box8.Size = new System.Drawing.Size(20, 20);
+            this.Box8.Size = new System.Drawing.Size(20, 24);
             this.Box8.TabIndex = 1;
             this.Box8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box8.TextChanged += new System.EventHandler(this.Box8_TextChanged);
@@ -1223,13 +1275,14 @@
             this.Box7.BackColor = System.Drawing.SystemColors.Window;
             this.Box7.Location = new System.Drawing.Point(3, 3);
             this.Box7.Name = "Box7";
-            this.Box7.Size = new System.Drawing.Size(20, 20);
+            this.Box7.Size = new System.Drawing.Size(20, 24);
             this.Box7.TabIndex = 0;
             this.Box7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box7.TextChanged += new System.EventHandler(this.Box7_TextChanged);
             // 
             // panel7
             // 
+            this.panel7.BackColor = System.Drawing.Color.Transparent;
             this.panel7.Controls.Add(this.Box24);
             this.panel7.Controls.Add(this.Box23);
             this.panel7.Controls.Add(this.Box22);
@@ -1239,7 +1292,7 @@
             this.panel7.Controls.Add(this.Box6);
             this.panel7.Controls.Add(this.Box5);
             this.panel7.Controls.Add(this.Box4);
-            this.panel7.Location = new System.Drawing.Point(90, 9);
+            this.panel7.Location = new System.Drawing.Point(92, 9);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(81, 83);
             this.panel7.TabIndex = 9;
@@ -1249,7 +1302,7 @@
             this.Box24.BackColor = System.Drawing.SystemColors.Window;
             this.Box24.Location = new System.Drawing.Point(55, 55);
             this.Box24.Name = "Box24";
-            this.Box24.Size = new System.Drawing.Size(20, 20);
+            this.Box24.Size = new System.Drawing.Size(20, 24);
             this.Box24.TabIndex = 8;
             this.Box24.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box24.TextChanged += new System.EventHandler(this.Box24_TextChanged);
@@ -1259,7 +1312,7 @@
             this.Box23.BackColor = System.Drawing.SystemColors.Window;
             this.Box23.Location = new System.Drawing.Point(29, 55);
             this.Box23.Name = "Box23";
-            this.Box23.Size = new System.Drawing.Size(20, 20);
+            this.Box23.Size = new System.Drawing.Size(20, 24);
             this.Box23.TabIndex = 7;
             this.Box23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box23.TextChanged += new System.EventHandler(this.Box23_TextChanged);
@@ -1269,7 +1322,7 @@
             this.Box22.BackColor = System.Drawing.SystemColors.Window;
             this.Box22.Location = new System.Drawing.Point(3, 55);
             this.Box22.Name = "Box22";
-            this.Box22.Size = new System.Drawing.Size(20, 20);
+            this.Box22.Size = new System.Drawing.Size(20, 24);
             this.Box22.TabIndex = 6;
             this.Box22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box22.TextChanged += new System.EventHandler(this.Box22_TextChanged);
@@ -1279,7 +1332,7 @@
             this.Box15.BackColor = System.Drawing.SystemColors.Window;
             this.Box15.Location = new System.Drawing.Point(55, 29);
             this.Box15.Name = "Box15";
-            this.Box15.Size = new System.Drawing.Size(20, 20);
+            this.Box15.Size = new System.Drawing.Size(20, 24);
             this.Box15.TabIndex = 5;
             this.Box15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box15.TextChanged += new System.EventHandler(this.Box15_TextChanged);
@@ -1289,7 +1342,7 @@
             this.Box14.BackColor = System.Drawing.SystemColors.Window;
             this.Box14.Location = new System.Drawing.Point(29, 29);
             this.Box14.Name = "Box14";
-            this.Box14.Size = new System.Drawing.Size(20, 20);
+            this.Box14.Size = new System.Drawing.Size(20, 24);
             this.Box14.TabIndex = 4;
             this.Box14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box14.TextChanged += new System.EventHandler(this.Box14_TextChanged);
@@ -1299,7 +1352,7 @@
             this.Box13.BackColor = System.Drawing.SystemColors.Window;
             this.Box13.Location = new System.Drawing.Point(3, 29);
             this.Box13.Name = "Box13";
-            this.Box13.Size = new System.Drawing.Size(20, 20);
+            this.Box13.Size = new System.Drawing.Size(20, 24);
             this.Box13.TabIndex = 3;
             this.Box13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box13.TextChanged += new System.EventHandler(this.Box13_TextChanged);
@@ -1309,7 +1362,7 @@
             this.Box6.BackColor = System.Drawing.SystemColors.Window;
             this.Box6.Location = new System.Drawing.Point(55, 3);
             this.Box6.Name = "Box6";
-            this.Box6.Size = new System.Drawing.Size(20, 20);
+            this.Box6.Size = new System.Drawing.Size(20, 24);
             this.Box6.TabIndex = 2;
             this.Box6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box6.TextChanged += new System.EventHandler(this.Box6_TextChanged);
@@ -1319,7 +1372,7 @@
             this.Box5.BackColor = System.Drawing.SystemColors.Window;
             this.Box5.Location = new System.Drawing.Point(29, 3);
             this.Box5.Name = "Box5";
-            this.Box5.Size = new System.Drawing.Size(20, 20);
+            this.Box5.Size = new System.Drawing.Size(20, 24);
             this.Box5.TabIndex = 1;
             this.Box5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box5.TextChanged += new System.EventHandler(this.Box5_TextChanged);
@@ -1329,13 +1382,14 @@
             this.Box4.BackColor = System.Drawing.SystemColors.Window;
             this.Box4.Location = new System.Drawing.Point(3, 3);
             this.Box4.Name = "Box4";
-            this.Box4.Size = new System.Drawing.Size(20, 20);
+            this.Box4.Size = new System.Drawing.Size(20, 24);
             this.Box4.TabIndex = 0;
             this.Box4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box4.TextChanged += new System.EventHandler(this.Box4_TextChanged);
             // 
             // panel8
             // 
+            this.panel8.BackColor = System.Drawing.Color.Transparent;
             this.panel8.Controls.Add(this.Box21);
             this.panel8.Controls.Add(this.Box20);
             this.panel8.Controls.Add(this.Box19);
@@ -1355,7 +1409,7 @@
             this.Box21.BackColor = System.Drawing.SystemColors.Window;
             this.Box21.Location = new System.Drawing.Point(55, 55);
             this.Box21.Name = "Box21";
-            this.Box21.Size = new System.Drawing.Size(20, 20);
+            this.Box21.Size = new System.Drawing.Size(20, 24);
             this.Box21.TabIndex = 8;
             this.Box21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box21.TextChanged += new System.EventHandler(this.Box21_TextChanged);
@@ -1365,7 +1419,7 @@
             this.Box20.BackColor = System.Drawing.SystemColors.Window;
             this.Box20.Location = new System.Drawing.Point(29, 55);
             this.Box20.Name = "Box20";
-            this.Box20.Size = new System.Drawing.Size(20, 20);
+            this.Box20.Size = new System.Drawing.Size(20, 24);
             this.Box20.TabIndex = 7;
             this.Box20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box20.TextChanged += new System.EventHandler(this.Box20_TextChanged);
@@ -1375,7 +1429,7 @@
             this.Box19.BackColor = System.Drawing.SystemColors.Window;
             this.Box19.Location = new System.Drawing.Point(3, 55);
             this.Box19.Name = "Box19";
-            this.Box19.Size = new System.Drawing.Size(20, 20);
+            this.Box19.Size = new System.Drawing.Size(20, 24);
             this.Box19.TabIndex = 6;
             this.Box19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box19.TextChanged += new System.EventHandler(this.Box19_TextChanged);
@@ -1385,7 +1439,7 @@
             this.Box12.BackColor = System.Drawing.SystemColors.Window;
             this.Box12.Location = new System.Drawing.Point(55, 29);
             this.Box12.Name = "Box12";
-            this.Box12.Size = new System.Drawing.Size(20, 20);
+            this.Box12.Size = new System.Drawing.Size(20, 24);
             this.Box12.TabIndex = 5;
             this.Box12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box12.TextChanged += new System.EventHandler(this.Box12_TextChanged);
@@ -1395,7 +1449,7 @@
             this.Box11.BackColor = System.Drawing.SystemColors.Window;
             this.Box11.Location = new System.Drawing.Point(29, 29);
             this.Box11.Name = "Box11";
-            this.Box11.Size = new System.Drawing.Size(20, 20);
+            this.Box11.Size = new System.Drawing.Size(20, 24);
             this.Box11.TabIndex = 4;
             this.Box11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box11.TextChanged += new System.EventHandler(this.Box11_TextChanged);
@@ -1405,7 +1459,7 @@
             this.Box10.BackColor = System.Drawing.SystemColors.Window;
             this.Box10.Location = new System.Drawing.Point(3, 29);
             this.Box10.Name = "Box10";
-            this.Box10.Size = new System.Drawing.Size(20, 20);
+            this.Box10.Size = new System.Drawing.Size(20, 24);
             this.Box10.TabIndex = 3;
             this.Box10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box10.TextChanged += new System.EventHandler(this.Box10_TextChanged);
@@ -1415,7 +1469,7 @@
             this.Box3.BackColor = System.Drawing.SystemColors.Window;
             this.Box3.Location = new System.Drawing.Point(55, 3);
             this.Box3.Name = "Box3";
-            this.Box3.Size = new System.Drawing.Size(20, 20);
+            this.Box3.Size = new System.Drawing.Size(20, 24);
             this.Box3.TabIndex = 2;
             this.Box3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box3.TextChanged += new System.EventHandler(this.Box3_TextChanged);
@@ -1425,7 +1479,7 @@
             this.Box2.BackColor = System.Drawing.SystemColors.Window;
             this.Box2.Location = new System.Drawing.Point(29, 3);
             this.Box2.Name = "Box2";
-            this.Box2.Size = new System.Drawing.Size(20, 20);
+            this.Box2.Size = new System.Drawing.Size(20, 24);
             this.Box2.TabIndex = 1;
             this.Box2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box2.TextChanged += new System.EventHandler(this.Box2_TextChanged);
@@ -1435,29 +1489,33 @@
             this.Box1.BackColor = System.Drawing.SystemColors.Window;
             this.Box1.Location = new System.Drawing.Point(3, 3);
             this.Box1.Name = "Box1";
-            this.Box1.Size = new System.Drawing.Size(20, 20);
+            this.Box1.Size = new System.Drawing.Size(20, 24);
             this.Box1.TabIndex = 0;
             this.Box1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Box1.TextChanged += new System.EventHandler(this.Box1_TextChanged);
             // 
             // button3
             // 
+            this.button3.BackColor = System.Drawing.Color.Silver;
+            this.button3.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button3.Location = new System.Drawing.Point(351, 118);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 2;
             this.button3.Text = "Solve";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
+            this.button4.BackColor = System.Drawing.Color.Silver;
+            this.button4.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button4.Location = new System.Drawing.Point(315, 48);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(111, 45);
             this.button4.TabIndex = 4;
             this.button4.Text = "New Game";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // label2
@@ -1472,36 +1530,11 @@
             this.label2.Text = "Congratulation!";
             this.label2.Visible = false;
             // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Easy",
-            "Normal",
-            "Hard"});
-            this.comboBox1.Location = new System.Drawing.Point(310, 19);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(116, 21);
-            this.comboBox1.TabIndex = 9;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "Easy",
-            "Normal",
-            "Hard"});
-            this.comboBox2.Location = new System.Drawing.Point(168, 19);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(116, 21);
-            this.comboBox2.TabIndex = 9;
-            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(499, 379);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);

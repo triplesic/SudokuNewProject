@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="false">
+  <TopNode>[0-1000]D:\Sipa's training\Programming\Agile\Soduku Step9 Add Unit Test\Sudoku\Sudoku\Sudoku.csproj</TopNode>
+  <SelectedNode>[0-1003]Sudoku.CheckCorrectCellTest.TableGetTest2_02</SelectedNode>
+  <ExcludeCategories>false</ExcludeCategories>
+  <Nodes>
+    <Node UniqueName="[0-1000]D:\Sipa's training\Programming\Agile\Soduku Step9 Add Unit Test\Sudoku\Sudoku\Sudoku.csproj" Expanded="true" />
+    <Node UniqueName="[0-1015]D:\Sipa's training\Programming\Agile\Soduku Step9 Add Unit Test\Sudoku\Sudoku\bin\Debug\Sudoku.exe" Expanded="true" />
+    <Node UniqueName="[0-1016]Sudoku" Expanded="true" />
+    <Node UniqueName="[0-1001]Sudoku.CheckCorrectCellTest" Expanded="true" />
+  </Nodes>
+</VisualState>

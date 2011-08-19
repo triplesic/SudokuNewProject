@@ -7,9 +7,20 @@ namespace Sudoku
 {
     public class CheckCorrectCell
     {
-        public int[,] table = new int[9, 9];
-        private int[,] smallTable = new int[3, 3];
+        private int[,] table = new int[9, 9];
 
+        public int[,] Table
+        {
+            get
+            {
+                return table;
+            }
+            set
+            {
+                table = value;
+            }
+        }
+        
         public CheckCorrectCell()
         {
         }
