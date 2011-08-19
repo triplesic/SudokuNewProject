@@ -1103,28 +1103,10 @@ namespace Sudoku
         private void button2_Click(object sender, EventArgs e)
         {
 
+            GenerateNumber gg = new Generate4();
             table = s.getSolve();
-            Random r = new Random();
-            int x, y;
-            int[,] arrGen = new int[4, 4];
-
-            for (int i = 0; i < valueLevel4x4; i++)
-            {
-                x = r.Next(4);
-                y = r.Next(4);
-
-                // Random duplicate
-                if (arrGen[x, y] != 0 && i != 0)
-                {
-                    i--;
-                }
-                else
-                {
-                    arrGen[x, y] = table[x, y];
-                }
-            }
-
-            mapArrayToTable(arrGen);
+            mapArrayToTable(gg.generatePosition(table, valueLevel4x4));
+            
             textBox1.BackColor = Color.White;
             textBox2.BackColor = Color.White;
             textBox3.BackColor = Color.White;
@@ -1192,30 +1174,10 @@ namespace Sudoku
 
         private void button4_Click(object sender, EventArgs e)
         {
-            
 
-            table9x9 = s.getSolve9x9();
-            int[,] gen = new int[9, 9];
-            Random r = new Random();
-            int x, y;
-
-            for (int i = 0; i < valueLevel9x9; i++)
-            {
-                x = r.Next(9);
-                y = r.Next(9);
-
-                if (gen[x, y] != 0 && i != 0)
-                {
-                    i--;
-                }
-                else
-                {
-                    gen[x, y] = table9x9[x, y];
-                }
-
-                gen[x, y] = table9x9[x, y];
-            }
-            mapArrayToTable9x9(gen);
+            GenerateNumber gg = new Generate9();
+            table = s.getSolve9x9();
+            mapArrayToTable9x9(gg.generatePosition(table, valueLevel9x9));
         }
 
         private void enableTable()
@@ -2701,49 +2663,16 @@ namespace Sudoku
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (comboBox1.Text.Equals("Easy"))
-            {
-                valueLevel9x9 = 50;
-
-            }
-            else if (comboBox1.Text.Equals("Normal"))
-            {
-                valueLevel9x9 = 40;
-
-            }
-            else if (comboBox1.Text.Equals("Hard"))
-            {
-                valueLevel9x9 = 30;
-
-            }
-            else
-            {
-                valueLevel9x9 = 0;
-            }
+            LevelChooser c1 = new Chooselv9();
+            valueLevel9x9 = c1.selectedlv(comboBox1.Text);
         }
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (comboBox2.Text.Equals("Easy"))
-            {
-                valueLevel4x4 = 7;
-
-            }
-            else if (comboBox2.Text.Equals("Normal"))
-            {
-                valueLevel4x4 = 6;
-
-            }
-            else if (comboBox2.Text.Equals("Hard"))
-            {
-                valueLevel4x4 = 5;
-
-            }
-            else
-            {
-                valueLevel4x4 = 0;
-            }
+            LevelChooser c1 = new Chooselv4();
+            valueLevel4x4 = c1.selectedlv(comboBox2.Text);
         }
+        
 
 
         public void congratulations9x9()

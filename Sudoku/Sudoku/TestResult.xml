@@ -1,29 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!--This file represents the results of running a test suite-->
-<test-results name="D:\Sipa's training\Programming\Agile\Soduku Step9 Add Unit Test\Sudoku\Sudoku\Sudoku.csproj" total="13" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2011-08-19" time="11:37:31">
-  <environment nunit-version="2.5.10.11092" clr-version="2.0.50727.5446" os-version="Microsoft Windows NT 6.1.7601 Service Pack 1" platform="Win32NT" cwd="D:\Sipa's training\Programming\Agile\Soduku Step9 Add Unit Test\Sudoku\Sudoku" machine-name="TRIPLESICNEWLAB" user="Triplesic" user-domain="TRIPLESICNEWLAB" />
-  <culture-info current-culture="en-IN" current-uiculture="en-US" />
-  <test-suite type="Project" name="D:\Sipa's training\Programming\Agile\Soduku Step9 Add Unit Test\Sudoku\Sudoku\Sudoku.csproj" executed="True" result="Success" success="True" time="0.075" asserts="0">
+<test-results name="C:\Users\NULENG\Desktop\Sudoku\Sudoku\Sudoku.csproj" total="13" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2011-08-19" time="12:38:27">
+  <environment nunit-version="2.5.10.11092" clr-version="2.0.50727.5446" os-version="Microsoft Windows NT 6.1.7601 Service Pack 1" platform="Win32NT" cwd="C:\Users\NULENG\Desktop\Sudoku\Sudoku" machine-name="NULENG-PC" user="NULENG" user-domain="NULENG-PC" />
+  <culture-info current-culture="th-TH" current-uiculture="en-US" />
+  <test-suite type="Project" name="C:\Users\NULENG\Desktop\Sudoku\Sudoku\Sudoku.csproj" executed="True" result="Success" success="True" time="0.037" asserts="0">
     <results>
-      <test-suite type="Assembly" name="D:\Sipa's training\Programming\Agile\Soduku Step9 Add Unit Test\Sudoku\Sudoku\bin\Debug\Sudoku.exe" executed="True" result="Success" success="True" time="0.067" asserts="0">
+      <test-suite type="Assembly" name="C:\Users\NULENG\Desktop\Sudoku\Sudoku\bin\Debug\Sudoku.exe" executed="True" result="Success" success="True" time="0.037" asserts="0">
         <results>
-          <test-suite type="Namespace" name="Sudoku" executed="True" result="Success" success="True" time="0.067" asserts="0">
+          <test-suite type="Namespace" name="Sudoku" executed="True" result="Success" success="True" time="0.037" asserts="0">
             <results>
-              <test-suite type="TestFixture" name="CheckCorrectCellTest" executed="True" result="Success" success="True" time="0.066" asserts="0">
+              <test-suite type="TestFixture" name="CheckCorrectCellTest" executed="True" result="Success" success="True" time="0.036" asserts="0">
                 <results>
-                  <test-case name="Sudoku.CheckCorrectCellTest.CheckCorrectCell9x9Test_01" executed="True" result="Success" success="True" time="0.016" asserts="1" />
+                  <test-case name="Sudoku.CheckCorrectCellTest.CheckCorrectCell9x9Test_01" executed="True" result="Success" success="True" time="0.001" asserts="1" />
                   <test-case name="Sudoku.CheckCorrectCellTest.CheckCorrectCell9x9Test_02" executed="True" result="Success" success="True" time="0.000" asserts="1" />
-                  <test-case name="Sudoku.CheckCorrectCellTest.CheckSmallPositionPart_01" executed="True" result="Success" success="True" time="0.003" asserts="1" />
+                  <test-case name="Sudoku.CheckCorrectCellTest.CheckSmallPositionPart_01" executed="True" result="Success" success="True" time="0.000" asserts="1" />
                   <test-case name="Sudoku.CheckCorrectCellTest.CheckSmallPositionPart_02" executed="True" result="Success" success="True" time="0.000" asserts="1" />
-                  <test-case name="Sudoku.CheckCorrectCellTest.CheckSmallPositionPart_03" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                  <test-case name="Sudoku.CheckCorrectCellTest.CheckSmallPositionPart_03" executed="True" result="Success" success="True" time="0.000" asserts="1" />
                   <test-case name="Sudoku.CheckCorrectCellTest.CheckSmallPositionPart_04" executed="True" result="Success" success="True" time="0.001" asserts="1" />
-                  <test-case name="Sudoku.CheckCorrectCellTest.CheckSmallPositionPart_05" executed="True" result="Success" success="True" time="0.000" asserts="1" />
-                  <test-case name="Sudoku.CheckCorrectCellTest.CheckSmallPositionPart_06" executed="True" result="Success" success="True" time="0.000" asserts="1" />
-                  <test-case name="Sudoku.CheckCorrectCellTest.CheckSmallPositionPart_07" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                  <test-case name="Sudoku.CheckCorrectCellTest.CheckSmallPositionPart_05" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                  <test-case name="Sudoku.CheckCorrectCellTest.CheckSmallPositionPart_06" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                  <test-case name="Sudoku.CheckCorrectCellTest.CheckSmallPositionPart_07" executed="True" result="Success" success="True" time="0.000" asserts="1" />
                   <test-case name="Sudoku.CheckCorrectCellTest.CheckSmallPositionPart_08" executed="True" result="Success" success="True" time="0.000" asserts="1" />
                   <test-case name="Sudoku.CheckCorrectCellTest.CheckSmallPositionPart_09" executed="True" result="Success" success="True" time="0.000" asserts="1" />
-                  <test-case name="Sudoku.CheckCorrectCellTest.TableGetTest_01" executed="True" result="Success" success="True" time="0.001" asserts="1" />
-                  <test-case name="Sudoku.CheckCorrectCellTest.TableGetTest2_02" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                  <test-case name="Sudoku.CheckCorrectCellTest.TableGetTest_01" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                  <test-case name="Sudoku.CheckCorrectCellTest.TableGetTest2_02" executed="True" result="Success" success="True" time="0.000" asserts="1" />
                 </results>
               </test-suite>
             </results>
